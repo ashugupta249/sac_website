@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* https://codepen.io/Katiae/pen/zwjmbW */
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  background-color: #f8f8f8;
+}
+body {
+  padding: 2rem 0.5rem;
+  font-family: 'Raleway', Sans-serif;
+  color: #32325d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
+@media (min-width: 40rem) {
+  body {
+    padding: 2rem;
+  }
+}
+.container {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.cards {
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+@media (min-width: 40rem) {
+  .cards {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards {
+    width: 33.3%;
+  }
+}
+.cards .card-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+.cards .card-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.cards .card-item:hover .card-image {
+  opacity: 1;
+}
+.cards .card-info {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+  line-height: 1.5em;
+}
+.cards .card-title {
+  font-size: 25px;
+  line-height: 1.1em;
+  color: #32325d;
+  margin-bottom: 0.2em;
+}
+.cards .card-image {
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 0.91;
+}
+
+
+/*  ....  */
+
+.tabs {
+}
+.tabs input[type=radio] {
+  display: none; 
+}
+.tabs label {
+  transition: background 0.4s ease-in-out, height 0.2s linear;
+  display: inline-block;
+  cursor: pointer;
+  color: #2EBEB9;
+  width: 20%;
+  height: 3em;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: #FCFCFC;
+  text-align: center;
+  line-height: 3em; 
+}
+.tabs label:last-of-type {
+  border-bottom: none; 
+}
+.tabs label:hover {
+  background: #259692;
+  color:#ffffff;
+}
+@media screen and (max-width: 1600px) {
+.tabs label {
+  width: 15%; } 
+}
+@media screen and (max-width: 900px) {
+.tabs label {
+  width: 20%; 
+  } 
+}
+@media screen and (max-width: 600px) {
+.tabs label {
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid #C7C6C4;
+  border-radius: 0; 
+} 
+}
+@media screen and (max-width: 600px) {
+.tabs {
+  margin: 0; 
+} 
+}
+
+#tab1:checked + label, #tab2:checked + label, #tab3:checked + label, #tab4:checked + label {
+  background: #2EBEB9;
+  color: #FFFFFF; }
+
+.tab-content {
+  position: absolute;
+  top: -9999px;
+  padding: 10px; 
+}
+
+.tab-content-wrapper{
+  background: #FCFCFC;
+  border-top: #2EBEB9 5px solid;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  
+}
+@media screen and (max-width: 600px) {
+.tab-content-wrapper, .tab1-content-wrapper {
+  border: none;
+  border-radius: 0; 
+} 
+}
+
+#tab1:checked ~ .tab-content-wrapper #tab-content-1, #tab2:checked ~ .tab-content-wrapper #tab-content-2, #tab3:checked ~ .tab-content-wrapper #tab-content-3, #tab4:checked ~ .tab-content-wrapper #tab-content-4 {
+  position: relative;
+  top: 0px;
+ }
+
+ /* above from https://codepen.io/itsthomas/pen/JdYNOo */
