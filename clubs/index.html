@@ -8,6 +8,7 @@
     
     
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./toggle.css" />
 
     <link
       rel="stylesheet"
@@ -16,8 +17,26 @@
 
     <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
 
+    <script type="text/javascript">
+       $(document).ready(function() {
+        $('#toggle-dark').click(function() {
+          if ($(this).prop('checked'))
+            $('html').addClass('dark');
+          else
+            $('html').removeClass('dark');
+        })
+
+       })
+        
+    </script>
+
   </head>
   <body>
+
+    <label class="switch">
+          <input type="checkbox" id='toggle-dark'>
+          <span class="slider round"></span>
+    </label>
 
     <div class="tabs">
         <input type="radio" name="tab" id="tab1" checked="checked">
@@ -26,6 +45,8 @@
         <label for="tab2">CAIC</label>
         <input type="radio" name="tab" id="tab3">
         <label for="tab3">Others</label>
+
+        
         
       
         <div class="tab-content-wrapper">
@@ -133,6 +154,7 @@
 
     <script>
     //TEMP 
+    /*
       images = [
         "https://source.unsplash.com/featured/?mountains",
         "https://source.unsplash.com/featured/?hiking",
@@ -143,10 +165,12 @@
         "https://source.unsplash.com/featured/?outdoors"
       "https://source.unsplash.com/featured/?norway"
       ]
+      
 
       $('div.card-image').each ->
         random_image_index = Math.floor(images.length * Math.random())
         $(this).css('background-image', 'url(' + images[random_image_index] + ')')
+        */
       </script>
 
 
