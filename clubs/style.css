@@ -79,6 +79,7 @@ body {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
 }
+
 .cards .card-item:hover .card-image {
   opacity: 1;
 }
@@ -187,3 +188,13 @@ body {
  }
 
  /* above from https://codepen.io/itsthomas/pen/JdYNOo */
+
+
+
+
+
+ .cards .card-more {
+  display: block;
+  align-content: center;
+
+}
