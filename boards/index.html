@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boards</title>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style-drop.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+
+    <script src='./script.js'></script>
+    <script src='./script-drop.js'></script>
+
+    <script>
+
+      $(document).ready(function() {
+        
+
+        $.toggler = function(val){ 
+          $('.container').fadeOut(function(){
+            $(".container").html("");
+            $(".container").load("partials/"+val+".html .ux-vertical-tabs"); 
+            $('.container').fadeIn();
+            history.replaceState(undefined, undefined, "#"+val);
+         }) 
+        }
+
+
+        if (window.location.hash) {
+              // alert(window.location.hash.substring(1));
+              $.toggler(window.location.hash.substring(1));
+         }
+         else{
+              $.toggler("bsw");
+         }
+
+
+
+        
+        $('#drop select').on('change', function() {
+          // alert('triggered '+val);
+          $.toggler($(this).val());
+        })
+      
+
+      })
+    </script>
+
+  </head>
+
+    <header>
+      <div id='home'>
+        <!-- Use any 1 of these -->
+        <a href='../'><i class='material-icons' >arrow_back</i></a>
+        <a href='../'><i class='material-icons' >home</i></a>
+      </div>
+      <div id='drop'>
+          <select name="nav">
+            <option value="bsw">BSW</option>
+            <option value="bsp">BSP</option>
+            <option value="brca">BRCA</option>
+         </select>
+      </div>
+    </header>
+
+
+    
+  <body>
+    <div class="vert-tabs">
+
+      <div class="container"></div>
+
+    </div>
+  </body>
+</html>

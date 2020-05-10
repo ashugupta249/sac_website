@@ -7,17 +7,22 @@ body {
   margin: 0;
 }
 
-/*template ends*/
+/*template starts*/
 
  /* https://codepen.io/xcrap/pen/ejVbva */
 
 
 @import url("//fonts.googleapis.com/css?family=Cairo:300,400,700");
 body {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  margin: 0 auto auto 0;
+  
+}
+
+.vert-tabs{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;*/
+  /*align-items: center;*/
   font-family: 'Cairo';
   margin: 0;
   padding: 0;
@@ -67,7 +72,8 @@ body {
 }
 
 .ux-vertical-tabs .tabs {
-  width: 20rem;
+  position: fixed;
+  width: 20rem;  /** change in main content margin-left!! */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -141,6 +147,7 @@ body {
 }
 
 .ux-vertical-tabs .maincontent {
+  margin-left: 20rem;
   flex: 1;
   border: 1px solid #ddd;
   border-left: 0;
@@ -160,11 +167,13 @@ body {
 
 @media (max-width: 50rem) {
   .ux-vertical-tabs {
+
     flex-direction: column;
     background: none;
   }
 
   .ux-vertical-tabs .tabs {
+    position: relative;
     width: 100%;
   }
 
@@ -173,6 +182,7 @@ body {
   }
 
   .ux-vertical-tabs .maincontent {
+    
     border: 1px solid #ccc;
     border-top: 0;
     background: linear-gradient(to bottom, #eee, #fff 200px);
@@ -199,6 +209,7 @@ body {
   }
 
   .ux-vertical-tabs .maincontent {
+    margin-left: 0;
     padding: 1rem;
   }
 }
