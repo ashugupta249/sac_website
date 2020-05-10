@@ -1,8 +1,6 @@
 function vertical_tabs()
   {
-  if ($('.ux-vertical-tabs').length > 0)
-    {
-    $('.ux-vertical-tabs .tabs button').on("click", function()
+    $('.container').on("click", ".ux-vertical-tabs .tabs button", function()
       {
       var temp_tab = $(this).data('tab');
       var temp_tab_js = this.getAttribute('data-tab');
@@ -23,7 +21,7 @@ function vertical_tabs()
       });
       });
     }
-  }
+
 
 $(function() 
   {
