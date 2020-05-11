@@ -127,9 +127,13 @@ body {
   text-align: center;
   line-height: 3em; 
 }
+
+/* show border-bottom on small screens
 .tabs label:last-of-type {
   border-bottom: none; 
 }
+*/
+
 .tabs label:hover {
   background: #259692;
   color:#ffffff;
