@@ -1,6 +1,8 @@
 *{
 	text-align: center;
 	padding:1%;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
 }
 
 
@@ -28,10 +30,14 @@
 	margin-right: auto;	
 }
 
-#boards{
+#boards,#facilities,#board_container{
 	display:flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+#board_container{
+	width:90%;
 }
 
 #sac_box{
@@ -40,8 +46,23 @@
 	margin-right: 35%;
 }
 
-.boardbox{
+#sac_box div img{
+	float: left;
+	margin-left: 5%;
+}
+
+.boardbox,.facilitybox{
 	width:16%;
+}
+
+.board_logo{
+	height: 2em;
+	width: 2em;
+}
+
+#sac_box div h1{
+	margin-block-start: 0em;
+	margin-block-end: 0em;
 }
 
 @media(max-width: 600px){
@@ -57,8 +78,42 @@
 	}
 
 	.boardbox{
+		width:100%;
+		margin-left: 0%;
+		margin-right: 0%;
+		float:right;
+		border-left-style: double;
+	}
+
+	#board_container{
 		width:70%;
+	}
+
+	.facilitybox{
+		width:80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#sac_box div img{
+		float: left;
+		margin-left: 10%;
+	}
+
+	#line1{
+		border-left: 5px solid black;
+		height: 100em;
+		padding: 0%;
 		margin-left: 15%;
-		margin-right: 15%;
+	}
+	#line2,#line3,#line4,#line5,#line6{
+		border-top: 5px solid black;
+		width:15px;
+	}
+	#line2{
+		margin-top: 2em;
+	}
+	#line3,#line4,#line5,#line6{
+		margin-top: 20em;
 	}
 }
