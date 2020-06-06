@@ -1,8 +1,23 @@
 *{
 	text-align: center;
-	padding:1%;
+	/* padding:1%; */
 	margin-block-start: 0em;
 	margin-block-end: 0em;
+}
+
+div{
+	padding:1%;
+}
+
+body{
+	margin:0px;
+	text-align: center;
+	padding:0%;
+}
+
+a{
+	text-decoration: none;
+	color: black;
 }
 
 
@@ -12,6 +27,11 @@
 	border-style: solid;
 	margin-bottom: 1%;
 	border-radius: 20px;
+	;
+}
+
+.box:hover{
+	cursor: pointer;
 }
 
 #about_us{
@@ -36,8 +56,14 @@
 	flex-wrap: wrap;
 }
 
-#board_container{
+#board_container,#facilities{
 	width:90%;
+	margin:auto;
+	margin-top: 1em;
+}
+
+.box{
+	padding:1%;
 }
 
 #sac_box{
@@ -53,6 +79,14 @@
 
 .boardbox,.facilitybox{
 	width:16%;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+
+.boardbox:hover,.facilitybox:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
 }
 
 .board_logo{
@@ -65,7 +99,8 @@
 	margin-block-end: 0em;
 }
 
-@media(max-width: 600px){
+
+@media(max-width: 800px){
 	.mobile_hidden{
 		visibility: hidden;
 		height: 0px;
