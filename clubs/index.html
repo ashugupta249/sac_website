@@ -20,68 +20,7 @@
     <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
 
     <style>
-      div.social{
-        font-size: 1.2em;
-      }
-      .fb{
-        display: inline-block;
-        border: 1px solid #3b5999;
-        color: #3b5999;
-        padding: 6px 12px;
-        text-decoration: none;
-        margin-right: 6px;
-      }
-
-      .fb:hover{
-        background: #3b5999;
-        color: white;
-      }
-
-      .insta{
-        display: inline-block;
-        border: 1px solid #e4405f;
-        color: #e4405f;
-        padding: 6px 12px;
-        text-decoration: none;
-        margin-right: 6px;
-      }
-
-      .insta:hover{
-        background: #e4405f;
-        color: white;
-      }
-
-
-
-      .web{
-        display: inline-block;
-        border: 1px solid black;
-        color: black;
-        float: right;
-        padding: 6px 12px;
-        text-decoration: none;
-      }
-      .web:hover{
-        border: 1px solid DodgerBlue;
-        color: DodgerBlue;
-        /*
-        border: none;
-        background: DodgerBlue;
-        col or: white;
-        */
-      }
-      @media screen and (max-width: 600px) {
-        .contact{
-          text-align: center;
-        }
-
-        .web{
-          margin-top: 12px;
-          width: 100%;
-          float: none;
-        }
-       
-      }
+      
     </style>
 
     <script>
@@ -111,13 +50,14 @@
           <div id="tab-content-1" class="tab-content">
             
             <div class="container">
-              <div class="cards modal__trigger" data-modal="#club1">
+              <div class="cards" >
                 <div class="card-item">
                   <div class="card-image" style="background-image:url('default.png')">
                   </div>
                   <div class="card-info">
                     <h2 class="card-title">Club 1</h2>
                     <p class="card-intro">Desc</p>
+                    <a class="card-more modal__trigger" data-modal="#club1">Know More</a>
                   </div>
                 </div>
               </div>

@@ -194,11 +194,90 @@ body {
  /* above from https://codepen.io/itsthomas/pen/JdYNOo */
 
 
+ div.social{
+   font-size: 1.2em;
+ }
+ .fb{
+   display: inline-block;
+   border: 1px solid #3b5999;
+   color: #3b5999;
+   padding: 6px 12px;
+   text-decoration: none;
+   margin-right: 6px;
+ }
+
+ .fb:hover{
+   background: #3b5999;
+   color: white;
+ }
+
+ .insta{
+   display: inline-block;
+   border: 1px solid #e4405f;
+   color: #e4405f;
+   padding: 6px 12px;
+   text-decoration: none;
+   margin-right: 6px;
+ }
+
+ .insta:hover{
+   background: #e4405f;
+   color: white;
+ }
+
+
+
+ .web{
+   display: inline-block;
+   border: 1px solid black;
+   color: black;
+   float: right;
+   padding: 6px 12px;
+   text-decoration: none;
+ }
+ .web:hover{
+   border: 1px solid DodgerBlue;
+   color: DodgerBlue;
+   /*
+   border: none;
+   background: DodgerBlue;
+   col or: white;
+   */
+ }
+ @media screen and (max-width: 600px) {
+   .contact{
+     text-align: center;
+   }
+
+   .web{
+     margin-top: 12px;
+     width: 100%;
+     float: none;
+   }
+  
+ }
+
 
 
 
  .cards .card-more {
   display: block;
-  align-content: center;
+  text-align: center;
+  border: 1px solid DodgerBlue;
+  padding: 0.25rem;
+  /*
+  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  */
+}
 
+ .cards .card-more:hover {
+  background: DodgerBlue;
+  color: white;
+  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
 }
