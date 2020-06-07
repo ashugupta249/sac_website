@@ -1,3 +1,9 @@
+/* Note:
+  1: tabs width and maincontent left-margin are interrelated and should be chnaged simultaneously;
+  2: dropwdown height & padding and tabs top margin are interrelated and should be chnaged together;
+
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -5,6 +11,41 @@
 body {
   overflow-x: hidden;
   margin: 0;
+  font-family: 'Lato';
+}
+
+h1,h2,h3{
+  font-family: 'Oswald';
+}
+
+header{
+    background-color: DodgerBlue;
+    padding: 12px 9px;;
+    z-index: 999;
+    display: block;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    vertical-align: middle;
+}
+
+header::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+
+#home{
+    display: inline-block;
+    font-size: 2.25em;
+    color: white;
+    margin-left: 6px;
+    cursor:  pointer;
+    user-select:  none;
+}
+
+#home>a{
+    color: white;
 }
 
 /*template starts*/
@@ -12,18 +53,15 @@ body {
  /* https://codepen.io/xcrap/pen/ejVbva */
 
 
-@import url("//fonts.googleapis.com/css?family=Cairo:300,400,700");
 body {
   /*min-height: 100vh;*/
   margin: 0 auto auto 0;
-  
 }
 
 .vert-tabs{
   display: flex;
   /*justify-content: center;*/
   /*align-items: center;*/
-  font-family: 'Cairo';
   margin: 0;
   padding: 0;
 }
@@ -72,11 +110,13 @@ body {
 }
 
 .ux-vertical-tabs .tabs {
+  font-family: 'Oswald';
   position: fixed;
-  width: 20rem;  /** change in main content margin-left!! */
+  width: 20rem;  /** change in main content margin-left & dropdown width!! */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-top: 70px;  /** change in dropdown height & padding **/
 }
 
 .ux-vertical-tabs .tabs button {
@@ -156,7 +196,10 @@ body {
 }
 
 .ux-vertical-tabs .maincontent .tabcontent {
-  display: none;
+  display: flex;
+  flex: 1;
+  position: relative;
+  padding-top: 15px;
 }
 
 .ux-vertical-tabs .maincontent .tabcontent.active {
@@ -213,4 +256,7 @@ body {
     padding: 1rem;
   }
 }
+
+
+
 
