@@ -1,16 +1,8 @@
 /*Template from https://codepen.io/ettrics/pen/Jdjdzp */
 
-* {
-  box-sizing: border-box;
-}
 
-h1,
-h2,
-h3,
-p {
-  font-weight: 300;
-  margin: 0 0 2.4rem 0;
-}
+
+
 h1,
 h2,
 h3 {
@@ -83,7 +75,7 @@ h3 {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transiti@imporon: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
