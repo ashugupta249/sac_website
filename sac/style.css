@@ -5,6 +5,11 @@
 body {
   overflow-x: hidden;
   margin: 0;
+  font-family: 'Lato';
+}
+
+h1,h2,h3{
+  font-family: 'Oswald';
 }
 
 header{
@@ -42,18 +47,15 @@ header::after{
  /* https://codepen.io/xcrap/pen/ejVbva */
 
 
-@import url("//fonts.googleapis.com/css?family=Cairo:300,400,700");
 body {
   /*min-height: 100vh;*/
   margin: 0 auto auto 0;
-  
 }
 
 .vert-tabs{
   display: flex;
   /*justify-content: center;*/
   /*align-items: center;*/
-  font-family: 'Cairo';
   margin: 0;
   padding: 0;
 }
@@ -102,6 +104,7 @@ body {
 }
 
 .ux-vertical-tabs .tabs {
+  font-family: 'Oswald';
   position: fixed;
   width: 20rem;  /** change in main content margin-left!! */
   display: flex;
@@ -186,7 +189,10 @@ body {
 }
 
 .ux-vertical-tabs .maincontent .tabcontent {
-  display: none;
+  display: flex;
+  flex: 1;
+  position: relative;
+  padding-top: 25px;
 }
 
 .ux-vertical-tabs .maincontent .tabcontent.active {
