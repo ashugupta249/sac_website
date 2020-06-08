@@ -12,9 +12,10 @@ var line5 = $("#line5")[0];
 var line6 = $("#line6")[0];
 
 var size = $(".boardbox")[0].clientHeight*5;
-
-line1.setAttribute("style","height:"+size+"px");
-line3.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
-line4.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
-line5.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
-line6.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
+if(window.innerWidth<800){
+    line1.setAttribute("style","height:"+size+"px");
+    line3.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
+    line4.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
+    line5.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
+    line6.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
+}
