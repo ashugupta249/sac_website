@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./style-drop.css" />
-    <link rel="stylesheet" href="./style-flow.css" />
+    <link rel="stylesheet" href="../navbar/style-nav.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
     
@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script  src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
@@ -58,26 +60,49 @@
 
       })
     </script>
-
   </head>
 
-    <header>
-      <div id='home'>
-        <!-- Use any 1 of these -->
-        <a href='../'><i class='material-icons' >arrow_back</i></a>
-        <a href='../'><i class='material-icons' >home</i></a>
-      </div>
 
-      <!---
-      <div id='drop'>
-          <select name="nav">
-            <option value="bsw">BSW</option>
-            <option value="bsp">BSP</option>
-            <option value="brca">BRCA</option>
-          </select>
+  <div class="topnav" id="myTopnav">
+    <img src="../logo.png" class="saclogo"/>
+    <div class="nav-links">
+      <a href="../">Home</a>
+      <a href="../sac/">SAC</a>
+      <div class="dropdown">
+        <button class="dropbtn">Boards
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../boards/#bsw">BSW</a>
+          <a href="../boards/#bsa">BSA</a>
+          <a href="../boards/#bsp">BSP</a>
+          <a href="../boards/#bhm">BHM</a>
+          <a href="../boards/#brca">BRCA</a>
+        </div>
       </div>
-      -->
-    </header>
+      <div class="dropdown">
+        <button class="dropbtn">Activities
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../clubs/#cultural">Cultural</a>
+          <a href="../clubs/#technical">Technical</a>
+          <a href="../clubs/#others">Others</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Explore
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../facilities/">Facilities</a>
+          <!-- <a href="#">Activities</a> -->
+          <a href="#">Projects</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
 
 
     
@@ -91,4 +116,6 @@
     <script src='./script.js'></script>
     <script src='./script-drop.js'></script>
   </body>
+
+  <script src='../navbar/script-nav.js'></script>
 </html>
