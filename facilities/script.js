@@ -1,4 +1,4 @@
-function vertical_tabs()
+/*function vertical_tabs()
   {
     $('.container').on("click", ".ux-vertical-tabs .tabs button", function()
       {
@@ -27,3 +27,45 @@ $(function()
   {
   vertical_tabs();
   });
+
+*/
+
+
+
+
+
+
+
+$('.container').on("click", ".ux-vertical-tabs .tabs button", function(){
+    $('html, body').animate({
+        scrollTop: $('.ux-vertical-tabs .maincontent .tabcontent[data-tab="' + $(this).data('tab') + '"]').offset().top - $('header').outerHeight() + 2
+    }, 500); //adjust with header
+    return false;
+});
+
+
+$(window).scroll(function (e){
+    var q = $(".ux-vertical-tabs .tabs button:not(.empty)");
+    var len = q.length;
+
+    var i = 0;
+
+    for (i = 0; i < len; i++) {
+      q.eq(i).removeClass("active");
+    }
+
+    var top = $(window).scrollTop() + $('header').outerHeight();
+
+    for (i = 0; i < len; i++){
+      if (top < $('.ux-vertical-tabs .maincontent .tabcontent[data-tab="' + q.eq(i).data('tab') + '"]').offset().top)
+        break;
+    }
+
+    // Handle i = 0 case
+    if (i==0)
+      i=1;
+
+    q.eq(i-1).addClass("active");
+
+    
+});

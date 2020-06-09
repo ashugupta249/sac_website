@@ -3,53 +3,22 @@
 /* dropdown template starts */
 /* https://codepen.io/saravanajd/pen/GGPQbY */
 
-header{
-    background-color: DodgerBlue;
-    padding: 12px 9px;;
-    z-index: 999;
-    display: block;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    vertical-align: middle;
-    width:100%;
-}
-
-header::after{
-    clear: both;
-    display: table;
-    content: "";
-}
-
-#home{
-    display: inline-block;
-    font-size: 2.25em;
-    color: white;
-    margin-left: 6px;
-    cursor:  pointer;
-    user-select:  none;
-}
-
-#home>a{
-    color: white;
-}
 
 
-div#drop{
-  float: right;
-
-}
 select {
     display: none !important;
 }
 
 .dropdown-select {
+    font-family: 'Oswald';
+    font-weight: 300;
+
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40FFFFFF', endColorstr='#00FFFFFF', GradientType=0);
     background-color: DodgerBlue;
     background-color: rgba(255,255,255,0.5);
-    border-radius: 6px;
+    /*border-radius: 6px;*/
     border: solid 1px #eee; /*changed to border-bottom from border*/
 
     box-shadow: 0px 2px 5px 0px rgba(155, 155, 155, 0.5);
@@ -72,8 +41,6 @@ select {
     -ms-user-select: none;
     user-select: none;
     white-space: nowrap;
-    min-width: 35vw;
-
 }
 
 
@@ -222,4 +189,17 @@ select {
     color: #666;
 }
 
+#drop{
+    position: absolute;
+    position: fixed;
+    padding: 13px 0.75rem;
+    width: 18.5rem;
+    z-index: 99;
+}
 
+
+@media (max-width: 50rem) {
+    #drop{
+        width: 98%;
+    }
+}

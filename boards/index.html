@@ -24,8 +24,7 @@
 
     <script  src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-    <!-- <a href="#">Activities</a> -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -69,41 +68,44 @@
 
   </head>
     <div class="topnav" id="myTopnav">
-      <div class="dropdown">
-        <button class="dropbtn">Explore
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="../facilities/">Facilities</a>
-          <!-- <a href="#">Activities</a> -->
-          <a href="#">Projects</a>
+      <img src="../logo.png" class="saclogo"/>
+      <div class="nav-links">
+        <a href="../">Home</a>
+        <a href="../sac/">SAC</a>
+        <div class="dropdown">
+          <button class="dropbtn">Boards
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../boards/#bsw">BSW</a>
+            <a href="../boards/#bsa">BSA</a>
+            <a href="../boards/#bsp">BSP</a>
+            <a href="../boards/#bhm">BHM</a>
+            <a href="../boards/#brca">BRCA</a>
+          </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Activities
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="../clubs/#cultural">Cultural</a>
-          <a href="../clubs/#technical">Technical</a>
-          <a href="../clubs/#others">Others</a>
+        <div class="dropdown">
+          <button class="dropbtn">Activities
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../clubs/#cultural">Cultural</a>
+            <a href="../clubs/#technical">Technical</a>
+            <a href="../clubs/#others">Others</a>
+          </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Boards
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="../boards/#bsw">BSW</a>
-          <a href="../boards/#bsa">BSA</a>
-          <a href="../boards/#bsp">BSP</a>
-          <a href="../boards/#bhm">BHM</a>
-          <a href="../boards/#brca">BRCA</a>
+        <div class="dropdown">
+          <button class="dropbtn">Explore
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../facilities/">Facilities</a>
+            <!-- <a href="#">Activities</a> -->
+            <a href="#">Projects</a>
+          </div>
         </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
-      <a href="../sac/">SAC</a>
-      <a href="../">Home</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     <!-- <header>
       <nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
