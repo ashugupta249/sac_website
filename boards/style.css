@@ -20,7 +20,7 @@ h1,h2,h3{
 
 header{
     background-color: DodgerBlue;
-    padding: 12px 9px;;
+    /* padding: 12px 9px; */
     z-index: 999;
     display: block;
     position: sticky;

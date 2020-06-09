@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./style-drop.css" />
     <link rel="stylesheet" href="./style-flow.css" />
+    <link rel="stylesheet" href="../navbar/style-nav.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
     
@@ -18,8 +19,14 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
 
+    
+
+
     <script  src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 
     <script>
@@ -60,23 +67,95 @@
     </script>
 
   </head>
-
-    <header>
-      <div id='home'>
-        <!-- Use any 1 of these -->
-        <a href='../'><i class='material-icons' >arrow_back</i></a>
-        <a href='../'><i class='material-icons' >home</i></a>
+    <div class="topnav" id="myTopnav">
+      <a href="../">Home</a>
+      <a href="#home">SAC</a>
+      <div class="dropdown">
+        <button class="dropbtn">Boards
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../boards/#bsw">BSW</a>
+          <a href="../boards/#bsa">BSA</a>
+          <a href="../boards/#bsp">BSP</a>
+          <a href="../boards/#bhm">BHM</a>
+          <a href="../boards/#brca">BRCA</a>
+        </div>
       </div>
-
-      <!---
-      <div id='drop'>
-          <select name="nav">
-            <option value="bsw">BSW</option>
-            <option value="bsp">BSP</option>
-            <option value="brca">BRCA</option>
-          </select>
+      <div class="dropdown">
+        <button class="dropbtn">Clubs
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../clubs/#cultural">Cultural</a>
+          <a href="../clubs/#technical">Technical</a>
+          <a href="../clubs/#others">Others</a>
+        </div>
       </div>
-      -->
+      <div class="dropdown">
+        <button class="dropbtn">Explore
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../facilities/">Facilities</a>
+          <a href="#">Activities</a>
+          <a href="#">Projects</a>
+        </div>
+      </div>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- <header>
+      <nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  <a class="navbar-brand" href="#">WebSiteName</a>
+					</div>
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav">
+						<li><a href="#">Home</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Boards
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+								<li><a href="#">BSW</a></li>
+								<li><a href="#">BSP</a></li>
+								<li><a href="#">BSA</a></li>
+								<li><a href="#">BHM</a></li>
+								<li><a href="#">BRCA</a></li>
+								</ul>
+							
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Clubs
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+								<li><a href="#">Cultutral</a></li>
+								<li><a href="#">Technical</a></li>
+								<li><a href="#">Others</a></li>
+								</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Facilities
+								<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+								<li><a href="#">Cultutral</a></li>
+								<li><a href="#">Technical</a></li>
+								<li><a href="#">Others</a></li>
+								<li><a href="#">Technical</a></li>
+								<li><a href="#">Others</a></li>
+								</ul>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</nav> -->
     </header>
 
 
@@ -97,5 +176,6 @@
 
     <script src='./script.js'></script>
     <script src='./script-drop.js'></script>
+    <script src='../navbar/script-nav.js'></script>
   </body>
 </html>
