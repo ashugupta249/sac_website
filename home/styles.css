@@ -90,6 +90,16 @@ a,a:hover{
 	-webkit-transform: scale(1.1);
 }
 
+#sac_box {
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+}
+
+#sac_box:hover{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+
 .board_logo{
 	height: 2em;
 	width: 2em;
@@ -119,7 +129,7 @@ a,a:hover{
 		margin-right: 0%;
 		margin-top:5%;
 		float:right;
-		border-left-style: double;
+		/* border-left-style: double; */
 	}
 
 	#board_container{
