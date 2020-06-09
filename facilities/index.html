@@ -9,7 +9,10 @@
     
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./style-drop.css" />
+    <link rel="stylesheet" href="./style-flow.css" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
+    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -18,18 +21,18 @@
     <script  src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 
-    <script src='./script.js'></script>
-    <script src='./script-drop.js'></script>
 
     <script>
 
       $(document).ready(function() {
+        
         
 
         $.toggler = function(val){ 
           $('.container').fadeOut(function(){
             $(".container").html("");
             $(".container").load("./partials/"+val+".html .ux-vertical-tabs"); 
+            $("title").html("Boards - "+val.toUpperCase());
             $('.container').fadeIn();
             history.replaceState(undefined, undefined, "#"+val);
          }) 
@@ -41,7 +44,7 @@
               $.toggler(window.location.hash.substring(1));
          }
          else{
-              $.toggler("bsw");
+              $.toggler("facility");
          }
 
 
@@ -64,20 +67,28 @@
         <a href='../'><i class='material-icons' >arrow_back</i></a>
         <a href='../'><i class='material-icons' >home</i></a>
       </div>
+
+      <!---
       <div id='drop'>
           <select name="nav">
-            <option value="facility1">facility1</option>
-         </select>
+            <option value="bsw">BSW</option>
+            <option value="bsp">BSP</option>
+            <option value="brca">BRCA</option>
+          </select>
       </div>
+      -->
     </header>
 
 
     
   <body>
     <div class="vert-tabs">
-
       <div class="container"></div>
 
     </div>
+
+
+    <script src='./script.js'></script>
+    <script src='./script-drop.js'></script>
   </body>
 </html>
