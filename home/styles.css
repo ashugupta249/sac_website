@@ -380,21 +380,21 @@ section{
 
 @media only screen and (max-width: 992px) {
 	#lead {
-		/*
+		
 		height: auto;
 		min-height: auto;
 		max-height: auto;
 		
 		padding: 120px 15px
-		*/
+		
 	}
 	#lead-content {
-		/*
+		
 		position: relative;
 		transform: none;
 		left: auto;
 		top: auto
-		*/
+		
 	}
 	#lead-content img{
 		height: calc(5.5em + 10px);
@@ -422,11 +422,11 @@ section{
 	#lead-content h2 {
 		font-size: 1.8em
 	}
-	/*
+	
 	#lead-down {
 		display: none
 	}
-	*/
+	
 	#lead-content p {
 		font-size: 1.05em
 	}
