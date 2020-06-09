@@ -11,11 +11,14 @@ var line4 = $("#line4")[0];
 var line5 = $("#line5")[0];
 var line6 = $("#line6")[0];
 
-var size = $(".boardbox")[0].clientHeight*5;
+var col_size = $("#board_container").outerHeight(true);
+var size = $(".boardbox")[0].offsetHeight;
+var size2 = $(".boardbox")[0].clientHeight;
+size = col_size/5;
 if(window.innerWidth<800){
-    line1.setAttribute("style","height:"+size+"px");
-    line3.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
-    line4.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
-    line5.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
-    line6.setAttribute("style","margin-top:"+$(".boardbox")[0].clientHeight+"px");
+    line1.setAttribute("style","height:"+col_size+"px");
+    line3.setAttribute("style","margin-top:"+size+"px");
+    line4.setAttribute("style","margin-top:"+size+"px");
+    line5.setAttribute("style","margin-top:"+size+"px");
+    line6.setAttribute("style","margin-top:"+size+"px");
 }

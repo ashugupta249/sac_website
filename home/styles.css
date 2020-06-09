@@ -117,6 +117,7 @@ a,a:hover{
 		width:100%;
 		margin-left: 0%;
 		margin-right: 0%;
+		margin-top:5%;
 		float:right;
 		border-left-style: double;
 	}
@@ -138,7 +139,7 @@ a,a:hover{
 
 	#line1{
 		border-left: 5px solid black;
-		height: 100em;
+		height: 0em;
 		padding: 0%;
 		margin-left: 15%;
 	}
@@ -150,7 +151,7 @@ a,a:hover{
 		margin-top: 3em;
 	}
 	#line3,#line4,#line5,#line6{
-		margin-top: 20em;
+		margin-top: 0em;
 	}
 }
 
