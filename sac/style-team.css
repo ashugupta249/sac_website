@@ -1,0 +1,98 @@
+/* https://codepen.io/JarlLyng/pen/qyZLPp */
+
+.page-wrapper {
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  padding-left: calc(5% - 16px);
+  padding-right: calc(5% - 16px);
+  /* padding: 0 5%; */
+}
+
+
+.profile-box {
+  background: #fafafa;
+  box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+  border-radius: 3px;
+  margin: 16px 16px;
+  padding: 16px 16px;
+  width: 200px;
+  text-align: center;
+  transition: 300ms;
+  flex-grow: 1;
+}
+
+.profile-box:hover {
+  /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
+  box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
+}
+
+
+.page-wrapper h3 {
+  font-weight: 500;
+  color: #000;
+  font-size: 1.2em;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.page-wrapper h4 {
+  transition: 500ms;
+  font-weight: 300;
+  font-size: 1.14em;
+  color: #0f0f0f;
+  margin-top: 8px;
+  color: #98A0A6;
+  /*cursor: pointer;*/
+}
+
+/*
+h4:hover {
+  color: #507BFC;
+  text-decoration: underline;
+}
+*/
+
+#assign,
+#view {
+  width: 45%;
+  font-size: 1em;
+  color: #98A0A6;
+  font-weight: 300;
+  padding: 6px 4px;
+  margin: 15px 2.5% 6px;
+  border-radius: 100px;
+  transition: 300ms;
+  cursor: pointer;
+  border: 1px solid #507BFC;
+}
+
+#assign:hover,
+#view:hover {
+  background-color: #507BFC;
+  color: white;
+  /*box-shadow: 0 10px 20px 0 rgba(80,123,252,0.50);*/
+}
+
+#assign {
+  float: left;
+}
+
+#view {
+  float: right;
+}
+
+i {
+  margin-right: 8px;
+}
+

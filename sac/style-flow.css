@@ -12,8 +12,9 @@
 
 
 
+h1 { color:#fff; text-align:center;}
+
 #wrapper-flow {
-  margin:150px auto;
     max-width: 80em;
 }
 
@@ -45,14 +46,13 @@ ol.organizational-chart ol {
     padding-top: 1em;
 }
 
-/* lines */
 ol.organizational-chart ol:before,
 ol.organizational-chart ol:after,
 ol.organizational-chart li:before,
 ol.organizational-chart li:after,
 ol.organizational-chart > li > div:before,
 ol.organizational-chart > li > div:after {
-    background-color: #252525;
+    background-color: #b7a6aa;
     content: '';
     position: absolute;
 }
@@ -112,7 +112,7 @@ ol.organizational-chart li > div {
 
 /*** PRIMARY ***/
 ol.organizational-chart > li > div {
-    background-color: #000;
+    background-color: #a2ed56;
     margin-right: 1em;
 }
 
