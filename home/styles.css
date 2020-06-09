@@ -117,6 +117,7 @@ a,a:hover{
 		width:100%;
 		margin-left: 0%;
 		margin-right: 0%;
+		margin-top:5%;
 		float:right;
 		border-left-style: double;
 	}
@@ -138,7 +139,7 @@ a,a:hover{
 
 	#line1{
 		border-left: 5px solid black;
-		height: 100em;
+		height: 0em;
 		padding: 0%;
 		margin-left: 15%;
 	}
@@ -150,7 +151,7 @@ a,a:hover{
 		margin-top: 3em;
 	}
 	#line3,#line4,#line5,#line6{
-		margin-top: 20em;
+		margin-top: 0em;
 	}
 }
 
@@ -217,11 +218,22 @@ body {
 	margin: 5px
 }
 
+#lead-content img{
+	float: left;
+	height: calc(7.25em + 10px);
+	width: auto;
+}
+
+#lead-content img:after{
+	clear:  both;
+	content: "";
+	display:  block;
+}
+
 #lead-content h1 {
 	color: #fff;
 	font-weight: 900;
 	font-size: 5em;
-	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	line-height: 0.9em
 }
@@ -232,6 +244,16 @@ body {
 	font-size: 2.25em;
 	margin-bottom: 15px
 }
+
+#lead-content p {
+	display: block;
+	text-align: justify;
+	color: #a0cfee;
+	font-weight: 500;
+	font-size: 1.25em;
+	margin: 40px 7.5% 15px 5px;
+}
+
 
 #lead-overlay {
 	position: absolute;
@@ -298,6 +320,7 @@ section{
 .more-grid{
 	border: 1px solid DodgerBlue;
 	padding: 0.25vw;
+	margin-bottom: 25px;
 
 	box-shadow: 0 10px 20px -7px rgba(0, 0, 0, 0.25);
 	overflow: hidden;
@@ -352,4 +375,76 @@ section{
 	background: Blue;
 	color: white;
 }
+
+
+
+@media only screen and (max-width: 992px) {
+	#lead {
+		/*
+		height: auto;
+		min-height: auto;
+		max-height: auto;
+		
+		padding: 120px 15px
+		*/
+	}
+	#lead-content {
+		/*
+		position: relative;
+		transform: none;
+		left: auto;
+		top: auto
+		*/
+	}
+	#lead-content img{
+		height: calc(5.5em + 10px);
+		width: auto;
+	}
+	#lead-content h1 {
+		font-size: 3.5em
+	}
+	#lead-content h2 {
+		font-size: 2em
+	}
+	#lead-content p {
+		font-size: 1.15em
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#lead-content img{
+		height: calc(4.3em + 10px);
+		width: auto;
+	}
+	#lead-content h1 {
+		font-size: 2.5em
+	}
+	#lead-content h2 {
+		font-size: 1.8em
+	}
+	/*
+	#lead-down {
+		display: none
+	}
+	*/
+	#lead-content p {
+		font-size: 1.05em
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#lead-content img{
+		height: calc(3.2em + 10px);
+		width: auto;
+	}
+	#lead-content h1 {
+		font-size: 1.9em
+	}
+	#lead-content h2 {
+		font-size: 1.3em
+	}
+	#lead-content p {
+		font-size: 0.9em
+	}
+
 }
