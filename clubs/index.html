@@ -29,7 +29,9 @@
       $(document).ready(function(){
           
           $.toggler = function(val){ 
-            val = val.toLowerCase();
+            
+            
+            // val = val.toLowerCase();
             if (val == 'others')
               $('#tab3').prop('checked', true);
             else if (val == 'technical')
@@ -43,6 +45,17 @@
           }
 
 
+          $.hashChanger = function(){
+            var val = window.location.hash.substring(1).toLowerCase();
+            var univ_set = ['cultural','technical','others'];
+            val = (univ_set.indexOf(val) > -1) ? val : 'cultural';
+            
+            $.toggler(val);
+          }
+
+          $.hashChanger();   
+
+          /*
           if (window.location.hash) {
                 // alert(window.location.hash.substring(1));
                 $.toggler(window.location.hash.substring(1));
@@ -50,13 +63,14 @@
            else{
                 $.toggler("cultural");
            }
+           */
 
 
 
           
           $('[name=tab]').on('change', function() {
             //alert($('label[for='+$(this).attr('id')+']').html());
-            $.toggler($('label[for='+$(this).attr('id')+']').html());
+            $.toggler($('label[for='+$(this).attr('id')+']').html().toLowerCase());
           })
     
 
@@ -114,7 +128,7 @@
   </div>
 
 
-  <body>
+  <body onhashchange="$.hashChanger()">
 
 
 

@@ -101,12 +101,51 @@ $(document).on('keydown', '.dropdown-select', function (event) {
 });
 
 $(document).ready(function () {
-    if (window.location.hash) {
+    /* if (window.location.hash) {
         $('#drop select option[value='+window.location.hash.substring(1)+']').attr('selected','selected');
     }
+    */
     
     create_custom_dropdowns();
 
 
     
+    $.toggler = function(val){ 
+      $('.container').fadeOut(function(){
+        $(".container").html("");
+        $(".container").load("./partials/"+val+".html .ux-vertical-tabs"); 
+        $("title").html("Boards - "+val.toUpperCase());
+        $('.container').fadeIn();
+        history.replaceState(undefined, undefined, "#"+val);
+     }) 
+    }
+
+    $.hashChanger = function(){
+      var val = window.location.hash.substring(1).toLowerCase();
+      var univ_set = ['bsw','bsp','brca'];
+      val = (univ_set.indexOf(val) > -1) ? val : 'bsw';
+      $('.dropdown-select .option[data-value=' + val + ']').trigger("click");
+      $(document).trigger('click');
+      $.toggler(val);
+    }
+
+    $.hashChanger();        
+
+    /*
+    if (window.location.hash) {
+          // alert(window.location.hash.substring(1));
+          $.toggler(window.location.hash.substring(1));
+     }
+     else{
+          $.toggler("bsw");
+     }
+     
+     */
+
+    $('#drop select').on('change', function() {
+      // alert('triggered '+val);
+      $.toggler($(this).val());
+    })
+
+
 });

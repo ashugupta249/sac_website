@@ -26,47 +26,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-    <script>
-
-      $(document).ready(function() {
-        
-        
-
-        $.toggler = function(val){ 
-          $('.container').fadeOut(function(){
-            $(".container").html("");
-            $(".container").load("./partials/"+val+".html .ux-vertical-tabs"); 
-            $("title").html("Boards - "+val.toUpperCase());
-            $('.container').fadeIn();
-            history.replaceState(undefined, undefined, "#"+val);
-         }) 
-        }
-
-
-        if (window.location.hash) {
-              // alert(window.location.hash.substring(1));
-              $.toggler(window.location.hash.substring(1));
-         }
-         else{
-              $.toggler("bsw");
-         }
-
-
-
-        
-        $('#drop select').on('change', function() {
-          // alert('triggered '+val);
-          $.toggler($(this).val());
-        })
-      
-
-
-      })
-    </script>
-
   </head>
+<<<<<<< Updated upstream
     <div class="topnav" id="myTopnav">
       <img src="../logo.png" class="saclogo"/>
       <div class="nav-links">
@@ -108,6 +69,10 @@
       </div>
     </div>
     <!-- <header>
+=======
+    <!--
+     <header>
+>>>>>>> Stashed changes
       <nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
 				<div class="container-fluid">
 					<div class="navbar-header">
@@ -157,12 +122,56 @@
 						</ul>
 					</div>
 				</div>
-			</nav> -->
+			</nav> 
     </header>
+
+  -->
 
 
     
-  <body>
+<body onhashchange="$.hashChanger()">
+
+  <header>
+    <div class="topnav" id="myTopnav">
+      <div class="dropdown">
+        <button class="dropbtn">Explore
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../facilities/">Facilities</a>
+          <!-- <a href="#">Activities</a> -->
+          <a href="#">Projects</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Activities
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../clubs/#cultural">Cultural</a>
+          <a href="../clubs/#technical">Technical</a>
+          <a href="../clubs/#others">Others</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Boards
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="../boards/#bsw">BSW</a>
+          <a href="../boards/#bsa">BSA</a>
+          <a href="../boards/#bsp">BSP</a>
+          <a href="../boards/#bhm">BHM</a>
+          <a href="../boards/#brca">BRCA</a>
+        </div>
+      </div>
+      <a href="../sac/">SAC</a>
+      <a href="../">Home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  </header>
+
+  <main>
     <div class="vert-tabs">
       <div id='drop'>
               <select name="nav">
@@ -174,6 +183,8 @@
       <div class="container"></div>
 
     </div>
+
+  </main>
 
 
     <script src='./script.js'></script>
