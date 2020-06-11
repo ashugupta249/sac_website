@@ -1,5 +1,10 @@
 /* Add a black background color to the top navigation */
 
+:root{
+  --background-color:#003366;
+  --background-hover-color:#0059b3;
+}
+
 header{
   position: sticky;
   position: -webkit-sticky;
@@ -8,7 +13,7 @@ header{
 }
 
 .topnav {
-    background-color: #0059b3;
+    background-color: var(--background-color);
     overflow: hidden;
   }
   
@@ -75,7 +80,7 @@ header{
   /* Add a dark background on topnav links and the dropdown button on active */
   @media screen and (min-width: 600px) {
       .topnav a:hover, .dropdown:hover .dropbtn {
-      background-color: #003366;
+      background-color: var(--background-hover-color);
       color: white;
     }
   }
