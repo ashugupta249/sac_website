@@ -8,7 +8,7 @@ header{
 }
 
 .topnav {
-    background-color: #333;
+    background-color: #0059b3;
     overflow: hidden;
   }
   
@@ -73,15 +73,20 @@ header{
   }
   
   /* Add a dark background on topnav links and the dropdown button on active */
-  .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
-    color: white;
+  @media screen and (min-width: 600px) {
+      .topnav a:hover, .dropdown:hover .dropbtn {
+      background-color: #003366;
+      color: white;
+    }
   }
-  
+
+
   /* Add a grey background to dropdown links on active */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
+  @media screen and (min-width: 600px) {
+      .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+    }
   }
   @media screen and (min-width: 600px) {
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
