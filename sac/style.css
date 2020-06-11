@@ -32,36 +32,6 @@ h1,h2,:not(.page-wrapper) h3{
   background: #3498db
 }
 
-header{
-    background-color: DodgerBlue;
-    padding: 12px 9px;;
-    z-index: 999;
-    display: block;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    vertical-align: middle;
-}
-
-header::after{
-    clear: both;
-    display: table;
-    content: "";
-}
-
-#home{
-    display: inline-block;
-    font-size: 2.25em;
-    color: white;
-    margin-left: 6px;
-    cursor:  pointer;
-    user-select:  none;
-}
-
-#home>a{
-    color: white;
-}
-
 /*template starts*/
 
  /* https://codepen.io/xcrap/pen/ejVbva */

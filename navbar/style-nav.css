@@ -1,4 +1,12 @@
 /* Add a black background color to the top navigation */
+
+header{
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 999999;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
