@@ -1,3 +1,8 @@
+/* 
+
+DodgerBlue: 1e90ff
+*/;
+
 body {
   overflow-x: hidden;
 }
@@ -18,7 +23,7 @@ h1,h2,h3{
 }
 
 html {
-  background-color: #f8f8f8;
+  background-color: #f6f6f6;
 }
 body {
   /* padding: 2rem 0.5rem; */
@@ -73,9 +78,9 @@ body {
   -webkit-transition: transform 0.5s;
 }
 .cards .card-item:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
+  /*cursor: pointer;*/
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
 }
 
 .cards .card-item:hover .card-image {
@@ -108,6 +113,8 @@ body {
 /*  ....  */
 
 .tabs {
+  margin-top: 5px;
+  background: #cce6ff;
 }
 .tabs input[type=radio] {
   display: none; 
@@ -116,12 +123,12 @@ body {
   transition: background 0.4s ease-in-out, height 0.2s linear;
   display: inline-block;
   cursor: pointer;
-  color: #2EBEB9;
+  color: #0080ff;
   width: 20%;
   height: 3em;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background: #FCFCFC;
+  background: #cce6ff; /*#b3d9ff;*/
   text-align: center;
   line-height: 3em; 
   font-family: 'Oswald';
@@ -134,8 +141,8 @@ body {
 */
 
 .tabs label:hover {
-  background: #259692;
-  color:#ffffff;
+  background: #3399ff; /*#4da6ff;*/
+  color: #ffffff;
 }
 @media screen and (max-width: 1600px) {
 .tabs label {
@@ -150,7 +157,7 @@ body {
 .tabs label {
   width: 100%;
   display: block;
-  border-bottom: 2px solid #C7C6C4;
+  border-bottom: 2px solid #0080ff;
   border-radius: 0; 
 } 
 }
@@ -161,7 +168,7 @@ body {
 }
 
 #tab1:checked + label, #tab2:checked + label, #tab3:checked + label, #tab4:checked + label {
-  background: #2EBEB9;
+  background: #0080ff;
   color: #FFFFFF; }
 
 .tab-content {
@@ -171,8 +178,8 @@ body {
 }
 
 .tab-content-wrapper{
-  background: #FCFCFC;
-  border-top: #2EBEB9 5px solid;
+  background: #e6f2ff;
+  border-top: #0080ff 5px solid;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -262,9 +269,11 @@ body {
  .cards .card-more {
   display: block;
   text-align: center;
-  border: 1px solid DodgerBlue;
+  border: 1px solid #1e90ff;
   padding: 0.25rem;
   margin-top: 0.5rem;
+  background: #1e90ff;
+  color: #fff;
   /*
   transition: background-color 0.5s ease-in-out;
   -webkit-transition: background-color 0.5s ease-in-out;
@@ -274,10 +283,17 @@ body {
 }
 
  .cards .card-more:hover {
-  background: DodgerBlue;
-  color: white;
+  background-color: #0073e6; /*#F3AE55;*/ /* #740a0a; */ /*#210202;*/
+  border: none;
+  cursor:  pointer;
+  /*color: white;*/
+  /*
   transition: background-color 0.5s ease-in-out;
   -webkit-transition: background-color 0.5s ease-in-out;
   -moz-transition: background-color 0.5s ease-in-out;
   -o-transition: background-color 0.5s ease-in-out;
+  -webkit-transition: border-color 0.5s ease-in-out;
+  -moz-transition: border-color 0.5s ease-in-out;
+  -o-transition: border-color 0.5s ease-in-out;
+  */
 }

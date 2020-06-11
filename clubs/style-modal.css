@@ -55,7 +55,7 @@ h3 {
   will-change: transform, opacity;
   position: relative;
   padding: 2.4rem;
-  background: #ffebee;
+  background: #99ccff;
   background-clip: padding-box;
   box-shadow: 0 12px 15px 0 rgba(0,0,0,0.25);
   opacity: 0;
@@ -91,7 +91,7 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #ffebee;
+  background: #0073e6;
   -webkit-transform: none;
           transform: none;
   opacity: 1;
@@ -105,6 +105,8 @@ h3 {
 
 .modal-close {
   position: absolute;
+  color: #fff;
+  text-decoration:  none;
   top: 0;
   right: 0;
   margin: 1.2rem;
