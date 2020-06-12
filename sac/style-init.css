@@ -1,0 +1,140 @@
+
+
+/* https://codepen.io/NielsVoogt/pen/YbaNPd */
+
+details {
+  /*
+  margin: 7em auto;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  */
+  width: calc(100vw - 20rem - 4rem);
+  background: #ffffff;
+  border-radius: 8px;
+  position: relative;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+}
+details .summary-title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+details:hover {
+  cursor: pointer;
+}
+details .summary-content {
+  border-top: 1px solid #e2e8f0;
+  cursor: default;
+  padding: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+details summary {
+  padding: 1em 0.5em;
+}
+details summary:focus {
+  outline: none;
+}
+details summary:hover .summary-chevron-up svg {
+  opacity: 1;
+}
+details .summary-chevron-up svg {
+  opacity: 0.5;
+}
+details .summary-chevron-up,
+details .summary-chevron-down {
+  pointer-events: none;
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  background: #ffffff;
+}
+details .summary-chevron-up svg,
+details .summary-chevron-down svg {
+  display: block;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+
+
+@media (max-width: 50rem) {
+  details {
+    width: calc(100vw - 2rem);
+  }
+}
+
+
+
+
+/* https://codepen.io/hectorguo/pen/BoZEyW */
+
+.init-container {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+.init-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+/*float layout*/
+.init-float {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.init-float:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.init-float-item {
+  float: left;
+}
+
+
+
+
+/*inline-block*/
+/*
+.inline-b {
+  max-width:1200px;
+  margin:0 auto;
+}
+.inline-b-item {
+  display: inline-block;
+}
+*/
+
+/*Flexbox*/
+/*
+.flex {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+*/

@@ -30,7 +30,7 @@
   box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
 }
 
-img {
+.page-wrapper img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -63,8 +63,8 @@ h4:hover {
 }
 */
 
-#assign,
-#view {
+.page-wrapper #assign,
+.page-wrapper #view {
   width: 45%;
   font-size: 1em;
   color: #98A0A6;
@@ -77,22 +77,22 @@ h4:hover {
   border: 1px solid #507BFC;
 }
 
-#assign:hover,
-#view:hover {
+.page-wrapper #assign:hover,
+.page-wrapper #view:hover {
   background-color: #507BFC;
   color: white;
   /*box-shadow: 0 10px 20px 0 rgba(80,123,252,0.50);*/
 }
 
-#assign {
+.page-wrapper #assign {
   float: left;
 }
 
-#view {
+.page-wrapper #view {
   float: right;
 }
 
-i {
+.page-wrapper i {
   margin-right: 8px;
 }
 
