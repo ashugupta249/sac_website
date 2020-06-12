@@ -78,17 +78,64 @@ details summary::-webkit-details-marker {
   padding: 0;
 }
 .init-item {
-  background: tomato;
+  position: relative;
+  background: #1e90ff;
   padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin: 10px;
+  width: 175px;
+  height: 225px;
+  margin: 15px 12px;
+  border-left: 15px solid #0059b3;
   
-  line-height: 150px;
+  /*
+  box-shadow: 5px 4px 0px 7px rgba(0, 0, 0,0.1);
+  -webkit-box-shadow: 5px 4px 0px 7px rgba(0, 0, 0,0.1);
+  -moz-box-shadow: 5px 4px 0px 7px rgba(0, 0, 0,0.1);
+  */
+}
+
+.init-item-title{
+  padding: 12px 3px 5px;
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 1.75em;
   text-align: center;
+  max-height: 125px;
+  line-height: 1.2em;
+  overflow-y: hidden;
+  font-family: "Oswald";
+}
+
+
+.init-item-read{
+  position: absolute;
+  z-index: 2;
+  display: none;
+  margin-top: 20px;
+
+  padding: 6px 9px;
+
+  text-decoration:  none;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #fff;
+  background: rgb(0,0,0,0.4);
+}
+
+.init-item:hover{
+  background: #4da6ff;
+  border-left: 15px solid #0073e6;
+  transform: scale(1.03);
+
+}
+
+.init-item:hover .init-item-read{
+  display: inline-block;
+}
+
+.init-item-read:hover{
+  background: rgb(0,0,0,0.6);
 }
 
 /*float layout*/
@@ -105,6 +152,31 @@ details summary::-webkit-details-marker {
 }
 .init-float-item {
   float: left;
+}
+
+@media (max-width: 50rem) {  /* value to be changed*/
+  .init-item-read {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% + 15px);
+    text-align:  center;
+
+    left: 0;
+    transform: translateX(0);
+
+    left: -15px;
+
+    background: rgb(0,0,0,0.4);
+
+  }
+
+  .init-item:hover .init-item-read{
+    display: block;
+  }
+
+
+
 }
 
 
