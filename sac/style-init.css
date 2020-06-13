@@ -76,6 +76,12 @@ details summary::-webkit-details-marker {
   list-style:none;
   margin: 0;
   padding: 0;
+
+  
+  overflow-x: scroll;
+  /*
+  white-space: nowrap;
+  */
 }
 .init-item {
   position: relative;
@@ -85,7 +91,9 @@ details summary::-webkit-details-marker {
   height: 225px;
   margin: 15px 12px;
   border-left: 15px solid #0059b3;
-  
+
+  white-space: normal;
+
   /*
   box-shadow: 5px 4px 0px 7px rgba(0, 0, 0,0.1);
   -webkit-box-shadow: 5px 4px 0px 7px rgba(0, 0, 0,0.1);
@@ -139,8 +147,8 @@ details summary::-webkit-details-marker {
 }
 
 /*float layout*/
+/*
 .init-float {
-  max-width: 1200px;
   margin: 0 auto;
 }
 .init-float:after {
@@ -153,6 +161,7 @@ details summary::-webkit-details-marker {
 .init-float-item {
   float: left;
 }
+*/
 
 @media (max-width: 50rem) {  /* value to be changed*/
   .init-item-read {
@@ -183,7 +192,7 @@ details summary::-webkit-details-marker {
 
 
 /*inline-block*/
-/*
+
 .inline-b {
   max-width:1200px;
   margin:0 auto;
@@ -191,7 +200,7 @@ details summary::-webkit-details-marker {
 .inline-b-item {
   display: inline-block;
 }
-*/
+
 
 /*Flexbox*/
 /*
@@ -210,3 +219,76 @@ details summary::-webkit-details-marker {
   justify-content: space-around;
 }
 */
+
+
+
+/* =========== */
+
+.init-index-container{
+  display: none;
+  position: relative;
+  border: 1px solid DodgerBlue;
+  padding: 5px;
+  margin-top: 6px;
+}
+
+
+
+.init-index-container ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 8px;
+}
+
+.init-index-container .read-pdf{
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #1e90ff;
+  padding: 3px 15px;
+  margin: 12px auto 10px 3px;
+  background: #1e90ff;
+  color: #fff;
+  text-decoration:  none;
+  text-transform:  uppercase;
+  /*
+  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  */
+}
+
+
+.init-index-container .read-pdf:hover {
+  background-color: #0073e6; /*#F3AE55;*/ /* #740a0a; */ /*#210202;*/
+  border: 1px solid #0073e6;
+  cursor:  pointer;
+  /*color: white;*/
+  /*
+  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  -webkit-transition: border-color 0.5s ease-in-out;
+  -moz-transition: border-color 0.5s ease-in-out;
+  -o-transition: border-color 0.5s ease-in-out;
+  */
+}
+
+
+.init-index-container-close{
+  display: inline-block;
+  position:  absolute;
+  right: 3px;
+  top: 3px;
+
+  margin: -5px;
+  padding: 2px 6px;
+
+  font-size: 2em;
+  color: white;
+  background: tomato;
+
+  cursor: pointer;
+
+}
