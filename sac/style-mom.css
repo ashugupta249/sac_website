@@ -197,7 +197,7 @@ Main Components
   content:  "\f053";
   font-family: FontAwesome;
   color: #ccc;
-  font-size: 1.4rem;
+  font-size: 1rem;
   display: block;
   position:absolute;
   top: 9px;
@@ -211,7 +211,7 @@ Main Components
 .cd-timeline-navigation a.next::before {
   content:  "\f054";
   font-family: FontAwesome;
-  font-size: 1.4rem;
+  font-size: 1rem;
   display: block;
   position:absolute;
   top: 9px;
