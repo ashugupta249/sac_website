@@ -17,6 +17,7 @@ Main Components
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
   width: calc(100vw - 20rem - 4rem);
+  user-select:  none;
 }
 .cd-horizontal-timeline::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -237,6 +238,7 @@ Main Components
   border-color: #7b9d6f;
 }
 .cd-timeline-navigation a.inactive {
+  visibility: hidden;
   cursor: not-allowed;
 }
 .cd-timeline-navigation a.inactive::after {
