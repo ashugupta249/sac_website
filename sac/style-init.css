@@ -94,6 +94,8 @@ details summary::-webkit-details-marker {
 
   white-space: normal;
 
+  cursor:  pointer;
+
   /*
   box-shadow: 5px 4px 0px 7px rgba(0, 0, 0,0.1);
   -webkit-box-shadow: 5px 4px 0px 7px rgba(0, 0, 0,0.1);
@@ -146,6 +148,7 @@ details summary::-webkit-details-marker {
   background: rgb(0,0,0,0.6);
 }
 
+
 /*float layout*/
 /*
 .init-float {
@@ -182,13 +185,22 @@ details summary::-webkit-details-marker {
 
   .init-item:hover .init-item-read{
     display: block;
+    background: rgb(0,0,0,0.6);
   }
 
 
 
 }
 
+.init-item-active{
+  background: #4da6ff;
+  border-left: 15px solid #0073e6;
+  transform: scale(1.05);
+}
 
+.init-item-active .init-item-read, .init-item-active:hover .init-item-read{
+  display: none;
+}
 
 
 /*inline-block*/
