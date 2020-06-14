@@ -7,22 +7,29 @@ $(".init-item").click(function(){
 	
 
 	if ($(this).hasClass('init-item-active')){
-		$(this).removeClass('init-item-active');
-		book_container.css("white-space", "normal");
+		$('.init-index-container[data-init-index="'+data+'"]').slideUp(function(){
+			book_item.removeClass('init-item-active');
+			book_container.css("white-space", "normal");	
+		});
+		
 	}
 	else{
 		$(this).siblings().removeClass("init-item-active");
-		$(this).addClass('init-item-active');
-		$(this).parent().parent().find('.init-index-container:not([data-init-index="'+data+'"])').css("display","none");
+		$(this).parent().parent().find('.init-index-container:not([data-init-index="'+data+'"])').css("display","none");			
+		
 		book_container.css("white-space", "nowrap");
-		book_container.animate({
-		      scrollLeft: book_item.offset().left - 50
-		  }, 500);
+		book_item.addClass('init-item-active');
+
+		$('.init-index-container[data-init-index="'+data+'"]').slideDown(function(){
+			book_container.animate({
+			      scrollLeft: book_item.offset().left - 50
+			  }, 500);
+		});
 	}	
 
 
 
-	$('.init-index-container[data-init-index="'+data+'"]').slideToggle();
+	
 	
 })
 

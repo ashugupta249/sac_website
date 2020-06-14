@@ -203,6 +203,7 @@ details summary::-webkit-details-marker {
 }
 
 
+
 /*inline-block*/
 
 .inline-b {
@@ -239,7 +240,8 @@ details summary::-webkit-details-marker {
 .init-index-container{
   display: none;
   position: relative;
-  border: 1px solid DodgerBlue;
+  border: 1px solid #1e90ff;
+  color: #003366;
   padding: 5px;
   margin-top: 6px;
 }
@@ -247,10 +249,34 @@ details summary::-webkit-details-marker {
 
 
 .init-index-container ul {
-  list-style-type: circle;
+  list-style-type: none;
   list-style-position: inside;
-  margin-left: 8px;
+  margin-left: 5px;
+  font-size: 1.2em;
+  font-weight: 200;
 }
+
+/*
+.init-index-container li::before {
+    content: "\25B7"; 
+    color: blue;  
+  
+    font-weight: bold;
+}
+*/
+
+.init-index-container li a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1px 8px 1px 4px;
+}
+
+
+.init-index-container li a:hover {
+  background: #80bfff;
+}
+
 
 .init-index-container .read-pdf{
   display: inline-block;
@@ -303,4 +329,8 @@ details summary::-webkit-details-marker {
 
   cursor: pointer;
 
+}
+
+.fa-vc{
+  line-height:inherit !important;
 }
