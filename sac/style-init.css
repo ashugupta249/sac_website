@@ -252,7 +252,7 @@ details summary::-webkit-details-marker {
   list-style-type: none;
   list-style-position: inside;
   margin-left: 5px;
-  font-size: 1.1em;
+  font-size: 1.08em;
 }
 
 
@@ -302,7 +302,7 @@ details summary::-webkit-details-marker {
   padding: 8px 5px;
   vertical-align: middle;
 
-  margin-right: 30px;
+  margin-right: 35px;
 }
 
 .init-index-container li .init-index-text-more{
