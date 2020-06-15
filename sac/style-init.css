@@ -252,7 +252,7 @@ details summary::-webkit-details-marker {
   list-style-type: none;
   list-style-position: inside;
   margin-left: 5px;
-  font-size:1.18em;
+  font-size: 1.1em;
 }
 
 
@@ -261,16 +261,24 @@ details summary::-webkit-details-marker {
   margin: 5px 7px;
   border: 0.8px solid #66b3ff;
   border-left: 6px solid #1a8cff;
-  padding-left: 8px;
   position: relative;
 
   cursor:   pointer;
+
+}
+
+.init-index-container li:hover{
+  border-left: 6px solid #66b3ff;
 }
 
 .init-index-container li a{
   text-decoration:   none;
   color: inherit;
+
+  padding-left: 8px;
 }
+
+
 
 /*
 .init-index-container li:hover {
@@ -293,6 +301,8 @@ details summary::-webkit-details-marker {
   text-transform: uppercase;
   padding: 8px 5px;
   vertical-align: middle;
+
+  margin-right: 30px;
 }
 
 .init-index-container li .init-index-text-more{
@@ -302,10 +312,12 @@ details summary::-webkit-details-marker {
 
   
   text-transform: uppercase;
-  background: #99ccff;
+  background: #99ccff; 
 
   display: none;
   color: #004080;
+
+  height: 100%;
 }
 
 .init-index-container li:hover .init-index-text-more{
