@@ -302,12 +302,13 @@ details summary::-webkit-details-marker {
   padding: 8px 5px;
   vertical-align: middle;
 
-  margin-right: 35px;
+  margin-right: 36px;
 }
 
 .init-index-container li .init-index-text-more{
   position: absolute;
   right: 0;
+  top: 0;
   padding: 8px 10px;
 
   
