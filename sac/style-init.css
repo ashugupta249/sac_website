@@ -252,8 +252,71 @@ details summary::-webkit-details-marker {
   list-style-type: none;
   list-style-position: inside;
   margin-left: 5px;
-  font-size: 1.2em;
-  font-weight: 200;
+  font-size:1.18em;
+}
+
+
+.init-index-container li{
+  display: block;
+  margin: 5px 7px;
+  border: 0.8px solid #66b3ff;
+  border-left: 6px solid #1a8cff;
+  padding-left: 8px;
+  position: relative;
+
+  cursor:   pointer;
+}
+
+.init-index-container li a{
+  text-decoration:   none;
+  color: inherit;
+}
+
+/*
+.init-index-container li:hover {
+  background: #80bfff;
+}
+*/
+
+.init-index-container li .init-index-num{
+  background: #80bfff;
+  padding: 4px 10px;
+  font-size: calc(1em + 8px);
+  display: inline-block;
+  font-weight: 300;
+  font-family: "Oswald";
+}
+
+.init-index-container li .init-index-text{
+  display: inline-block;
+  
+  text-transform: uppercase;
+  padding: 8px 5px;
+  vertical-align: middle;
+}
+
+.init-index-container li .init-index-text-more{
+  position: absolute;
+  right: 0;
+  padding: 8px 10px;
+
+  
+  text-transform: uppercase;
+  background: #99ccff;
+
+  display: none;
+  color: #004080;
+}
+
+.init-index-container li:hover .init-index-text-more{
+  display: inline-block;
+}
+
+@media (max-width: 50rem) {
+  .init-index-container li .init-index-text-more{
+    display: inline-block;
+  }
+
 }
 
 /*
@@ -265,6 +328,7 @@ details summary::-webkit-details-marker {
 }
 */
 
+/*
 .init-index-container li a{
   display: block;
   text-decoration: none;
@@ -276,6 +340,7 @@ details summary::-webkit-details-marker {
 .init-index-container li a:hover {
   background: #80bfff;
 }
+*/
 
 
 .init-index-container .read-pdf{

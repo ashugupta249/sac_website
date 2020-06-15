@@ -20,6 +20,14 @@ $(".init-item").click(function(){
 		book_container.css("white-space", "nowrap");
 		book_item.addClass('init-item-active');
 
+		if ($(window).scrollTop() + $('header').height() + 5 > book_container.offset().top){
+			//alert('triggered');
+			$('html,body').animate({
+				scrollTop: book_container.offset().top - $('header').height() - 5
+			 }, 500);
+		} 
+
+
 		$('.init-index-container[data-init-index="'+data+'"]').slideDown(function(){
 			book_container.animate({
 			      scrollLeft: book_item.offset().left - 50
