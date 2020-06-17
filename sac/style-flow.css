@@ -1,4 +1,4 @@
-/*template starts*/
+/*tremplate starts*/
 
  /* https://www.cssscript.com/responsive-hierarchical-organization-chart-pure-css/ */
 
@@ -12,15 +12,20 @@
 
 
 
-h1 { color:#fff; text-align:center;}
 
 #wrapper-flow {
-    max-width: 80em;
+    width: calc(100vw - 20rem - 4rem);
+}
+
+@media (max-width: 50rem) {
+      #wrapper-flow{
+        width: calc(100vw - 2rem);
+      }
 }
 
 #container-flow {
     float: left;
-    padding: 1em;
+    padding: 1rem;
     width: 100%;
 }
 
@@ -43,7 +48,7 @@ ol.organizational-chart {
 }
 
 ol.organizational-chart ol {
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 ol.organizational-chart ol:before,
@@ -58,11 +63,11 @@ ol.organizational-chart > li > div:after {
 }
 
 ol.organizational-chart ol > li {
-    padding: 1em 0 0 1em;
+    padding: 1rem 0 0 1rem;
 }
 
 ol.organizational-chart > li ol:before {
-    height: 1em;
+    height: 1rem;
     left: 50%;
     top: 0;
     width: 3px;
@@ -71,15 +76,15 @@ ol.organizational-chart > li ol:before {
 ol.organizational-chart > li ol:after {
     height: 3px;
     left: 3px;
-    top: 1em;
+    top: 1rem;
     width: 50%;
 }
 
 ol.organizational-chart > li ol > li:not(:last-of-type):before {
     height: 3px;
     left: 0;
-    top: 2em;
-    width: 1em;
+    top: 2rem;
+    width: 1rem;
 }
 
 ol.organizational-chart > li ol > li:not(:last-of-type):after {
@@ -92,12 +97,12 @@ ol.organizational-chart > li ol > li:not(:last-of-type):after {
 ol.organizational-chart > li ol > li:last-of-type:before {
     height: 3px;
     left: 0;
-    top: 2em;
-    width: 1em;
+    top: 2rem;
+    width: 1rem;
 }
 
 ol.organizational-chart > li ol > li:last-of-type:after {
-    height: 2em;
+    height: 2rem;
     left: 0;
     top: 0;
     width: 3px;
@@ -106,38 +111,38 @@ ol.organizational-chart > li ol > li:last-of-type:after {
 ol.organizational-chart li > div {
     background-color: #fff;
     border-radius: 3px;
-    min-height: 2em;
-    padding: 0.5em;
+    min-height: 2rem;
+    padding: 0.5rem;
 }
 
 /*** PRIMARY ***/
 ol.organizational-chart > li > div {
     background-color: #a2ed56;
-    margin-right: 1em;
+    margin-right: 1rem;
 }
 
 ol.organizational-chart > li > div:before {
-    bottom: 2em;
+    bottom: 2rem;
     height: 3px;
-    right: -1em;
-    width: 1em;
+    right: -1rem;
+    width: 1rem;
 }
 
 ol.organizational-chart > li > div:first-of-type:after {
     bottom: 0;
-    height: 2em;
-    right: -1em;
+    height: 2rem;
+    right: -1rem;
     width: 3px;
 }
 
 ol.organizational-chart > li > div + div {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 ol.organizational-chart > li > div + div:after {
-    height: calc(100% + 1em);
-    right: -1em;
-    top: -1em;
+    height: calc(100% + 1rem);
+    right: -1rem;
+    top: -1rem;
     width: 3px;
 }
 
@@ -172,54 +177,54 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 }
 
 /*** MEDIA QUERIES ***/
-@media only screen and ( min-width: 64em ) {
+@media only screen and ( min-width: 80rem ) {
 
     ol.organizational-chart {
-        margin-left: -1em;
-        margin-right: -1em;
+        margin-left: -1rem;
+        margin-right: -1rem;
     }
 
     /* PRIMARY */
     ol.organizational-chart > li > div {
         display: inline-block;
         float: none;
-        margin: 0 1em 1em 1em;
+        margin: 0 1rem 1rem 1rem;
         vertical-align: bottom;
     }
 
     ol.organizational-chart > li > div:only-of-type {
         margin-bottom: 0;
-        width: calc((100% / 1) - 2em - 4px);
+        width: calc((100% / 1) - 2rem - 4px);
     }
 
     ol.organizational-chart > li > div:first-of-type:nth-last-of-type(2),
     ol.organizational-chart > li > div:first-of-type:nth-last-of-type(2) ~ div {
-        width: calc((100% / 2) - 2em - 4px);
+        width: calc((100% / 2) - 2rem - 4px);
     }
 
     ol.organizational-chart > li > div:first-of-type:nth-last-of-type(3),
     ol.organizational-chart > li > div:first-of-type:nth-last-of-type(3) ~ div {
-        width: calc((100% / 3) - 2em - 4px);
+        width: calc((100% / 3) - 2rem - 4px);
     }
 
     ol.organizational-chart > li > div:first-of-type:nth-last-of-type(4),
     ol.organizational-chart > li > div:first-of-type:nth-last-of-type(4) ~ div {
-        width: calc((100% / 4) - 2em - 4px);
+        width: calc((100% / 4) - 2rem - 4px);
     }
 
     ol.organizational-chart > li > div:first-of-type:nth-last-of-type(5),
     ol.organizational-chart > li > div:first-of-type:nth-last-of-type(5) ~ div {
-        width: calc((100% / 5) - 2em - 4px);
+        width: calc((100% / 5) - 2rem - 4px);
     }
 
     ol.organizational-chart > li > div:before,
     ol.organizational-chart > li > div:after {
-        bottom: -1em!important;
+        bottom: -1rem!important;
         top: inherit!important;
     }
 
     ol.organizational-chart > li > div:before {
-        height: 1em!important;
+        height: 1rem!important;
         left: 50%!important;
         width: 3px!important;
     }
@@ -230,9 +235,9 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 
     ol.organizational-chart > li > div:first-of-type:not(:only-of-type):after,
     ol.organizational-chart > li > div:last-of-type:not(:only-of-type):after {
-        bottom: -1em;
+        bottom: -1rem;
         height: 3px;
-        width: calc(50% + 1em + 3px);
+        width: calc(50% + 1rem + 3px);
     }
 
     ol.organizational-chart > li > div:first-of-type:not(:only-of-type):after {
@@ -240,13 +245,13 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
     }
 
     ol.organizational-chart > li > div:last-of-type:not(:only-of-type):after {
-        left: calc(-1em - 3px);
+        left: calc(-1rem - 3px);
     }
 
     ol.organizational-chart > li > div + div:not(:last-of-type):after {
         height: 3px;
-        left: -2em;
-        width: calc(100% + 4em);
+        left: -2rem;
+        width: calc(100% + 4rem);
     }
 
     /* SECONDARY */
@@ -257,7 +262,7 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 
     ol.organizational-chart > li > ol:before,
     ol.organizational-chart > li > ol > li:before {
-        height: 1em!important;
+        height: 1rem!important;
         left: 50%!important;
         top: 0!important;
         width: 3px!important;
@@ -269,9 +274,9 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 
     ol.organizational-chart > li > ol > li {
         flex-grow: 1;
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-top: 1em;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
     }
 
     ol.organizational-chart > li > ol > li:only-of-type {
