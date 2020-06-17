@@ -472,7 +472,18 @@ Main Components
    cursor:  pointer;
 }
 
-@media screen and (max-width:800px) {
+.mins-card-container .mins-item:hover span{
+   margin-left: 20px;
+
+   transition: 0.8 ease-in-out;
+   -webkit-transition: 0.8 ease-in-out;
+   -moz-transition: 0.8 ease-in-out;
+   -o-transition: 0.8 ease-in-out;
+   
+
+}
+
+@media screen and (max-width:375px) {
    .mins-card-container {
       grid-gap: 5%;
       grid-template-columns: repeat(auto-fit, 94%);
