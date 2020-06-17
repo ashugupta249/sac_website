@@ -258,7 +258,7 @@ details summary::-webkit-details-marker {
 
 .init-index-container li{
   display: block;
-  margin: 5px 7px;
+  margin: 6px 1%;
   border: 0.8px solid #66b3ff;
   border-left: 6px solid #1a8cff;
   position: relative;
@@ -269,6 +269,7 @@ details summary::-webkit-details-marker {
 
 .init-index-container li:hover{
   border-left: 6px solid #66b3ff;
+  transform: scaleX(1.00784);
 }
 
 .init-index-container li a{
