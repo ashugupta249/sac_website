@@ -2,32 +2,42 @@
 
 .page-wrapper {
   font-family: 'Lato', sans-serif;
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-evenly;
   padding-left: calc(5% - 16px);
   padding-right: calc(5% - 16px);
+  width: calc(100vw - 20rem - 4rem);
   /* padding: 0 5%; */
+}
+
+@media (max-width: 50rem) {
+      .page-wrapper{
+        width: calc(100vw - 2rem);
+      }
 }
 
 
 .profile-box {
-  background: #fafafa;
+  background: #e6f2ff;
   box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
   border-radius: 3px;
-  margin: 16px 16px;
-  padding: 16px 16px;
-  width: 200px;
+  margin: 20px 16px;
+  padding: 16px 16px 12px;
+  width: 300px;
   text-align: center;
   transition: 300ms;
   flex-grow: 1;
+  user-select:   none;
 }
 
 .profile-box:hover {
   /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
+  background-color: #cce6ff;
+  border-color: #1a8cff;
   box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
+  transform: scale(1.03);
 }
 
 .page-wrapper img {
@@ -40,9 +50,9 @@
 
 .page-wrapper h3 {
   font-weight: 500;
-  color: #000;
+  color: #004080;
   font-size: 1.2em;
-  margin-top: 12px;
+  margin-top: 20px;
   margin-bottom: 5px;
 }
 
@@ -50,9 +60,8 @@
   transition: 500ms;
   font-weight: 300;
   font-size: 1.14em;
-  color: #0f0f0f;
-  margin-top: 8px;
-  color: #98A0A6;
+  color: #0073e6;
+  margin-top: 12px;
   /*cursor: pointer;*/
 }
 
@@ -63,6 +72,128 @@ h4:hover {
 }
 */
 
+.page-wrapper .mem-contact{
+  margin: 6px 2.5% 15px;
+
+  display:  inline-block;
+  transition: 300ms;
+  border: 0.5px solid #000;
+}
+
+.mem-contact i{
+   display: inline-block;
+   border: 1px solid #000;
+   background: #000;
+   color: #fff;
+   padding: 6px 12px;
+   text-decoration: none;
+}
+
+.mem-contact span{
+    padding: 6px 8px;
+}
+
+.page-wrapper .mem-contact:hover{
+  border: 0.5px solid #444;
+  cursor:  pointer;
+}
+
+.page-wrapper .mem-contact:hover i{
+  background-color: #444;
+}
+
+.page-wrapper .mem-social{
+  margin: 18px 2.5% 9px;
+
+  padding: 6px 4px;
+  transition: 300ms;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+.mem-social.mem-social.mem-social .fb{
+   display: inline-block;
+   border: 1px solid #3b5999;
+   color: #3b5999;
+   padding: 6px 12px;
+   text-decoration: none;
+   margin-right: 6px;
+ }
+
+.mem-social.mem-social .fb:hover{
+   background: #3b5999;
+   color: white;
+ }
+
+ .mem-social .mail{
+   display: inline-block;
+   border: 1px solid #1e90ff;
+   color: #1e90ff;
+   padding: 6px 12px;
+   text-decoration: none;
+   margin-right: 6px;
+ }
+
+.mem-social .mail:hover{
+   background: #1e90ff;
+   color: white;
+ }
+
+ .mem-social .phone{
+  position: relative;
+   display: inline-block;
+   border: 1px solid #000;
+   color: #000;
+   padding: 6px 12px;
+   text-decoration: none;
+   margin-right: 6px;
+ }
+
+
+
+.mem-social .phone .ph-num {
+   visibility: hidden;
+   width: 17ch;
+   background-color: black;
+   color: #fff;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px 0;
+   position: absolute;
+   z-index: 1;
+   top: 140%;
+   left: 60%;
+   margin-left: -60px;
+
+   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+     opacity: 0;
+     transition: opacity 1s;
+ }
+
+.mem-social .phone .ph-num::after {
+   content: "";
+   position: absolute;
+   bottom: 100%;
+   left: 30%;
+   margin-left: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: transparent transparent black transparent;
+ }
+
+ .mem-social .phone:hover{
+   background: #000;
+   color: white;
+   cursor:  pointer;
+ }
+
+ .mem-social .phone:hover .ph-num {
+   visibility: visible;
+   opacity: 1;
+ }
+
+/*
 .page-wrapper #assign,
 .page-wrapper #view {
   width: 45%;
@@ -81,7 +212,7 @@ h4:hover {
 .page-wrapper #view:hover {
   background-color: #507BFC;
   color: white;
-  /*box-shadow: 0 10px 20px 0 rgba(80,123,252,0.50);*/
+  //box-shadow: 0 10px 20px 0 rgba(80,123,252,0.50);
 }
 
 .page-wrapper #assign {
@@ -96,3 +227,4 @@ h4:hover {
   margin-right: 8px;
 }
 
+*/
