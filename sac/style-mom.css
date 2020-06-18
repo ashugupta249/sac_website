@@ -468,13 +468,23 @@ Main Components
    cursor:  pointer;
 }
 
-.mins-card-container .mins-item:hover span{
-   margin-left: 20px;
+.mins-card-container .mins-item:after{
+   content:  ">>";
+   display: inline-block;
+   position:  absolute;
+   padding-left: 10px;
 
-   transition: 0.8 ease-in-out;
-   -webkit-transition: 0.8 ease-in-out;
-   -moz-transition: 0.8 ease-in-out;
-   -o-transition: 0.8 ease-in-out;
+   /*
+   transition: all 1.8s ease-in-out;
+   -webkit-transition: all 1.8s ease-in-out;
+   -moz-transition: all 1.8s ease-in-out;
+   -o-transition: all 1.8s ease-in-out;
+   */
+ }
+.mins-card-container .mins-item:hover:after{
+
+   right: 15px;
+   
    
 
 }
