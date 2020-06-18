@@ -63,11 +63,11 @@
 
 .footer-items ul li {
 	margin: 10px 0;
-	height: 25px;
+	/* height: 25px; */
 }
 
 .footer-items ul li i {
-	margin-right: 20px;
+	/* margin-right: 20px; */
 }
 
 .social-media {
