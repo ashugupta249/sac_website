@@ -15,7 +15,6 @@
 
 #wrapper-flow {
     width: calc(100% - 4rem);
-    /* text-align: center; */
 }
 
 @media (max-width: 50rem) {
@@ -26,8 +25,8 @@
 
 #container-flow {
     float: left;
-    padding: 0.5rem;
-    width: calc(100% - 1rem);
+    padding: 1rem;
+    width: 100%;
 }
 
 ol.organizational-chart,
