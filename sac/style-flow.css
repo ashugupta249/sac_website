@@ -14,13 +14,7 @@
 
 
 #wrapper-flow {
-    width: calc(100% - 4rem);
-}
-
-@media (max-width: 50rem) {
-      #wrapper-flow{
-        width: calc(100% - 2rem);
-      }
+    width: inherit;
 }
 
 #container-flow {

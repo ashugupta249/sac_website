@@ -63,7 +63,7 @@ h1,h2,:not(.page-wrapper) h3{
   margin: 0 auto;
 }
 
-.ux-text h2 {
+.tabcontent h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -71,7 +71,7 @@ h1,h2,:not(.page-wrapper) h3{
   color: #444;
 }
 
-.ux-text h3 {
+.tabcontent h3 {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -79,14 +79,14 @@ h1,h2,:not(.page-wrapper) h3{
   color: #a0b101;
 }
 
-.ux-text p {
+.tabcontent p {
   color: #666;
   line-height: 1.8rem;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
-.ux-text p:last-child {
+.tabcontent p:last-child {
   margin: 0;
 }
 
@@ -182,8 +182,7 @@ h1,h2,:not(.page-wrapper) h3{
 }
 
 .ux-vertical-tabs .maincontent .tabcontent {
-  display: flex;
-  flex: 1;
+  display: block;
   position: relative;
   padding-top: 25px;
 }
@@ -237,4 +236,5 @@ h1,h2,:not(.page-wrapper) h3{
     padding: 1rem;
   }
 }
+
 

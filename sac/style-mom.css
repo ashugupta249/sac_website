@@ -12,23 +12,17 @@ Main Components
 }
 .cd-horizontal-timeline {
   opacity: 0;
-  margin: 0.35em auto 0;
+  margin: 0.35em 0 0;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  width: calc(100% - 4rem);
+  width: inherit;
   user-select:  none;
 }
 .cd-horizontal-timeline::before {
   /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
   display: none;
-}
-
-@media (max-width: 50rem) {
-      .cd-horizontal-timeline{
-        width: calc(100% - 2rem);
-      }
 }
 
 .cd-horizontal-timeline.loaded {
