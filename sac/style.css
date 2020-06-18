@@ -43,10 +43,7 @@ h1,h2,:not(.page-wrapper) h3{
  /* https://codepen.io/xcrap/pen/ejVbva */
 
 
-body {
-  /*min-height: 100vh;*/
-  margin: 0 auto auto 0;
-}
+
 
 .vert-tabs{
   display: flex;

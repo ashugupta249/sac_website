@@ -14,12 +14,12 @@
 
 
 #wrapper-flow {
-    width: calc(100vw - 20rem - 4rem);
+    width: calc(100% - 4rem);
 }
 
 @media (max-width: 50rem) {
       #wrapper-flow{
-        width: calc(100vw - 2rem);
+        width: calc(100% - 2rem);
       }
 }
 

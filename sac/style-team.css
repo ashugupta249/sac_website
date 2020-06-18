@@ -8,13 +8,13 @@
   justify-content: space-evenly;
   padding-left: calc(5% - 16px);
   padding-right: calc(5% - 16px);
-  width: calc(100vw - 20rem - 4rem);
+  width: calc(100% - 4rem);
   /* padding: 0 5%; */
 }
 
 @media (max-width: 50rem) {
       .page-wrapper{
-        width: calc(100vw - 2rem);
+        width: calc(100% - 2rem);
       }
 }
 

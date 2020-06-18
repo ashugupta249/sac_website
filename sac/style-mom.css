@@ -16,7 +16,7 @@ Main Components
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
-  width: calc(100vw - 20rem - 4rem);
+  width: calc(100% - 4rem);
   user-select:  none;
 }
 .cd-horizontal-timeline::before {
@@ -27,7 +27,7 @@ Main Components
 
 @media (max-width: 50rem) {
       .cd-horizontal-timeline{
-        width: calc(100vw - 2rem);
+        width: calc(100% - 2rem);
       }
 }
 
@@ -155,9 +155,11 @@ Main Components
   border-color: #085796;
 }
 @media only screen and (min-width: 1100px) {
+  /*
   .cd-horizontal-timeline {
     margin: 0.75em auto 0;
   }
+  */
   .cd-horizontal-timeline::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
