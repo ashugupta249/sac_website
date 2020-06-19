@@ -202,7 +202,6 @@ details summary::-webkit-details-marker {
 /*inline-block*/
 
 .inline-b {
-  max-width:1200px;
   margin:0 auto;
 }
 .inline-b-item {
