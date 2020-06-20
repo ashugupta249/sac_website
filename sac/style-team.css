@@ -6,7 +6,8 @@
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-evenly;
-  padding: 5px 16px;
+  padding-left: calc(5% - 16px);
+  padding-right: calc(5% - 16px);
   width: inherit;
   /* padding: 0 5%; */
 }

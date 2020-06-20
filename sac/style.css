@@ -1,6 +1,6 @@
 /* Note:
   1: tabs width and maincontent left-margin are interrelated and should be chnaged simultaneously;
-  2: init's detail has to be changed if margin-left/padding for maincontent is changed;
+  2: max-width has to be changed if margin-left for maincontent is changed;
 */
 
 
@@ -179,6 +179,7 @@ h1,h2,:not(.page-wrapper) h3{
   border-left: 0;
   padding: 2rem;
   overflow: hidden;
+  max-width: calc(100vw - 20rem);
 }
 
 .ux-vertical-tabs .maincontent .tabcontent {
@@ -234,6 +235,7 @@ h1,h2,:not(.page-wrapper) h3{
   .ux-vertical-tabs .maincontent {
     margin-left: 0;
     padding: 1rem;
+    max-width: calc(100vw);
   }
 }
 
