@@ -197,7 +197,7 @@ body {
 
 #lead {
 	position: relative;
-	height: 100vh;
+	height: calc(100vh - 49px);
 	min-height: 500px;
 	max-height: 1080px;
 	background: url(./cover.jpg);
