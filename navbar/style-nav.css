@@ -1,8 +1,8 @@
 /* Add a black background color to the top navigation */
 
 :root{
-  --background-color:#003366;
-  --background-hover-color:#0059b3;
+  --background-color:#333333;
+  --background-hover-color:#999999;
 }
 
 header{
@@ -108,6 +108,9 @@ header{
     .topnav a.icon {
       float: right;
       display: block;
+    }
+    .nav-links{
+      position:absolute;
     }
   }
   

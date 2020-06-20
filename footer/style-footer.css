@@ -142,6 +142,9 @@
 	.scroll-top-button{
 		min-width: 200px;
 	}
+	.scroll-top-button{
+		margin-top: 50px;
+	}
 }
 
 /* for tablet mode view */
@@ -160,7 +163,14 @@
 	}
 	.scroll-top-button{
 		float: none;
-		margin: auto;	
+		margin: auto;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (min-width: 1275px) {
+	.scroll-top-button{
+		margin-top: 100px;
 	}
 }
 
