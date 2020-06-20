@@ -123,14 +123,7 @@ a,a:hover{
 		margin-right: 5%;
 	}
 
-	.boardbox{
-		width:100%;
-		margin-left: 0%;
-		margin-right: 0%;
-		margin-top:5%;
-		float:right;
-		/* border-left-style: double; */
-	}
+	
 
 	#board_container{
 		width:70%;
