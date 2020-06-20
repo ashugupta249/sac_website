@@ -122,6 +122,28 @@
 	text-align: center;
 }
 
+.scroll-top-button{
+	background: #001012;
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+	font-size: 2rem;
+	max-width: 300px;
+	float:right;
+}
+
+.scroll-top-button:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+
+
+@media screen and (min-width: 660px) {
+	.scroll-top-button{
+		min-width: 200px;
+	}
+}
+
 /* for tablet mode view */
 
 @media screen and (max-width: 1275px) {
@@ -135,6 +157,10 @@
 @media screen and (max-width: 660px) {
 	.footer-items {
 		width: 100%;
+	}
+	.scroll-top-button{
+		float: none;
+		margin: auto;	
 	}
 }
 
