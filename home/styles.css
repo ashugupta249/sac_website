@@ -78,7 +78,8 @@ a,a:hover{
 }
 
 .boardbox,.facilitybox{
-	width:16%;
+	/*width:16%;*/
+	background: white;
 	transition: transform 0.5s;
 	-webkit-transition: transform 0.5s;
 }
@@ -89,14 +90,14 @@ a,a:hover{
 	-webkit-transform: scale(1.1);
 }
 
-#sac_box {
+.sacbox {
 	transition: transform 0.5s;
 	-webkit-transition: transform 0.5s;
 }
 
-#sac_box:hover{
-	transform: scale(1.1);
-	-webkit-transform: scale(1.1);
+.sacbox:hover{
+	transform: scalex(1.1);
+	-webkit-transform: scalex(1.1);
 }
 
 .board_logo{
