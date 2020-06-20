@@ -26,9 +26,8 @@ a,a:hover{
 	border-color: black;
 	border-width: 2px;
 	border-style: solid;
-	margin-bottom: 1%;
+	/*margin-bottom: 1%;*/
 	border-radius: 2px;
-	;
 }
 
 .box:hover{
@@ -370,7 +369,7 @@ section{
 	margin-bottom: 18px;
 }
 
-.more-grid .know-more{
+.know-more{
 	margin: 3px 3% 18px;
 	padding: 6px;
 	cursor: pointer;
@@ -380,7 +379,7 @@ section{
 	color: white;
 }
 
-.more-grid .know-more:hover{
+.know-more:hover{
 	border: 1px solid Blue;
 	background: Blue;
 	color: white;

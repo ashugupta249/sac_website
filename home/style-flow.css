@@ -2,6 +2,11 @@
 
  /* https://www.cssscript.com/responsive-hierarchical-organization-chart-pure-css/ */
 
+:root{
+  --background-color-sac:whilte;
+  --background-color-board:white;
+}
+
 *,
 *:before,
 *:after {
@@ -111,9 +116,10 @@ ol.organizational-chart li > div {
 
 /*** PRIMARY ***/
 ol.organizational-chart > li > div {
-    background-color: #a2ed56;
+    background-color: var(--background-color-sac);
     margin-right: 1em;
-    max-width: 
+    max-width: 1000px;
+    padding: 0px;
 }
 
 ol.organizational-chart > li > div:before {
@@ -153,22 +159,26 @@ ol.organizational-chart > li > ol:after {
 }
 
 ol.organizational-chart > li > ol > li > div {
-    background-color: #83e4e2;
+    background-color: var(--background-color-board);
+    padding: 0px;
 }
 
 /*** TERTIARY ***/
 ol.organizational-chart > li > ol > li > ol > li > div {
     background-color: #fd6470;
+    padding: 0px;
 }
 
 /*** QUATERNARY ***/
 ol.organizational-chart > li > ol > li > ol > li > ol > li > div {
     background-color: #fca858;
+    padding: 0px;
 }
 
 /*** QUINARY ***/
 ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
     background-color: #fddc32;
+    padding: 0px;
 }
 
 /*** MEDIA QUERIES ***/
