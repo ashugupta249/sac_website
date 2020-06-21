@@ -66,8 +66,8 @@
 	/* height: 25px; */
 }
 
-.footer-items ul li i {
-	/* margin-right: 20px; */
+.footer-items ul li a {
+	 margin-left: 15px; 
 }
 
 .footer-heading {
@@ -149,7 +149,7 @@
 
 /* for tablet mode view */
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 900px) {
 	.footer-items {
 		width: 50%;
 	}
@@ -168,7 +168,7 @@
 	}
 }
 
-@media screen and (min-width: 1275px) {
+@media screen and (min-width: 900px) {
 	.scroll-top-button{
 		margin-top: 100px;
 	}
