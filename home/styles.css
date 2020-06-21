@@ -64,7 +64,19 @@ a,a:hover{
 
 .box{
 	padding:1%;
+	position: relative;
+	/*box-shadow: 0 10px 20px rgba(0,0,0,1);*/
 }
+
+/*.box::after{
+	box-shadow: 0 50px 15px rgba(0,0,0,1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box:hover::after{
+	opacity: 1;
+}*/
 
 #sac_box{
 	width:30%;
@@ -77,27 +89,31 @@ a,a:hover{
 	margin-left: 5%;
 }
 
-.boardbox,.facilitybox{
-	/*width:16%;*/
+.boardbox{
 	background: white;
-	transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
+	-webkit-transition: all 0.5s ease-in-out;
 }
 
-.boardbox:hover,.facilitybox:hover{
+.boardbox:hover{
 	cursor: pointer;
-	transform: scale(1.1);
-	-webkit-transform: scale(1.1);
+	/*transform: scale(1.1);
+	-webkit-transform: scale(1.1);*/
+	box-shadow: 0 5px 10px -2px rgba(0,0,0,1);
+  /*transition: box-shadow 0.5s ease-in-out;*/
 }
 
-.sacbox {
-	transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
+.sacbox ,.cards .card-item{
+	-webkit-transition: all 0.5s;
 }
 
-.sacbox:hover{
-	transform: scalex(1.1);
-	-webkit-transform: scalex(1.1);
+.sacbox:hover {
+	/*-webkit-transform: scalex(1.1);*/
+	box-shadow: 0 5px 10px -2px rgba(0,0,0,1);
+}
+
+.cards .card-item:hover{
+	/*-webkit-transform: scalex(1.1);*/
+	box-shadow: 0 20px 50px -8px rgba(0,0,0,0.5);
 }
 
 .board_logo{
@@ -481,20 +497,17 @@ section{
   background-color: #fff;
   width: 100%;
   border-radius: 0px;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
+  /*box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);*/
+  overflow: hidden;/*
   transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;*/
 }
 .cards .card-item:hover {
-  cursor: pointer;
+  cursor: pointer;/*
   transform: scale(1.05);
-  -webkit-transform: scale(1.05);
+  -webkit-transform: scale(1.05);*/
 }
 
-.cards .card-item:hover .card-image {
-  opacity: 1;
-}
 .cards .card-info {
   display: flex;
   flex: 1 1 auto;
@@ -515,7 +528,8 @@ section{
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 0px 0px 0px 0px;
-  opacity: 0.91;
+  opacity: 0.8;
+  -moz-transition:all 1s ease-in-out;
 }
 
  .cards .card-more {
@@ -553,11 +567,15 @@ section{
 
 .card-image img{
 	width: -moz-available;
-  -moz-transition: 5s ease-in-out;
+  -moz-transition:all 5s cubic-bezier(.29,.64,.45,.94);
 }
 
-.cards .card-item:hover > .card-image img{
-	transform: scale(1.2);
-	-webkit-transform: scale(1.2);
+.cards .card-item:hover > .card-image img,.cards .card-item:active > .card-image img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
 	overflow: hidden;
+}
+
+.cards .card-item:hover > .card-image,.cards .card-item:active > .card-image{
+	opacity: 1;
 }
