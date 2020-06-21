@@ -56,7 +56,7 @@ ol.organizational-chart li:before,
 ol.organizational-chart li:after,
 ol.organizational-chart > li > div:before,
 ol.organizational-chart > li > div:after {
-    background-color: #000000;
+    background-color: #666666;
     content: '';
     position: absolute;
 }
@@ -283,6 +283,7 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 
     ol.organizational-chart > li > ol > li {
         flex-grow: 1;
+        flex-basis: 0;
         padding-left: 1em;
         padding-right: 1em;
         padding-top: 1em;
