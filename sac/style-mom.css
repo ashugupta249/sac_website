@@ -452,6 +452,7 @@ Main Components
 }
 
 .mins-card-container .mins-item{
+   position: relative;
    display: block;
    background: #0080ff;
    padding: 10px 30px;

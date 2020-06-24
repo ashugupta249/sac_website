@@ -305,3 +305,41 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
     }
 
 }
+
+
+/* ========= */
+
+
+.consti-box{
+    position:  relative;
+    background-color: #99ccff;
+    color: #001a33;
+    width: 100%;
+    padding: 15px 25px;
+}
+
+.consti-box > span{
+    display: inline-block;
+    padding: 8px 0;
+}
+
+.consti-box a.btn{
+    background-color: #2a73cc;
+    color: #eaeaea;
+    display: inline-block;
+    padding: 8px 12px;
+    margin-left: 15px;
+    text-decoration:  none;
+    text-transform:  uppercase;
+    float: right;
+}
+.consti-box a.btn:hover,.consti-box a.btn:focus{
+    text-decoration:  none;
+    background-color: #0066cc;
+}
+
+.consti-box:after{
+    clear:  both;
+    content: "";
+    display: block;
+}
