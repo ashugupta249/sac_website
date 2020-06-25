@@ -70,6 +70,11 @@
 	/* height: 25px; */
 }
 
+.footer-items ul li i{
+	margin-right: 10px;
+	/* height: 25px; */
+}
+
 .footer-items ul li a {
 	 margin-left: 15px; 
 }
@@ -89,7 +94,6 @@
 	height: 1px;
 	width: 40px;
 	left: 0;
-	right: 0;
 	margin: 0 auto;
 	background: #3498db
 }
