@@ -137,6 +137,7 @@
 	font-size: 2rem;
 	max-width: 300px;
 	float:right;
+	text-align: center;
 }
 
 .scroll-top-button:hover{
@@ -182,6 +183,7 @@
 	}
 }
 
-/* you can toggle the media screen view accordingly by changing the (max-width: px) to your convenience */
 
-/* Thanks to Computer Conversations */
+.fa{
+	font-famile:!FontAwesome;
+}
