@@ -1,7 +1,12 @@
 /* FOOTER */
+:root{
+	--footer-background-color:#00020b;
+	--footer-scroll-top-color:#000106;
+}
+
 .footer {
 	width: 100%;
-	background: #00121b;
+	background: var(--footer-background-color);
 	display: block;
  }
 
@@ -124,14 +129,14 @@
 
 .footer-bottom {
 	padding: 10px;
-	background: #00121b;
+	background: var(--footer-background-color)
 	color: #fff;
 	font-size: 12px;
 	text-align: center;
 }
 
 .scroll-top-button{
-	background: #001012;
+	background: var(--footer-scroll-top-color);
 	transition: transform 0.5s;
 	-webkit-transition: transform 0.5s;
 	font-size: 2rem;
