@@ -54,14 +54,14 @@
     align-items: baseline;
  }
 
-.footer-items ul a {
+.footer-items ul a ,.footer-items a {
 	text-decoration: none;
 	outline: none;
 	color: #fff;
 	transition: 0.3s;
 }
 
-.footer-items ul a:hover {
+.footer-items ul a:hover,.footer-items a:hover  {
 	color: #ff9800;
 }
 
