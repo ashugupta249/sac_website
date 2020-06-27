@@ -20,7 +20,7 @@
   border-radius: 3px;
   margin: 20px 16px;
   padding: 16px 16px 12px;
-  width: 200px;
+  width: 250px;
   max-width: calc(100% - 17px);
   text-align: center;
   transition: 300ms;
@@ -120,6 +120,7 @@ h4:hover {
 .mem-social.mem-social .fb:hover{
    background: #3b5999;
    color: white;
+   /* box-shadow: 4px 4px 6px 0 rgba(47,83,151,0.10); */
  }
 
  .mem-social .mail{
