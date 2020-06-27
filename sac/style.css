@@ -24,9 +24,12 @@ h1,h2,:not(.page-wrapper) h3{
   display: inline-block;
   font-size: 2em;
   font-weight: 300;
+  border-bottom: 2px dotted silver;
+  padding-bottom: 3px;
   margin: 0 0 30px 0
 }
 
+/*
 .heading:after {
   position: absolute;
   content: '';
@@ -35,10 +38,11 @@ h1,h2,:not(.page-wrapper) h3{
   width: 100px;
   left: 0;
   right: 0;
-  margin: 7px auto;
-  border-top: 1px solid #3498db;
-  border-bottom: 1px solid #3498db;
+  margin: 7px 0;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
 }
+*/
 
 /*template starts*/
 
@@ -65,10 +69,6 @@ h1,h2,:not(.page-wrapper) h3{
   margin: 0 auto;
 }
 
-.tabcontent{
-  margin-top: 35px;
-  margin-bottom: 25px;
-}
 
 .tabcontent:first-of-type{
   margin-top: 0;
@@ -90,7 +90,7 @@ h1,h2,:not(.page-wrapper) h3{
   left: 0;
   right: 0;
   margin: 5px 0;
-  background: #3498db
+  background: silver
 }
 
 
@@ -122,7 +122,7 @@ h1,h2,:not(.page-wrapper) h3{
 .ux-vertical-tabs .tabs {
   font-family: 'Oswald';
   position: fixed;
-  width: 20rem;  /** change in main content margin-left!! */
+  width: 13rem;  /** change in main content margin-left!! */
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -133,7 +133,7 @@ h1,h2,:not(.page-wrapper) h3{
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  padding: 1.2rem;
+  padding: 1.05rem 1.2rem;
   width: 100%;
   outline: none;
   text-align: left;
@@ -146,6 +146,7 @@ h1,h2,:not(.page-wrapper) h3{
   color: #666;
   text-transform: uppercase;
   transition: background 250ms ease;
+  line-height: 1.35rem;
 }
 
 .ux-vertical-tabs .tabs button:first-child {
@@ -153,11 +154,11 @@ h1,h2,:not(.page-wrapper) h3{
 }
 
 .ux-vertical-tabs .tabs button:hover {
-  background: #edf0d0;
+  background: #eaeaea;
 }
 
 .ux-vertical-tabs .tabs button.active {
-  background: #dcf0d0;
+  background: #eee;
   border-right: 0;
   color: #222;
 }
@@ -196,21 +197,22 @@ h1,h2,:not(.page-wrapper) h3{
 }
 
 .ux-vertical-tabs .maincontent {
-  margin-left: 20rem;
+  margin-left: 13rem;
   flex: 1;
   border: 1px solid #ddd;
   border-left: 0;
   padding: 2rem;
   overflow: hidden;
-  max-width: calc(100vw - 20rem);
+  max-width: calc(100vw - 13rem);
 }
 
 .ux-vertical-tabs .maincontent .tabcontent {
   display: block;
   position: relative;
-  padding-top: 25px;
-}
+  padding-top: 45px;
+  padding-bottom: 25px;
 
+}
 
 @media (max-width: 50rem) {
   .ux-vertical-tabs {
@@ -263,3 +265,10 @@ h1,h2,:not(.page-wrapper) h3{
 }
 
 
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+}
+
+.shadow-large {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15)
+}
