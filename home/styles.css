@@ -418,8 +418,8 @@ section{
 	#lead {
 		
 		height: auto;
-		min-height: auto;
-		max-height: auto;
+		/*min-height: auto;*/
+		/*max-height: auto;*/
 		
 		padding: 120px 15px
 		
@@ -602,4 +602,8 @@ section{
 
 .box h2{
 	font-weight: inherit;
+}
+
+.hidden{
+	visibility: hidden;
 }
