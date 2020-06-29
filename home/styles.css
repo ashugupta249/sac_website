@@ -77,13 +77,6 @@ a,a:hover{
 .box:hover::after{
 	opacity: 1;
 }*/
-
-#sac_box{
-	width:30%;
-	margin-left: 35%;
-	margin-right: 35%;
-}
-
 #sac_box div img{
 	float: left;
 	margin-left: 5%;
@@ -92,18 +85,20 @@ a,a:hover{
 .boardbox{
 	/*background: white;*/
 	-webkit-transition: all 0.5s ease-in-out;
+	box-shadow: 0 5px 10px -2px rgba(0,0,0,1);
 }
 
 .boardbox:hover{
 	cursor: pointer;
 	/*transform: scale(1.1);
 	-webkit-transform: scale(1.1);*/
-	box-shadow: 0 5px 10px -2px rgba(0,0,0,1);
+	/*box-shadow: 0 5px 10px -2px rgba(0,0,0,1);*/
   /*transition: box-shadow 0.5s ease-in-out;*/
 }
 
 .sacbox ,.cards .card-item{
 	-webkit-transition: all 0.5s;
+	/*box-shadow: 0 5px 10px -2px rgba(0,0,0,1);*/
 }
 
 .sacbox:hover {
@@ -113,7 +108,7 @@ a,a:hover{
 
 .cards .card-item:hover{
 	/*-webkit-transform: scalex(1.1);*/
-	box-shadow: 0 20px 50px -8px rgba(0,0,0,0.5);
+	/*box-shadow: 0 20px 50px -8px rgba(0,0,0,0.5);*/
 }
 
 .board_logo{
@@ -126,6 +121,10 @@ a,a:hover{
 	margin-block-end: 0em;
 }
 
+.box div img{
+	height:7rem;
+	width:7rem;
+}
 
 @media(max-width: 800px){
 	.mobile_hidden{
