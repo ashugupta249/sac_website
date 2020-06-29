@@ -597,3 +597,10 @@ section{
 	opacity: 1;
 }
 
+.box h1{
+	margin:0.3em 0;
+}
+
+.box h2{
+	font-weight: inherit;
+}
