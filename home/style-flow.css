@@ -185,7 +185,7 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 @media only screen and ( min-width: 64em ) {
 
     ol.organizational-chart > li > div{
-        max-width: 600px;
+        max-width: 500px;
     }
 
     ol.organizational-chart {
@@ -284,8 +284,8 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
     ol.organizational-chart > li > ol > li {
         flex-grow: 1;
         flex-basis: 0;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 0.5em;
+        /*padding-right: 1em;*/
         padding-top: 1em;
     }
 
