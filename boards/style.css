@@ -113,10 +113,13 @@ body {
   font-family: 'Oswald';
   position: fixed;
   width: 20rem;  /** change in main content margin-left & dropdown width!! */
-  display: flex;
+  /*display: flex;*/
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 70px;  /** change in dropdown height & padding **/
+  margin-top: 42px;  /** change in dropdown height & padding **/
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 91px);
 }
 
 .ux-vertical-tabs .tabs button {

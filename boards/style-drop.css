@@ -192,14 +192,15 @@ select {
 #drop{
     position: absolute;
     position: fixed;
-    padding: 13px 0.75rem;
-    width: 18.5rem;
+    padding: 0px;
+    width: 20rem;
     z-index: 99;
 }
 
 
 @media (max-width: 50rem) {
     #drop{
-        width: 98%;
+        position: absolute;
+        width: 100%;
     }
 }

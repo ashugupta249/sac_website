@@ -123,9 +123,12 @@ h1,h2,:not(.page-wrapper) h3{
   font-family: 'Oswald';
   position: fixed;
   width: 13rem;  /** change in main content margin-left!! */
-  display: flex;
+  /*display: flex;*/
   flex-wrap: wrap;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100vh - 49px);
 }
 
 .ux-vertical-tabs .tabs button {
