@@ -200,7 +200,8 @@ select {
 
 @media (max-width: 50rem) {
     #drop{
-        position: absolute;
+        /*position: absolute;*/
         width: 100%;
+        background-color: white;
     }
 }
