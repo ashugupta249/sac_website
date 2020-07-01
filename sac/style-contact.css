@@ -1,4 +1,108 @@
 .contact-container{
-	margin: 6px 9px;
-	padding: 12px;
+	border: 1px solid silver;
+	padding: 20px;
 }
+
+.contact-container::after{
+	content: "";
+	clear:   both;
+	display: table;
+}
+
+.contact-email{
+	border-right: 0.8px solid silver;
+	padding: 115px 25px 50px;
+	text-align: center;
+	width: 50%;
+	float: left;
+}
+
+.contact-email .contact-email-title{
+	font-weight: bold;
+	position: relative;
+	margin-top: 30px;
+}
+
+.contact-email .contact-email-title:before{
+	display: inline-block;
+	font-weight: bold;
+	content: "\f0e0";
+	font-family:  FontAwesome;
+	font-size: 70px;
+
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: -100px;
+    margin: 0 auto;
+}
+
+.contact-email .contact-email-caption{
+	margin-top: 15px;
+}
+
+.contact-email .contact-email-id{
+	display: inline-block;
+	margin-top: 30px;
+	text-decoration:  none;
+}
+
+
+.contact-social{
+	text-align:  center;
+	width: 50%;
+	float: left;
+
+}
+
+.contact-social .fb{
+   display: inline-block;
+   border: 1px solid #3b5999;
+   background: linear-gradient(45deg, #3b5998, #0078d7);
+   color: white;
+   padding: 15px 22px;
+   text-decoration: none;
+   margin: 50px 10px;
+   font-size: 25px;
+   transition: all .2s ease-in-out;
+ }
+
+ .contact-social .fb:hover{
+   transform: scale(1.1);
+   box-shadow: 0px 3px 15px rgba(43, 98, 169, 0.5);
+ }
+
+ .contact-social .insta{
+   display: inline-block;
+   border: 1px solid #e4405f;
+   background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+   color: white;
+   padding: 15px 20px;
+   text-decoration: none;
+   margin: 50px 10px;
+   font-size: 25px;
+   transition: all .2s ease-in-out;
+ }
+
+ .contact-social .insta:hover{
+  	transform: scale(1.1);
+  	box-shadow: 0px 3px 15px rgba(120, 64, 190, 0.6);
+  }
+
+ .contact-social .social-caption{
+ 	margin-top: 10px;
+ 	font-size: 1.5rem;
+ }
+
+
+ @media only screen and ( max-width: 35rem){
+ 	.contact-email{
+ 		border-right: none;
+		border-bottom: 0.8px solid silver;
+		width: 100%;
+	}
+
+	.contact-social{
+		width: 100%;
+	}
+ }
