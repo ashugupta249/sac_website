@@ -15,7 +15,7 @@ header{
 .topnav {
     background-color: var(--background-color);
     overflow: hidden;
-    background-image: linear-gradient ( to bottom right,#2222,#3334433);
+    background-image: linear-gradient(to bottom right,#222222,#555555);
   }
   
   /* Style the links inside the navigation bar */
