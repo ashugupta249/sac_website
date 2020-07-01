@@ -128,7 +128,6 @@ h1,h2,:not(.page-wrapper) h3{
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100vh - 49px);
 }
 
 .ux-vertical-tabs .tabs button {
@@ -264,6 +263,12 @@ h1,h2,:not(.page-wrapper) h3{
     margin-left: 0;
     padding: 1rem;
     max-width: calc(100vw);
+  }
+}
+
+@media (min-width: 50rem){
+  .ux-vertical-tabs .tabs{
+    height: calc(100vh - 49px);
   }
 }
 

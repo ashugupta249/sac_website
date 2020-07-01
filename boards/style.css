@@ -119,7 +119,7 @@ body {
   margin-top: 42px;  /** change in dropdown height & padding **/
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100vh - 91px);
+  /*height: calc(100vh - 91px);*/
 }
 
 .ux-vertical-tabs .tabs button {
@@ -263,3 +263,8 @@ body {
 
 
 
+@media (min-width: 50rem){
+  .ux-vertical-tabs .tabs{
+    height: calc(100vh - 91px);
+  }
+}
