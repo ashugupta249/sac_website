@@ -151,6 +151,9 @@ header{
       display: block;
       color:white;
     }
+    .topnav a.icon:hover{
+      color:white;
+    }
   }
   
   .nav-links{
