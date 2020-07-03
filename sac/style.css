@@ -85,7 +85,7 @@ h1,h2,:not(.page-wrapper) h3{
   position: absolute;
   content: '';
   top: 100%;
-  height: 1px;
+  height: 3px;
   width: 50px;
   left: 0;
   right: 0;

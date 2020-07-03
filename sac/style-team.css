@@ -15,7 +15,7 @@
 
 
 .profile-box {
-  background: #e6f2ff;
+  background: #fafafa;/*#e6f2ff;*/
   box-shadow: 0 2px 6px 0 rgba(47,83,151,0.10);
   border-radius: 3px;
   margin: 20px 16px;
@@ -30,8 +30,8 @@
 
 .profile-box:hover {
   /* box-shadow: 0 2px 6px 0 rgba(47,83,151,0.40); */
-  background-color: #cce6ff;
-  border-color: #1a8cff;
+  background-color: #eaeaea; /* #cce6ff;*/
+  /*border-color: #1a8cff;*/
   box-shadow: 0 0 20px 9px rgba(0,0,0,0.03);
   transform: scale(1.03);
 }
