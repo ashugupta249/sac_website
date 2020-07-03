@@ -152,27 +152,27 @@ ol.organizational-chart > li > ol:after {
 }
 
 ol.organizational-chart > li > ol > li > div {
-    background-color: silver /* #83e4e2*/;
+    background-color: #eaeaea /* #83e4e2*/;
 }
 
 /*** TERTIARY ***/
 ol.organizational-chart > li > ol > li > ol > li > div {
-    background-color: #888 /*#fd6470*/;
+    background-color: #eaeaea /*#fd6470*/;
 }
 
 /*** QUATERNARY ***/
 ol.organizational-chart > li > ol > li > ol > li > ol > li > div {
-    background-color: silver /*#fca858*/;
+    background-color: #eaeaea /*#fca858*/;
 }
 
 /*** QUINARY ***/
 ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
-    background-color: silver /*#fddc32*/;
+    background-color: #eaeaea /*#fddc32*/;
 }
 
 /*** Senary ***/
 ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > ol li > div {
-    background-color: silver;
+    background-color: #eaeaea;
 }
 
 /*** MEDIA QUERIES ***/

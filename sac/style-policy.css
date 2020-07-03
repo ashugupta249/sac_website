@@ -96,11 +96,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:  center;
     width: 100%;
 }
-
-
 
 .two-col-box-1{
   display: flex;   /* Magic begins */
