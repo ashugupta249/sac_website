@@ -140,6 +140,15 @@ header{
   .saclogo{
     float:left;
     height: 49px;
+    padding: 0 !important;
+  }
+
+  .saclogo:hover{
+    background-color: transparent !important;
+  }
+
+  .saclogo img{
+    height: 49px;
   }
 
 
