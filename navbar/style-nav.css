@@ -109,7 +109,11 @@ header{
     .topnav a.icon {
       float: right;
       display: block;
-    }/*
+    }
+    .saclogo{
+      display: block !important;
+    }
+    /*
     .nav-links{
       position:absolute;
     }*/
@@ -185,6 +189,6 @@ header{
 
     .nav-links{
       float: none;
-      margin-top: 49px;
+      /*margin-top: 49px;*/
     }
   }

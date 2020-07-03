@@ -1,7 +1,13 @@
-/* 
-
-DodgerBlue: 1e90ff
-*/;
+:root{
+  --tab-bar-background-color:#a3a3a3;
+  --active-tab-background-color:#131313;
+  --inactive-tab-background-color:#767676;
+  --hover-tab-background-color:#232323;
+  --know-more-background-color:#131313;
+  --know-more-hover-background-color:#101010;
+  --inactive-tab-text-color:#d0d0d0;
+  --active-tab-text-color:#ffffff;
+}
 
 body {
   overflow-x: hidden;
@@ -9,7 +15,7 @@ body {
 
 
 h1,h2,h3{
-  font-family: 'Oswald';
+  /*font-family: 'Oswald';*/
   margin: 0 0 1.4rem 0;
   font-weight: 300;
 }
@@ -114,7 +120,7 @@ body {
 
 .tabs {
   /*margin-top: 5px;*/
-  background:  /*#e6f2ff;*/ #cce6ff;
+  background-color: var(--tab-bar-background-color);
 }
 .tabs input[type=radio] {
   display: none; 
@@ -123,12 +129,12 @@ body {
   transition: background 0.4s ease-in-out, height 0.2s linear;
   display: inline-block;
   cursor: pointer;
-  color: #0080ff;
+  color: var(--inactive-tab-text-color);
   width: 20%;
   height: 3em;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  background: #cce6ff; /*#b3d9ff;*/
+  background: var(--inactive-tab-background-color); /*#b3d9ff;*/
   text-align: center;
   line-height: 3em; 
   font-family: 'Oswald';
@@ -141,8 +147,8 @@ body {
 */
 
 .tabs label:hover {
-  background: #3399ff; /*#4da6ff;*/
-  color: #ffffff;
+  background: var(--hover-tab-background-color); /*#4da6ff;*/
+  color: var(--active-tab-text-color);
 }
 @media screen and (max-width: 1600px) {
 .tabs label {
@@ -168,7 +174,7 @@ body {
 }
 
 #tab1:checked + label, #tab2:checked + label, #tab3:checked + label, #tab4:checked + label {
-  background: #0080ff;
+  background: /*#0080ff*/ var(--active-tab-background-color);
   color: #FFFFFF; }
 
 .tab-content {
@@ -179,7 +185,7 @@ body {
 
 .tab-content-wrapper{
   background: #e6f2ff;
-  border-top: #0080ff 5px solid;
+  border-top: var(--active-tab-background-color) 5px solid;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -269,10 +275,10 @@ body {
  .cards .card-more {
   display: block;
   text-align: center;
-  border: 1px solid #1e90ff;
+  border: 1px solid var(--know-more-background-color);
   padding: 0.25rem;
   margin-top: 0.5rem;
-  background: #1e90ff;
+  background: var(--know-more-background-color);
   color: #fff;
   /*
   transition: background-color 0.5s ease-in-out;
@@ -283,7 +289,7 @@ body {
 }
 
  .cards .card-more:hover {
-  background-color: #0073e6; /*#F3AE55;*/ /* #740a0a; */ /*#210202;*/
+  background-color: var(--know-more-hover-background-color); /*#F3AE55;*/ /* #740a0a; */ /*#210202;*/
   border: none;
   cursor:  pointer;
   /*color: white;*/
