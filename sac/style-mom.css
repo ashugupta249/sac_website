@@ -86,7 +86,7 @@ Main Components
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #fd8204;
+  background-color: #222 /*#fd8204*/;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -131,22 +131,22 @@ Main Components
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  border: 2px solid #fd8204;
-  background-color: #f8f8f8;
+  border: 2px solid #e0e0e0 /*#fd8204*/;
+  background-color: #e0e0e0 /*#f8f8f8*/;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s;
 }
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-  background-color: #085796;
-  border-color: #085796;
+  background-color: #a0a0a0 /*#085796*/;
+  border-color: #a0a0a0 /*#085796*/;
 }
 .cd-horizontal-timeline .events a.selected {
   pointer-events: none;
 }
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #085796;
-  border-color: #085796;
+  background-color: #202020 /*#085796*/;
+  border-color: #202020 /*#085796*/;
 }
 @media only screen and (min-width: 1100px) {
   /*
@@ -198,7 +198,7 @@ Main Components
   display: block;
   position:absolute;
   top: 0.4rem;
-  left: -1.35rem;
+  left: -1.3rem;
   z-index: 100;
   height: 100%;
   width: 100%;
@@ -458,36 +458,67 @@ Main Components
    padding: 10px 30px;
    text-align: center;
    border-radius: 10px;
-   color: #e6f2ff;
+   color: #fff /*#e6f2ff*/;
    text-decoration:  none;
 }
 
 .mins-card-container .mins-item:hover{
    background: #0073e6;
-   color: #fff;
+   /*color: #fff;*/
    transform: scaleY(1.05);
    cursor:  pointer;
 }
 
-.mins-card-container .mins-item:after{
-   content:  ">>";
-   display: inline-block;
-   position:  absolute;
-   padding-left: 10px;
 
-   /*
-   transition: all 1.8s ease-in-out;
-   -webkit-transition: all 1.8s ease-in-out;
-   -moz-transition: all 1.8s ease-in-out;
-   -o-transition: all 1.8s ease-in-out;
-   */
- }
-.mins-card-container .mins-item:hover:after{
 
-   right: 15px;
-   
-   
+.mins-card-container .mins-item span:first-of-type{
+  margin-right: 10px;
+  text-transform:   uppercase;
+  letter-spacing: 1.5px;
+}
 
+
+
+.arrow {position: absolute; bottom: 0;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:13px;}
+.segunda{margin-left: 8px;}
+.next {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+  0% {opacity: 1; transform: translateX(0px) scale(1);}
+  25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+  26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+  55% {opacity: 1; transform: translateX(0px) scale(1);}
+}
+
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.mins-card-container .mins-item:hover .arrow{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.mins-card-container .mins-item:hover .arrow.primera{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
 }
 
 @media screen and (max-width:375px) {
