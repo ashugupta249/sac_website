@@ -51,7 +51,7 @@ ol.organizational-chart li:before,
 ol.organizational-chart li:after,
 ol.organizational-chart > li > div:before,
 ol.organizational-chart > li > div:after {
-    background-color: #b7a6aa;
+    background-color: #dadada; 
     content: '';
     position: absolute;
 }
@@ -111,7 +111,7 @@ ol.organizational-chart li > div {
 
 /*** PRIMARY ***/
 ol.organizational-chart > li > div {
-    background-color: #a2ed56;
+    background-color: #eaeaea /*#a2ed56*/;
     margin-right: 1rem;
 }
 
@@ -152,22 +152,27 @@ ol.organizational-chart > li > ol:after {
 }
 
 ol.organizational-chart > li > ol > li > div {
-    background-color: #83e4e2;
+    background-color: silver /* #83e4e2*/;
 }
 
 /*** TERTIARY ***/
 ol.organizational-chart > li > ol > li > ol > li > div {
-    background-color: #fd6470;
+    background-color: #888 /*#fd6470*/;
 }
 
 /*** QUATERNARY ***/
 ol.organizational-chart > li > ol > li > ol > li > ol > li > div {
-    background-color: #fca858;
+    background-color: silver /*#fca858*/;
 }
 
 /*** QUINARY ***/
 ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
-    background-color: #fddc32;
+    background-color: silver /*#fddc32*/;
+}
+
+/*** Senary ***/
+ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > ol li > div {
+    background-color: silver;
 }
 
 /*** MEDIA QUERIES ***/
@@ -306,40 +311,9 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 
 }
 
-
-/* ========= */
-
-
-.consti-box{
-    position:  relative;
-    background-color: #99ccff;
-    color: #001a33;
-    width: 100%;
-    padding: 15px 25px;
-}
-
-.consti-box > span{
-    display: inline-block;
-    padding: 8px 0;
-}
-
-.consti-box a.btn{
-    background-color: #2a73cc;
-    color: #eaeaea;
-    display: inline-block;
-    padding: 8px 12px;
-    margin-left: 15px;
-    text-decoration:  none;
-    text-transform:  uppercase;
-    float: right;
-}
-.consti-box a.btn:hover,.consti-box a.btn:focus{
-    text-decoration:  none;
-    background-color: #0066cc;
-}
-
-.consti-box:after{
-    clear:  both;
-    content: "";
-    display: block;
+#wrapper-flow p{
+    color: #000;
+    font-weight: 700;
+    padding: 8px 10px;
+    font-size: 1.1em;
 }

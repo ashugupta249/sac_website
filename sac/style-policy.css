@@ -93,6 +93,16 @@
 /* https://codepen.io/wallaceerick/pen/ctsCz*/
 
 .two-col-box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:  center;
+    width: 100%;
+}
+
+
+
+.two-col-box-1{
   display: flex;   /* Magic begins */
   flex-wrap: wrap; /* Allow multiple lines */
   align-items: center;
@@ -100,7 +110,7 @@
   width: 100%;
 }
 
-.two-col-box>div{
+.two-col-box-1>div{
   position:   relative;
   flex: 1 50%;   /* Initial width of 600px/2
                       Grow to fill remaining space */
@@ -202,7 +212,7 @@
     color: #001a33;
     width: 100%;
     padding: 15px 25px;
-    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .consti-box > span{

@@ -11,7 +11,7 @@
 
 .contact-email{
 	border-right: 0.8px solid silver;
-	padding: 115px 25px 50px;
+	padding: 115px 20px 50px;
 	text-align: center;
 	width: 50%;
 	float: left;
@@ -52,6 +52,7 @@
 	text-align:  center;
 	width: 50%;
 	float: left;
+	padding: 50px 20px;
 
 }
 
@@ -62,7 +63,7 @@
    color: white;
    padding: 15px 22px;
    text-decoration: none;
-   margin: 50px 10px;
+   margin: 20px 10px;
    font-size: 25px;
    transition: all .2s ease-in-out;
  }
@@ -79,7 +80,7 @@
    color: white;
    padding: 15px 20px;
    text-decoration: none;
-   margin: 50px 10px;
+   margin: 20px 10px;
    font-size: 25px;
    transition: all .2s ease-in-out;
  }
@@ -90,7 +91,7 @@
   }
 
  .contact-social .social-caption{
- 	margin-top: 10px;
+ 	margin-top: 40px;
  	font-size: 1.5rem;
  }
 
