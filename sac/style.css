@@ -35,7 +35,7 @@ h1,h2,:not(.page-wrapper) h3{
   content: '';
   top: 100%;
   height: 5px;
-  width: 100%;
+  width: 50px;
   left: 0;
   right: 0;
   margin: 7px 0;
@@ -81,12 +81,12 @@ h1,h2,:not(.page-wrapper) h3{
   margin-bottom: 25px;
   color: #444;
 }
-.tabcontent h2:after {
+.tabcontent>h2:after {
   position: absolute;
   content: '';
   top: 100%;
   height: 1px;
-  width: 100%;
+  width: 50px;
   left: 0;
   right: 0;
   margin: 5px 0;
