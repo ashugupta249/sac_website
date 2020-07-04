@@ -163,7 +163,7 @@ body {
 .tabs label {
   width: 100%;
   display: block;
-  border-bottom: 2px solid #0080ff;
+  border-bottom: 2px solid var(--tab-bar-background-color);
   border-radius: 0; 
 } 
 }
@@ -241,14 +241,14 @@ body {
 
  .web{
    display: inline-block;
-   border: 1px solid #0073e6;
-   color: #0073e6;
+   border: 1px solid #101010;
+   color: #101010;
    float: right;
    padding: 6px 12px;
    text-decoration: none;
  }
  .web:hover{
-   background: #0073e6;
+   background: #101010;
    color: white;
    /*
    border: none;
