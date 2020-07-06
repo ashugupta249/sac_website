@@ -3,8 +3,9 @@
   --active-tab-background-color:#131313;
   --inactive-tab-background-color:#767676;
   --hover-tab-background-color:#232323;
-  --know-more-background-color:#131313;
-  --know-more-hover-background-color:#101010;
+  --know-more-background-color:#fff;
+  --know-more-hover-background-color:#000;
+  --know-more-hover-color:#fff;
   --inactive-tab-text-color:#d0d0d0;
   --active-tab-text-color:#ffffff;
 }
@@ -275,22 +276,23 @@ body {
  .cards .card-more {
   display: block;
   text-align: center;
-  border: 1px solid var(--know-more-background-color);
-  padding: 0.25rem;
-  margin-top: 0.5rem;
-  background: var(--know-more-background-color);
-  color: #fff;
-  /*
-  transition: background-color 0.5s ease-in-out;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -moz-transition: background-color 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out;
-  */
+  border: 1px solid var(--know-more-hover-background-color);
+  padding: 0.4rem 0.25rem;
+  margin-top: 0.75rem;
+  color: var(--know-more-hover-background-color);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  font-weight: 500;
 }
 
  .cards .card-more:hover {
   background-color: var(--know-more-hover-background-color); /*#F3AE55;*/ /* #740a0a; */ /*#210202;*/
-  border: none;
+  color: var(--know-more-hover-color); 
+  border-color: none;
   cursor:  pointer;
   /*color: white;*/
   /*
