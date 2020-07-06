@@ -448,22 +448,28 @@ Main Components
    grid-template-columns: repeat(auto-fit, 250px);
    justify-content: center;
    padding-bottom: calc(1.5em + 5%);
-   overflow: auto;
+   overflow-y: scroll;
+   max-height: 80vh;
 }
 
 .mins-card-container .mins-item{
    position: relative;
    display: block;
-   background: #0080ff;
+   background-color: #444; /*#0080ff;*/
    padding: 10px 30px;
    text-align: center;
-   border-radius: 10px;
+   /* border-radius: 10px; */
    color: #fff /*#e6f2ff*/;
    text-decoration:  none;
+
+   transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
 .mins-card-container .mins-item:hover{
-   background: #0073e6;
+   background-color: #000; /*#0073e6;*/
    /*color: #fff;*/
    transform: scaleY(1.05);
    cursor:  pointer;
@@ -478,6 +484,7 @@ Main Components
 }
 
 
+/* https://codepen.io/manelroig/pen/rJMVRO */
 
 .arrow {position: absolute; bottom: 0;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:13px;}
 .segunda{margin-left: 8px;}

@@ -253,7 +253,7 @@ details summary::-webkit-details-marker {
   font-size: 1.08em;
 }
 
-
+/* https://codepen.io/ianfarb/pen/fcmGt */
 .init-index-container li{
   display: block;
   margin: 6px 1%;
@@ -367,11 +367,12 @@ details summary::-webkit-details-marker {
   text-align: center;
   border: 1px solid #1e90ff;
   padding: 6px 15px;
-  margin: 12px auto 10px 6px;
+  margin: 12px auto 10px 10px;
   color: #000;
   border: 2px solid #000;
   text-decoration:  none;
   text-transform:  uppercase;
+  font-weight: 500;
 
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
