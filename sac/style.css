@@ -183,7 +183,7 @@ h1,h2,:not(.page-wrapper) h3{
   height: 0;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
-  border-left: 6px solid #ccc;
+  border-left: 6px solid #bfbfbf;
   transform: translateX(1rem);
   opacity: 0;
   transition: all 350ms ease;
@@ -196,7 +196,7 @@ h1,h2,:not(.page-wrapper) h3{
 
 .ux-vertical-tabs .tabs button.active span {
   transform: translateX(0);
-  border-left: 6px solid #a0b101;
+  border-left: 6px solid #a5a5a5;
   opacity: 1;
 }
 
