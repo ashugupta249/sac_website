@@ -40,6 +40,7 @@ $('.container').on("click", ".ux-vertical-tabs .tabs button", function(){
     $('html, body').animate({
         scrollTop: $('.ux-vertical-tabs .maincontent .tabcontent[data-tab="' + $(this).data('tab') + '"]').offset().top - $('header').outerHeight() + 2
     }, 500); //adjust with header
+    tab_hide();
     return false;
 });
 
