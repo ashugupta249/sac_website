@@ -519,7 +519,7 @@ section{
   -webkit-transition: transform 0.5s;*/
 }
 .cards .card-item:hover {
-  cursor: pointer;/*
+  /*cursor: pointer;/*
   transform: scale(1.05);
   -webkit-transform: scale(1.05);*/
 }
@@ -535,7 +535,10 @@ section{
   font-size: 25px;
   line-height: 1.1em;
   color: #32325d;
-  margin-bottom: 0.2em;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  text-transform:   uppercase;
+  letter-spacing: 1.65px;
 }
 .cards .card-image {
   height: 200px;
@@ -545,28 +548,30 @@ section{
   background-repeat: no-repeat;
   border-radius: 0px 0px 0px 0px;
   opacity: 0.8;
-  -moz-transition:all 1s ease-in-out;
 }
 
  .cards .card-more {
-  display: block;
+  display: inline-block;
   text-align: center;
-  border: 1px solid #1e90ff;
-  padding: 0.25rem;
-  margin-top: 0.5rem;
-  background: #1e90ff;
-  color: #fff;
-  /*
-  transition: background-color 0.5s ease-in-out;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -moz-transition: background-color 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out;
-  */
+  border: 2px solid #000;
+  padding: 7px;
+  margin-top: 15px;
+  margin-bottom: 4px;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  text-transform:  uppercase;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 
  .cards .card-more:hover {
-  background-color: #0073e6; /*#F3AE55;*/ /* #740a0a; */ /*#210202;*/
-  border-color: #0073e6;
+  background-color: #000; /*#F3AE55;*/ /* #740a0a; */ /*#210202;*/
+  border-color: none;
+  color: #fff;
   /*border: none;*/
   cursor:  pointer;
   /*color: white;*/
@@ -583,7 +588,10 @@ section{
 
 .card-image img{
 	width: -moz-available;
-  -moz-transition:all 5s cubic-bezier(.29,.64,.45,.94);
+	transition: all 1s cubic-bezier(.29,.64,.45,.94);
+  -webkit-transition: all 1s cubic-bezier(.29,.64,.45,.94);
+  -o-transition: all 1s cubic-bezier(.29,.64,.45,.94);
+  -moz-transition:all 1s cubic-bezier(.29,.64,.45,.94);
 }
 
 .cards .card-item:hover > .card-image img,.cards .card-item:active > .card-image img{
