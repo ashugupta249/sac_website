@@ -44,7 +44,7 @@ var tab_hide = function(){
 }
 
 var tab_toggle = function(){
-  alert("Clicked");
+  // alert("Clicked");
   state = tab_col.style.transform;
   if(state == "scaleY(1)"){
     tab_hide();
