@@ -1,8 +1,8 @@
 /* Note:
   1: tabs width and maincontent left-margin are interrelated and should be chnaged simultaneously;
-  2: dropwdown height & padding and tabs top margin are interrelated and should be chnaged together;
-
+  2: max-width has to be changed if margin-left for maincontent is changed;
 */
+
 
 * {
   box-sizing: border-box;
@@ -14,49 +14,44 @@ body {
   font-family: 'Lato';
 }
 
-h1,h2,h3{
-  font-family: 'Oswald';
+h1,h2,:not(.page-wrapper) h3{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
 }
 
-header{
-    background-color: DodgerBlue;
-    /* padding: 12px 9px; */
-    z-index: 999;
-    display: block;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    vertical-align: middle;
+.heading {
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+  /*border-bottom: 2px dotted silver;*/
+  padding-bottom: 3px;
+  letter-spacing: 1.5px;
+  margin: 0 0 30px 0
 }
 
-header::after{
-    clear: both;
-    display: table;
-    content: "";
+
+.heading:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  height: 5px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: 7px auto;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  background-color: #222;
 }
 
-#home{
-    display: inline-block;
-    font-size: 2.25em;
-    color: white;
-    margin-left: 6px;
-    cursor:  pointer;
-    user-select:  none;
-}
-
-#home>a{
-    color: white;
-}
 
 /*template starts*/
 
  /* https://codepen.io/xcrap/pen/ejVbva */
 
 
-body {
-  /*min-height: 100vh;*/
-  margin: 0 auto auto 0;
-}
+
 
 .vert-tabs{
   display: flex;
@@ -76,15 +71,32 @@ body {
   margin: 0 auto;
 }
 
-.ux-text h2 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: .6rem;
-  color: #444;
+
+.tabcontent:first-of-type{
+  margin-top: 0;
 }
 
-.ux-text h3 {
+.tabcontent h2 {
+  position:  relative;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #444;
+}
+.tabcontent>h2:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  height: 3px;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: 5px 0;
+  background: silver
+}
+
+
+.tabcontent h3 {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -92,34 +104,33 @@ body {
   color: #a0b101;
 }
 
-.ux-text p {
+.tabcontent p {
   color: #666;
   line-height: 1.8rem;
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
-.ux-text p:last-child {
+.tabcontent p:last-child {
   margin: 0;
 }
 
 .ux-vertical-tabs {
   position: relative;
   display: flex;
-  background: linear-gradient(to bottom, #eee, #fff 200px);
+  /* background: linear-gradient(to bottom, #eee, #fff 200px); */
 }
 
 .ux-vertical-tabs .tabs {
   font-family: 'Oswald';
   position: fixed;
-  width: 20rem;  /** change in main content margin-left & dropdown width!! */
+  width: 13rem;  /** change in main content margin-left!! */
   /*display: flex;*/
   flex-wrap: wrap;
   flex-direction: column;
-  margin-top: 42px;  /** change in dropdown height & padding **/
   overflow-x: hidden;
   overflow-y: auto;
-  /*height: calc(100vh - 91px);*/
+  margin-top:43px;
 }
 
 .ux-vertical-tabs .tabs button {
@@ -127,7 +138,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  padding: 1.2rem;
+  padding: 1.05rem 1.2rem;
   width: 100%;
   outline: none;
   text-align: left;
@@ -140,21 +151,15 @@ body {
   color: #666;
   text-transform: uppercase;
   transition: background 250ms ease;
+  line-height: 1.35rem;
 }
 
 .ux-vertical-tabs .tabs button:first-child {
   border-top: 1px solid #ddd;
 }
 
-.ux-vertical-tabs .tabs button:hover {
-  background: #edf0d0;
-}
 
-.ux-vertical-tabs .tabs button.active {
-  background: transparent;
-  border-right: 0;
-  color: #222;
-}
+
 
 .ux-vertical-tabs .tabs button.empty {
   flex: 1;
@@ -163,52 +168,39 @@ body {
   pointer-events: none;
 }
 
-.ux-vertical-tabs .tabs button:hover.empty {
-  background: none;
-}
+
 
 .ux-vertical-tabs .tabs button span {
   width: 0;
   height: 0;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
-  border-left: 6px solid #ccc;
+  border-left: 6px solid #bfbfbf;
   transform: translateX(1rem);
   opacity: 0;
   transition: all 350ms ease;
 }
 
-.ux-vertical-tabs .tabs button:hover span {
-  transform: translateX(0);
-  opacity: 1;
-}
 
-.ux-vertical-tabs .tabs button.active span {
-  transform: translateX(0);
-  border-left: 6px solid #a0b101;
-  opacity: 1;
-}
+
+
 
 .ux-vertical-tabs .maincontent {
-  margin-left: 20rem;
+  margin-left: 13rem;
   flex: 1;
   border: 1px solid #ddd;
   border-left: 0;
   padding: 2rem;
   overflow: hidden;
+  max-width: calc(100vw - 13rem);
 }
 
 .ux-vertical-tabs .maincontent .tabcontent {
-  display: flex;
-  flex: 1;
+  display: block;
   position: relative;
-  padding-top: 15px;
-}
+  padding-top: 45px;
+  padding-bottom: 25px;
 
-.ux-vertical-tabs .maincontent .tabcontent.active {
-  display: flex;
-  flex: 1;
-  position: relative;
 }
 
 @media (max-width: 50rem) {
@@ -238,33 +230,60 @@ body {
     padding: 1rem;
   }
 
-  .ux-vertical-tabs .tabs button.active {
+  /*.ux-vertical-tabs .tabs button.active {
     background: #eee;
-  }
+  }*/
 
   .ux-vertical-tabs .tabs button span {
     transform: rotate(90deg);
   }
 
-  .ux-vertical-tabs .tabs button:hover span {
+  /*.ux-vertical-tabs .tabs button:hover span {
     transform: rotate(90deg);
-  }
+  }*/
 
-  .ux-vertical-tabs .tabs button.active span {
+  /*.ux-vertical-tabs .tabs button.active span {
     transform: rotate(90deg);
-  }
+  }*/
 
   .ux-vertical-tabs .maincontent {
     margin-left: 0;
     padding: 1rem;
+    max-width: calc(100vw);
+  }
+}
+
+@media (min-width: 50rem){
+  .ux-vertical-tabs .tabs{
+    height: calc(100vh - 49px);
+  }
+  .ux-vertical-tabs .tabs button:hover.empty {
+    background: none;
+  }
+  .ux-vertical-tabs .tabs button:hover {
+    background: #eaeaea;
+  }
+  .ux-vertical-tabs .tabs button:hover span {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .ux-vertical-tabs .tabs button.active {
+    background: #eee;
+    border-right: 0;
+    color: #222;
+  }
+  .ux-vertical-tabs .tabs button.active span {
+    transform: translateX(0);
+    border-left: 6px solid #a5a5a5;
+    opacity: 1;
   }
 }
 
 
+.shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+}
 
-
-@media (min-width: 50rem){
-  .ux-vertical-tabs .tabs{
-    height: calc(100vh - 91px);
-  }
+.shadow-large {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15)
 }
