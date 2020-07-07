@@ -23,13 +23,14 @@ h1,h2,:not(.page-wrapper) h3{
   position: relative;
   display: inline-block;
   font-size: 2em;
-  font-weight: 300;
-  border-bottom: 2px dotted silver;
+  font-weight: 700;
+  /*border-bottom: 2px dotted silver;*/
   padding-bottom: 3px;
+  letter-spacing: 1.5px;
   margin: 0 0 30px 0
 }
 
-/*
+
 .heading:after {
   position: absolute;
   content: '';
@@ -38,11 +39,12 @@ h1,h2,:not(.page-wrapper) h3{
   width: 50px;
   left: 0;
   right: 0;
-  margin: 7px 0;
-  border-top: 1px solid silver;
-  border-bottom: 1px solid silver;
+  margin: 7px auto;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  background-color: #222;
 }
-*/
+
 
 /*template starts*/
 
