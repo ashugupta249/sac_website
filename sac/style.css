@@ -271,6 +271,7 @@ h1,h2,:not(.page-wrapper) h3{
   .tab-toggle i{
     transition: all 0.2s ease-in-out;
     transform: rotateZ(0deg);
+    text-decoration: none !important;
   }
 }
 
