@@ -268,6 +268,10 @@ h1,h2,:not(.page-wrapper) h3{
     border-radius: 5px 5px 0px px;
     cursor: pointer;
   }
+  .tab-toggle i{
+    transition: all 0.2s ease-in-out;
+    transform: rotateZ(0deg);
+  }
 }
 
 @media (min-width: 50rem){
