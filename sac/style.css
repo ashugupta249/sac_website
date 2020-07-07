@@ -157,15 +157,8 @@ h1,h2,:not(.page-wrapper) h3{
   border-top: 1px solid #ddd;
 }
 
-.ux-vertical-tabs .tabs button:hover {
-  background: #eaeaea;
-}
 
-.ux-vertical-tabs .tabs button.active {
-  background: #eee;
-  border-right: 0;
-  color: #222;
-}
+
 
 .ux-vertical-tabs .tabs button.empty {
   flex: 1;
@@ -174,9 +167,7 @@ h1,h2,:not(.page-wrapper) h3{
   pointer-events: none;
 }
 
-.ux-vertical-tabs .tabs button:hover.empty {
-  background: none;
-}
+
 
 .ux-vertical-tabs .tabs button span {
   width: 0;
@@ -189,16 +180,9 @@ h1,h2,:not(.page-wrapper) h3{
   transition: all 350ms ease;
 }
 
-.ux-vertical-tabs .tabs button:hover span {
-  transform: translateX(0);
-  opacity: 1;
-}
 
-.ux-vertical-tabs .tabs button.active span {
-  transform: translateX(0);
-  border-left: 6px solid #a5a5a5;
-  opacity: 1;
-}
+
+
 
 .ux-vertical-tabs .maincontent {
   margin-left: 13rem;
@@ -245,21 +229,21 @@ h1,h2,:not(.page-wrapper) h3{
     padding: 1rem;
   }
 
-  .ux-vertical-tabs .tabs button.active {
+  /*.ux-vertical-tabs .tabs button.active {
     background: #eee;
-  }
+  }*/
 
   .ux-vertical-tabs .tabs button span {
     transform: rotate(90deg);
   }
 
-  .ux-vertical-tabs .tabs button:hover span {
+  /*.ux-vertical-tabs .tabs button:hover span {
     transform: rotate(90deg);
-  }
+  }*/
 
-  .ux-vertical-tabs .tabs button.active span {
+  /*.ux-vertical-tabs .tabs button.active span {
     transform: rotate(90deg);
-  }
+  }*/
 
   .ux-vertical-tabs .maincontent {
     margin-left: 0;
@@ -271,6 +255,26 @@ h1,h2,:not(.page-wrapper) h3{
 @media (min-width: 50rem){
   .ux-vertical-tabs .tabs{
     height: calc(100vh - 49px);
+  }
+  .ux-vertical-tabs .tabs button:hover.empty {
+    background: none;
+  }
+  .ux-vertical-tabs .tabs button:hover {
+    background: #eaeaea;
+  }
+  .ux-vertical-tabs .tabs button:hover span {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .ux-vertical-tabs .tabs button.active {
+    background: #eee;
+    border-right: 0;
+    color: #222;
+  }
+  .ux-vertical-tabs .tabs button.active span {
+    transform: translateX(0);
+    border-left: 6px solid #a5a5a5;
+    opacity: 1;
   }
 }
 
