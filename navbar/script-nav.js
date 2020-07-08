@@ -11,6 +11,11 @@ function myFunction() {
     }
   }
 
+function closeNav(){
+  var x = document.getElementById("myTopnav");
+  x.className = "topnav";
+}
+
 function dropdown(a){
   // console.log(a);
   if(window.innerWidth<600){
