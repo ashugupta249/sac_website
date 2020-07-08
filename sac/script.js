@@ -35,12 +35,16 @@ var tabtoggle = $(".tab-toggle")[0];
 var downarrow = $(".tab-toggle i")[0];
 
 var tab_show = function(){
+  tabtoggle.classList.add("tab-toggle-active");
   tab_col.setAttribute("style","transform:scaleY(1)");
-  downarrow.setAttribute("style","transform:rotateZ(180deg)")
+  tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
+  // downarrow.setAttribute("style","transform:rotateZ(180deg)")
 }
 var tab_hide = function(){
+  tabtoggle.classList.remove("tab-toggle-active");
   tab_col.setAttribute("style","@media (max-width: 50rem) {transform:scaleY(0)}");
-  downarrow.setAttribute("style","transform:rotateZ(0deg)")
+  tabtoggle.setAttribute("style","margin-top:0");
+  // downarrow.setAttribute("style","transform:rotateZ(0deg)")
 }
 
 var tab_toggle = function(){
