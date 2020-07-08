@@ -124,7 +124,7 @@ h1,h2,:not(.page-wrapper) h3{
 .ux-vertical-tabs .tabs {
   font-family: 'Oswald';
   position: sticky;
-  position: -webkit-sticky
+  position: -webkit-sticky;
   top:49px;
   width: 13rem;  /** change in main content margin-left!! */
   /*display: flex;*/
