@@ -130,7 +130,7 @@
   display: inline-block;
   position: relative;
   font-size: 16px;
-  color: #fff;
+  color: #000;
   width: 200px;
   max-width: 100%;
   height: 2.4rem;
@@ -143,7 +143,8 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #444;
+  background-color: #fff;
+  border: 2px solid #000;
   font-size: 1rem;
   padding: 0.6rem 15px;
   -moz-transition: all 0.2s ease-in;
@@ -156,16 +157,21 @@
   width: 0;
   height: 0;
   border: 0.4rem solid transparent;
-  border-color: #fff transparent transparent transparent;
+  border-color: #000 transparent transparent transparent;
   position: absolute;
   top: 1rem;
   right: 10px;
 }
 .select-styled:hover {
-  background-color: #222;
+  background: #000;
+  color: #fff;
+}
+.select-styled:hover:after{
+  border-color: #fff transparent transparent transparent;
 }
 .select-styled:active, .select-styled.active {
-  background-color: #222;
+  background-color: #000;
+  color: #fff;
 }
 .select-styled:active:after, .select-styled.active:after {
   top: 9px;
@@ -178,25 +184,27 @@
   top: 100%;
   right: 0;
   left: 0;
-  z-index: 999;
+  z-index: 99;
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #444;
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #444;
 }
 .select-options li {
   margin: 0;
   padding: 12px 0;
   text-indent: 15px;
-  border-top: 1px solid #962d22;
+  border-top: 1.5px solid silver;
   -moz-transition: all 0.15s ease-in;
   -o-transition: all 0.15s ease-in;
   -webkit-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
 }
 .select-options li:hover {
-  color: #111;
-  background: #eaeaea;
+  color: #000;
+  background: silver;
 }
 .select-options li[rel="hide"] {
   display: none;
