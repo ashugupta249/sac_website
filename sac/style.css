@@ -27,7 +27,7 @@ h1,h2,:not(.page-wrapper) h3{
   /*border-bottom: 2px dotted silver;*/
   padding-bottom: 3px;
   letter-spacing: 1.5px;
-  margin: 0 0 30px 0
+  margin: 6px 0 30px 0
 }
 
 
@@ -230,28 +230,27 @@ h1,h2,:not(.page-wrapper) h3{
     
     border: 1px solid #ccc;
     border-top: 0;
-    background: linear-gradient(to bottom, #eee, #fff 200px);
   }
 
   .ux-vertical-tabs .tabs button {
     padding: 1rem;
   }
 
-  /*.ux-vertical-tabs .tabs button.active {
+  .ux-vertical-tabs .tabs button.active {
     background: #eee;
-  }*/
+  }
 
   .ux-vertical-tabs .tabs button span {
     transform: rotate(90deg);
   }
 
-  /*.ux-vertical-tabs .tabs button:hover span {
+  .ux-vertical-tabs .tabs button:hover span {
     transform: rotate(90deg);
-  }*/
+  }
 
-  /*.ux-vertical-tabs .tabs button.active span {
+  .ux-vertical-tabs .tabs button.active span {
     transform: rotate(90deg);
-  }*/
+  }
 
   .ux-vertical-tabs .maincontent {
     margin-left: 0;
@@ -274,6 +273,10 @@ h1,h2,:not(.page-wrapper) h3{
     transition: all 0.2s ease-in-out;
     transform: rotateZ(0deg);
     text-decoration: none !important;
+  }
+
+  .heading {
+    margin-top: 25px;
   }
 }
 
