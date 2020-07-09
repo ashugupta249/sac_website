@@ -213,6 +213,11 @@ h1,h2,:not(.page-wrapper) h3{
   .ux-vertical-tabs .tabs {
     position: relative;
     width: 100%;
+    transition:all 1s ease-in-out;
+    position: fixed;
+    z-index: 998;
+    transform: scaleY(0);
+    transform-origin: top;
   }
 
   .ux-vertical-tabs .tabs button.empty {
@@ -251,6 +256,31 @@ h1,h2,:not(.page-wrapper) h3{
     padding: 1rem;
     max-width: calc(100vw);
   }
+  .tab-toggle .tab-toggle-active{
+
+  }
+  .tab-toggle i{
+    transition: all 0.2s ease-in-out;
+    transform: rotateZ(0deg);
+    text-decoration: none !important;
+  }
+  .tab-toggle-active i{
+    transform: rotateZ(180deg);
+  }
+  .tab-toggle{
+    width:3rem;
+    height: 1rem;
+    position: fixed;
+    margin-left: auto;
+    background-color: #ddd;
+    transform: translateX(calc(50vw - 1.5rem));
+    z-index: 999;
+    text-align: center;
+    border-radius: 5px 5px 0px px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    top:91px;
+  }
 }
 
 @media (min-width: 50rem){
@@ -267,6 +297,10 @@ h1,h2,:not(.page-wrapper) h3{
     transform: translateX(0);
     border-left: 6px solid #a5a5a5;
     opacity: 1;
+  }
+  .tab-toggle{
+    visibility: hidden;
+    width: 0;
   }
 }
 

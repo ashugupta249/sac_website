@@ -33,6 +33,40 @@ $(function()
 
 
 
+var tab_show = function(){
+
+  var tab_col = $(".tabs")[0];
+  var tabtoggle = $(".tab-toggle")[0];
+  var downarrow = $(".tab-toggle i")[0];
+
+  tabtoggle.classList.add("tab-toggle-active");
+  tab_col.setAttribute("style","transform:scaleY(1)");
+  tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
+  // downarrow.setAttribute("style","transform:rotateZ(180deg)")
+}
+var tab_hide = function(){
+  var tab_col = $(".tabs")[0];
+  var tabtoggle = $(".tab-toggle")[0];
+  var downarrow = $(".tab-toggle i")[0];
+  tabtoggle.classList.remove("tab-toggle-active");
+  tab_col.setAttribute("style","@media (max-width: 50rem) {transform:scaleY(0)}");
+  tabtoggle.setAttribute("style","margin-top:0");
+  // downarrow.setAttribute("style","transform:rotateZ(0deg)")
+}
+
+var tab_toggle = function(){
+  // alert("Clicked");
+  var tabtoggle = $(".tab-toggle")[0];
+  var tab_col = $(".tabs")[0];
+  state = tab_col.style.transform;
+  if(state == "scaleY(1)"){
+    tab_hide();
+  }
+  else{
+    tab_show();
+  }
+}
+
 
 
 
