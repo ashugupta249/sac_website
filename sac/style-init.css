@@ -107,7 +107,6 @@ details summary::-webkit-details-marker {
   max-height: 125px;
   line-height: 1.2em;
   overflow-y: hidden;
-  font-family: "Oswald";
 }
 
 
@@ -317,10 +316,9 @@ details summary::-webkit-details-marker {
 
   
   text-transform: uppercase;
-  background: #000; 
 
   display: none;
-  color: #fafafa;
+  color: #000;
 
   height: 100%;
 
@@ -329,7 +327,51 @@ details summary::-webkit-details-marker {
 
 .init-index-container li:hover a:after{
   display: inline-block;
+
+    -webkit-animation: bounce 2s;
+              animation: bounce 2s;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
 }
+
+  @-webkit-keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    40% {
+      -webkit-transform: translateX(-20%);
+              transform: translateX(-20%);
+    }
+    60% {
+      -webkit-transform: translateX(10%);
+              transform: translateX(10%);
+    }
+  }
+
+  @keyframes bounce{
+      0%,
+      25%,
+      50%,
+      75%,
+      100% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+      40% {
+        -webkit-transform: translateX(-20%);
+                transform: translateX(-20%);
+      }
+      60% {
+        -webkit-transform: translateX(10%);
+                transform: translateX(10%);
+      }
+    }
+  
 
 @media (max-width: 50rem) {
   .init-index-container li a:after{
