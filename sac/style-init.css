@@ -99,7 +99,7 @@ details summary::-webkit-details-marker {
 }
 
 .init-item-title{
-  padding: 12px 3px 5px;
+  margin: 12px 3px 5px;
   color: white;
   font-weight: bold;
   font-size: 1.75em;
@@ -122,9 +122,14 @@ details summary::-webkit-details-marker {
 
   left: 50%;
   transform: translateX(-50%);
+  
 
   color: #fff;
   background: rgb(0,0,0,0.4);
+
+  border-radius: 12px;
+
+
 }
 
 .init-item:hover{
@@ -174,6 +179,8 @@ details summary::-webkit-details-marker {
     left: -15px;
 
     background: rgb(0,0,0,0.4);
+
+    border-radius: 0;
 
   }
 
