@@ -256,20 +256,9 @@ h1,h2,:not(.page-wrapper) h3{
     padding: 1rem;
     max-width: calc(100vw);
   }
-  .tab-toggle .tab-toggle-active{
-
-  }
-  .tab-toggle i{
-    transition: all 0.2s ease-in-out;
-    transform: rotateZ(0deg);
-    text-decoration: none !important;
-  }
-  .tab-toggle-active i{
-    transform: rotateZ(180deg);
-  }
   .tab-toggle{
     width:3rem;
-    height: 1rem;
+    height: 2rem;
     position: fixed;
     margin-left: auto;
     background-color: #ddd;
@@ -280,6 +269,18 @@ h1,h2,:not(.page-wrapper) h3{
     cursor: pointer;
     transition: all 1s ease-in-out;
     top:91px;
+    font-size: x-large;
+  }
+  .tab-toggle .tab-toggle-active{
+
+  }
+  .tab-toggle i{
+    transition: all 0.2s ease-in-out;
+    transform: rotateZ(0deg);
+    text-decoration: none !important;
+  }
+  .tab-toggle-active i{
+    transform: rotateZ(180deg);
   }
 }
 
