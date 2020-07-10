@@ -17,6 +17,16 @@
 	<link rel="stylesheet" href="home/styles.css" />	
     <script  src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <style type="text/css">
+    @media screen and (max-width: 600px){
+      .topnav a img{
+        visibility: hidden;
+      }
+      .responsive a img{
+        visibility: visible;
+      }
+    }
+  </style>
 </head>
 <body>
 <!-- 
@@ -38,10 +48,9 @@
 	        </p> -->
 	    </div>
 	    <!-- End #lead-content -->
-
 	    <div id="lead-overlay">
         <div class="topnav" id="myTopnav">
-          <a href="../" class="saclogo"><img src="../silver_trans.png" style="visibility: hidden;"/></a>"/>
+          <a href="../" class="saclogo"><img src="../silver_trans.png"/></a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
           <div class="nav-links">
             <a href="../">Home</a>
