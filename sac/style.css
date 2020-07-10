@@ -241,7 +241,7 @@ h1,h2,:not(.page-wrapper) h3{
   }
 
   .ux-vertical-tabs .tabs button span {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
   }
 
   .ux-vertical-tabs .tabs button:hover span {
