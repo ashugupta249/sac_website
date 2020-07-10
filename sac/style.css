@@ -125,7 +125,7 @@ h1,h2,:not(.page-wrapper) h3{
   font-family: 'Oswald';
   position: sticky;
   position: -webkit-sticky;
-  top:49px;
+  top:var(--top-margin);
   width: 13rem;  /** change in main content margin-left!! */
   /*display: flex;*/
   flex-wrap: wrap;
@@ -219,7 +219,7 @@ h1,h2,:not(.page-wrapper) h3{
     z-index: 998;
     transform: scaleY(0);
     transform-origin: top;
-    max-height: calc(100vh - 49px);
+    max-height: calc(100vh - var(--top-margin));
   }
 
   .ux-vertical-tabs .tabs button.empty {
@@ -269,7 +269,7 @@ h1,h2,:not(.page-wrapper) h3{
     border-radius: 5px 5px 0px px;
     cursor: pointer;
     transition: all 1s ease-in-out;
-    top:49px;
+    top:var(--top-margin);
     font-size: x-large;
   }
   .tab-toggle i{
@@ -291,7 +291,7 @@ h1,h2,:not(.page-wrapper) h3{
 
 @media (min-width: 50rem){
   .ux-vertical-tabs .tabs{
-    height: calc(100vh - 49px);
+    height: calc(100vh - var(--top-margin));
   }
   .ux-vertical-tabs .tabs button:hover.empty {
     background: none;
