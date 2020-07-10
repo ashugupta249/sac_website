@@ -32,6 +32,10 @@ header{
   .topnav a:hover{
     color:white;
   }
+
+  .dropdown-content a:hover{
+    color:black;
+  }
   
   /* Add an active class to highlight the current page */
   .active-nav {
