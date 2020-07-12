@@ -64,12 +64,12 @@
 .footer-items ul a ,.footer-items a {
 	text-decoration: none;
 	outline: none;
-	color: #fff;
+	color: #bbb;
 	transition: 0.3s;
 }
 
 .footer-items ul a:hover,.footer-items a:hover  {
-	color: #ff9800;
+	color: #fff;
 }
 
 .footer-items ul li {
