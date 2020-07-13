@@ -29,7 +29,6 @@ function dropdown(a){
       e.setAttribute("style","");}
     }
 
-    
     if(x.getAttribute("style") == "display:block"){
       x.setAttribute("style","");
     }
