@@ -1,12 +1,4 @@
 /* https://codepen.io/SmGG/pen/wXROpv */
-
-
-/* -------------------------------- 
-
-Main Components 
-
--------------------------------- */
-
 .cd-horizontal-timeline a {
   text-decoration: none;
 }
@@ -393,52 +385,6 @@ Main Components
     transform: translateX(0%);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.mins-card-container {
-   align-items: start;
-   display: grid;
-   grid-gap: 5%;
-   grid-template-columns: repeat(auto-fit, 45%);
-   justify-content: center;
-   padding-bottom: calc(1.5em + 5%);
-   border: 1px solid #ccc;
-}
-
-.mins-card-container .mins-card{
-   display: block;
-   border: 1px solid #000;
-}
-
-.mins-card *{
-   display: inline-block;
-}
-
-.mins-card .mins-card-num{
-   padding: 3px 8px;
-   font-size: 1.25em;
-   height: 100%;
-   background: #1e90ff;
-}
-
-.mins-card .mins-card-content{
-   padding: 8px;
-   font-size: 1em;
-}
-
-*/
 
 
 .mins-card-container {
