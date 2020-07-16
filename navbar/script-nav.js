@@ -9,7 +9,7 @@ function myFunction() {
     } else {
       x.className = "topnav";
     }
-  }
+}
 
 function closeNav(){
   var x = document.getElementById("myTopnav");
