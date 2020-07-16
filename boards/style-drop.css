@@ -93,7 +93,6 @@
 }
 
 #drop{
-    display:  inline-block;
     /*position: absolute;*/
     position: fixed;
     padding: 0px;
