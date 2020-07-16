@@ -252,7 +252,7 @@ body {
 
 #lead-content h1 {
 	color: #fff;
-	font-weight: 900;
+	font-weight: 500;
 	font-size: 5em;
 	letter-spacing: 0.05em;
 	line-height: 0.9em
@@ -507,6 +507,7 @@ section{
   .cards {
     width: 33.3%;
   }
+
 }
 .cards .card-item {
   display: flex;
@@ -720,5 +721,20 @@ section#more .container1 .cards a:hover i{
 	60% {
 		-webkit-transform: translateX(9px);
 		        transform: translateX(9px);
+	}
+}
+
+@media only screen and (min-width: 994px){
+	#lead-content{
+		display: flex;
+	}
+	#lead-content img{
+		height: 15em;
+	}
+
+	#lead-content div{
+		display: flex;
+		margin-top: 5%;
+		flex-direction: column;
 	}
 }

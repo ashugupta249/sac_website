@@ -201,6 +201,11 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
         vertical-align: bottom;
     }
 
+    ol.organizational-chart > li > ol > li > div {
+        display: flex;
+        height: 100%;
+    }
+
     ol.organizational-chart > li > div:only-of-type {
         margin-bottom: 0;
         width: calc((100% / 1) - 2em - 4px);
