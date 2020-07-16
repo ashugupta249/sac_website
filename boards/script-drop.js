@@ -60,7 +60,8 @@ $.hashChanger = function(){
   var val = window.location.hash.substring(1).toLowerCase();
   var univ_set = ['bsw','bsp','brca','bsa','bhm'];
   val = (univ_set.indexOf(val) > -1) ? val : 'bsw';
-  $('#drop .select-styled').html(val.toUpperCase());
+  val = val.toUpperCase();
+  $('#drop .select-styled').html(val);
  
   $.toggler(val);
 }
@@ -68,6 +69,6 @@ $.hashChanger = function(){
 $.hashChanger(); 
 
 
-$('.select-styled').on('DOMSubtreeModified',function(){
+$('#drop .select-styled').on('DOMSubtreeModified',function(){
    $.toggler($('#drop .select-styled').html());
 });
