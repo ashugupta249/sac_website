@@ -37,7 +37,8 @@ function dropdown(a){
   //     x.setAttribute("style","display:block");
   //   }
   // }
-  $(".dropdown-content").detach($(a).find("dropdown-content")).children().slideUp();
+  $(".dropdown-content").data($(a).find(".dropdown-content"));
+  $(".dropdown-content").removeData().children().slideUp();
   $(a).find(".dropdown-content").children().slideToggle();
-
+  console.log($(".dropdown-content").removeData());
 }
