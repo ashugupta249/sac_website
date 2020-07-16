@@ -11,6 +11,7 @@ function myFunction() {
       // console.log(a.clientHeight);
     } else {
       $(".nav-links").children().slideUp();
+      $(".dropdown-content").children().slideUp();
       x.className = "topnav";
       y.className = "";
     }
@@ -37,8 +38,12 @@ function dropdown(a){
   //     x.setAttribute("style","display:block");
   //   }
   // }
-  $(".dropdown-content").data($(a).find(".dropdown-content"));
-  $(".dropdown-content").removeData().children().slideUp();
+  x = $(a).find(".dropdown-content");
+  $(a).find(".dropdown-content").width($(a).width());
+  $(".dropdown-content").toArray().forEach((value) => {
+    if(value!=x.toArray()[0]){
+      $(value).children().slideUp();
+    }
+  }); 
   $(a).find(".dropdown-content").children().slideToggle();
-  console.log($(".dropdown-content").removeData());
 }
