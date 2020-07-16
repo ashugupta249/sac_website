@@ -78,6 +78,7 @@
 	/* height: 25px; */
 	width:100%;	
 	border-bottom: 1px dotted #333333;
+	display: flex;
 }
 
 .footer-items ul li i{
