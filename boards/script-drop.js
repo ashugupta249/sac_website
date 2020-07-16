@@ -70,5 +70,6 @@ $.hashChanger();
 
 
 $('#drop .select-styled').on('DOMSubtreeModified',function(){
-   $.toggler($('#drop .select-styled').html());
+   if ($('#drop .select-styled').html() != '')
+        $.toggler($('#drop .select-styled').html());
 });
