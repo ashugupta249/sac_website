@@ -1,200 +1,105 @@
+/* https://codepen.io/wallaceerick/pen/ctsCz */
 
 
-/* dropdown template starts */
-/* https://codepen.io/saravanajd/pen/GGPQbY */
-
-
-
-select {
-    display: none !important;
+.select-hidden {
+  display: none;
+  /* visibility: hidden; */
+  padding-right: 10px;
 }
 
-.dropdown-select {
-    font-family: 'Oswald';
-    font-weight: 300;
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #000;
+  width: calc(100% - 4px);
+  height: 2.4rem;
+  margin: 2px 2px;
 
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40FFFFFF', endColorstr='#00FFFFFF', GradientType=0);
-    background-color: DodgerBlue;
-    background-color: rgba(255,255,255,0.5);
-    /*border-radius: 6px;*/
-    border: solid 1px #eee; /*changed to border-bottom from border*/
-
-    box-shadow: 0px 2px 5px 0px rgba(155, 155, 155, 0.5);
-    box-sizing: border-box;
-    cursor: pointer;
-    display: block;
-    float: left;
-    font-size: 14px;
-    font-weight: normal;
-    height: 42px;
-    line-height: 40px;
-    outline: none;
-    padding-left: 18px;
-    padding-right: 30px;
-    position: relative;
-    text-align: left !important;
-    transition: all 0.2s ease-in-out;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    white-space: nowrap;
 }
 
-
-.dropdown-select:focus {
-    background-color: #fff;
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 1.2rem;
+  font-size: 1rem;
+  padding: 0.6rem 15px;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 0.4rem solid transparent;
+  border-color: #000 transparent transparent transparent;
+  position: absolute;
+  top: 1rem;
+  right: 10px;
+}
+.select-styled:hover {
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+}
+.select-styled:hover:after{
+  border-color: #fff transparent transparent transparent;
+}
+.select-styled:active, .select-styled.active {
+  background-color: #000;
+  color: #fff;
+  border-radius: 0;
+}
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px;
+  border-color: transparent transparent #fff transparent;
 }
 
-.dropdown-select:hover {
-    background-color: #fff;
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #999;
+  color: #444;
 }
-
-.dropdown-select:active,
-.dropdown-select.open {
-    background-color: #fff !important;
-    border-color: #bbb;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05) inset;
+.select-options li {
+  margin: 0;
+  padding: 12px 0;
+  text-indent: 15px;
+  border-top: 1.5px solid silver;
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
 }
-
-.dropdown-select:after {
-    height: 0;
-    width: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid #777;
-    -webkit-transform: origin(50% 20%);
-    transform: origin(50% 20%);
-    transition: all 0.125s ease-in-out;
-    content: '';
-    display: block;
-    margin-top: -2px;
-    pointer-events: none;
-    position: absolute;
-    right: 10px;
-    top: 50%;
+.select-options li:hover {
+  color: #000;
+  background: #e8e8e8;
 }
-
-.dropdown-select.open:after {
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-}
-
-.dropdown-select.open .list {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.dropdown-select.open .option {
-    cursor: pointer;
-}
-
-.dropdown-select.wide {
-    width: 100%;
-}
-
-.dropdown-select.wide .list {
-    left: 0 !important;
-    right: 0 !important;
-}
-
-.dropdown-select .list {
-    box-sizing: border-box;
-    transition: all 0.15s cubic-bezier(0.25, 0, 0.25, 1.75), opacity 0.1s linear;
-    -webkit-transform: scale(0.75);
-    transform: scale(0.75);
-    -webkit-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.09);
-    background-color: #fff;
-    border-radius: 6px;
-    margin-top: 4px;
-    padding: 3px 0;
-    opacity: 0;
-    overflow: hidden;
-    pointer-events: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 999;
-    max-height: 250px;
-    overflow: auto;
-    border: 1px solid #ddd;
-}
-
-.dropdown-select .list:hover .option:not(:hover) {
-    background-color: transparent !important;
-}
-.dropdown-select .dd-search{
-  overflow:hidden;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin:0.5rem;
-}
-
-.dropdown-select .dd-searchbox{
-  width:90%;
-  padding:0.5rem;
-  border:1px solid #999;
-  border-color:#999;
-  border-radius:4px;
-  outline:none;
-}
-.dropdown-select .dd-searchbox:focus{
-  border-color:#12CBC4;
-}
-
-.dropdown-select .list ul {
-    padding: 0;
-}
-
-.dropdown-select .option {
-    cursor: default;
-    font-weight: 400;
-    line-height: 40px;
-    outline: none;
-    padding-left: 18px;
-    padding-right: 29px;
-    text-align: left;
-    transition: all 0.2s;
-    list-style: none;
-}
-
-.dropdown-select .option:hover,
-.dropdown-select .option:focus {
-    background-color: #f6f6f6 !important;
-}
-
-.dropdown-select .option.selected {
-    font-weight: 600;
-    color: #12cbc4;
-}
-
-.dropdown-select .option.selected:focus {
-    background: #f6f6f6;
-}
-
-.dropdown-select a {
-    color: #aaa;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-}
-
-.dropdown-select a:hover {
-    color: #666;
+.select-options li[rel="hide"] {
+  display: none;
 }
 
 #drop{
-    position: absolute;
+    /*position: absolute;*/
     position: fixed;
     padding: 0px;
     width: 13rem;
-    z-index: 99;
+    z-index: 1000;
 }
 
 
