@@ -16,6 +16,7 @@
   width: calc(100% - 4px);
   height: 2.4rem;
   margin: 2px 2px;
+
 }
 
 .select-styled {
@@ -26,6 +27,7 @@
   left: 0;
   background-color: #fff;
   border: 1px solid #000;
+  border-radius: 1.2rem;
   font-size: 1rem;
   padding: 0.6rem 15px;
   -moz-transition: all 0.2s ease-in;
@@ -53,6 +55,7 @@
 .select-styled:active, .select-styled.active {
   background-color: #000;
   color: #fff;
+  border-radius: 0;
 }
 .select-styled:active:after, .select-styled.active:after {
   top: 9px;
@@ -65,7 +68,7 @@
   top: 100%;
   right: 0;
   left: 0;
-  z-index: 99;
+  z-index: 1000;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -96,7 +99,7 @@
     position: fixed;
     padding: 0px;
     width: 13rem;
-    z-index: 99;
+    z-index: 1000;
 }
 
 
