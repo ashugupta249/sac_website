@@ -32,8 +32,7 @@ $(function()
 
 
 
-
-var tab_show = function(){
+var tab_show = async function(){
 
   var tab_col = $(".tabs")[0];
   var tabtoggle = $(".tab-toggle")[0];
@@ -41,15 +40,23 @@ var tab_show = function(){
 
   tabtoggle.classList.add("tab-toggle-active");
   tab_col.setAttribute("style","transform:scaleY(1)");
+  $(".dim-caller").addClass("dimmer");
   if(tabtoggle.scrollHeight + tab_col.clientHeight + parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--tab-toggle-topmargin'))< screen.height){
     tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
   }
   else{
     // console.log(screen.height - parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--tab-toggle-topmargin') - tabtoggle.scrollHeight));
     tabtoggle.setAttribute("style","margin-top:"+(screen.height - parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--tab-toggle-topmargin')) - tabtoggle.scrollHeight+"px"));
+    await new Promise(r => setTimeout(r, 200));
+        if(tabtoggle.scrollHeight + tab_col.clientHeight + parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--tab-toggle-topmargin'))< screen.height){
+        tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
+      }
+      else{
+        tabtoggle.setAttribute("style","margin-top:"+(screen.height - parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--tab-toggle-topmargin')) - tabtoggle.scrollHeight+"px"));
+      }
   }
   // downarrow.setAttribute("style","transform:rotateZ(180deg)")
-  $(".dim-caller").addClass("dimmer");
+  
 }
 var tab_hide = function(){
   var tab_col = $(".tabs")[0];
