@@ -201,3 +201,20 @@
 		border-left:2px dotted #7d7d7d !important;
 	}
 }
+
+
+.boards-footer-flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;-webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.boards-footer-flex>a{
+	margin: 0 4px;
+}
+
+.boards-footer-flex>a:last-child{
+	margin-right: 0;
+}
+
