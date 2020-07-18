@@ -10,7 +10,12 @@ var tab_show = function(){
 
   tabtoggle.classList.add("tab-toggle-active");
   tab_col.setAttribute("style","transform:scaleY(1)");
-  tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
+  if(tabtoggle.scrollHeight + 84 < screen.height){
+    tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
+  }
+  else{
+    tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
+  }
   // downarrow.setAttribute("style","transform:rotateZ(180deg)")
   $(".dim-caller").addClass("dimmer");
 }
