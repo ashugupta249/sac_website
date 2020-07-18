@@ -710,7 +710,7 @@ h1,h2,:not(.page-wrapper) h3{
   }
   .dimmer{
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left:0;
     height: 100vh;
