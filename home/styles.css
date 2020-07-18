@@ -226,7 +226,7 @@ body {
 	position: absolute;
 	z-index: 10;
 	top: 50%;
-	/*left: 7.5%;*/
+	padding-right: 5%;
 	transform: translateY(-50%);
 	text-align: center;
 	width:100%;
