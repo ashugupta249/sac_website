@@ -426,11 +426,11 @@ section{
 		
 	}
 	#lead-content {
-		
+		/*
 		position: relative;
 		transform: none;
 		left: auto;
-		top: auto
+		top: auto*/
 		
 	}
 	#lead-content img{
