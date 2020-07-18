@@ -100,6 +100,10 @@ header{
       background-color: #ddd;
       color: black;
     }
+
+    .dropdown-content a{
+      width: 100%;
+    }
   }
   @media screen and (min-width: 600px) {
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
