@@ -312,6 +312,9 @@ h1,h2,:not(.page-wrapper) h3{
 .cd-horizontal-timeline .events-content li > * {
   margin: 0 auto;
 }
+.dimmer{
+  display: none;
+}
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
     font-size: 2.6rem;
@@ -704,6 +707,16 @@ h1,h2,:not(.page-wrapper) h3{
   }
   .tab-toggle-active i{
     transform: rotateZ(180deg);
+  }
+  .dimmer{
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 900;
+    background: rgba(0,0,0,0.2);
   }
 }
 @media (min-width: 50rem){
