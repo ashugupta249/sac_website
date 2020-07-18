@@ -41,7 +41,7 @@ var tab_show = function(){
 
   tabtoggle.classList.add("tab-toggle-active");
   tab_col.setAttribute("style","transform:scaleY(1)");
-  if(tabtoggle.scrollHeight + 84 < screen.height){
+  if(tabtoggle.scrollHeight + tab_col.clientHeight + parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--tab-toggle-topmargin'))< screen.height){
     tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
   }
   else{
@@ -80,11 +80,9 @@ $(window).resize(function(){
     var tab_col = $(".tabs")[0];
     var tabtoggle = $(".tab-toggle")[0];
     state = tab_col.style.transform;
-    console.log(state);
     if(state == "scaleY(1)"){
-      tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
+      tab_show();
     }
-    console.log(tabtoggle.style.marginTop)
   })
 
 $('.container').on("click", ".ux-vertical-tabs .tabs button", function(){
