@@ -70,6 +70,9 @@ $.hashChanger();
 
 
 $('#drop .select-styled').on('DOMSubtreeModified',function(){
-   if ($('#drop .select-styled').html() != window.location.hash.substring(1))
-        $.toggler($('#drop .select-styled').html());
+    if ($('#drop .select-styled').html()){
+        if($('#drop .select-styled').html() != window.location.hash.substring(1).toUpperCase()){
+            $.toggler($('#drop .select-styled').html());
+        }
+    }
 });
