@@ -312,6 +312,9 @@ h1,h2,:not(.page-wrapper) h3{
 .cd-horizontal-timeline .events-content li > * {
   margin: 0 auto;
 }
+.dimmer{
+  display: none;
+}
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
     font-size: 2.6rem;
@@ -647,7 +650,7 @@ h1,h2,:not(.page-wrapper) h3{
     z-index: 998;
     transform: scaleY(0);
     transform-origin: top;
-    max-height: calc(100vh - var(--top-margin));
+    max-height: calc(100vh - var(--top-margin) - 1.4rem - 7px);
   }
   .ux-vertical-tabs .tabs button.empty {
     display: none;
@@ -678,18 +681,19 @@ h1,h2,:not(.page-wrapper) h3{
   }
   .tab-toggle{
     width:3rem;
-    height: 2rem;
+    height: 1.4rem;
     position: fixed;
     margin-left: auto;
     background-color: #ddd;
     transform: translateX(calc(50vw - 1.5rem));
     z-index: 999;
     text-align: center;
-    border-radius: 5px 5px 0px px;
+    border-radius: 0 0 1.5rem 1.5rem;
     cursor: pointer;
     transition: all 1s ease-in-out;
     top:var(--top-margin);
-    font-size: x-large;
+    font-size: medium;
+    padding-top: 0.2rem;
   }
   .tab-toggle i{
     transition: all 0.2s ease-in-out;
@@ -703,6 +707,16 @@ h1,h2,:not(.page-wrapper) h3{
   }
   .tab-toggle-active i{
     transform: rotateZ(180deg);
+  }
+  .dimmer{
+    display: block;
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 900;
+    background: rgba(0,0,0,0.2);
   }
 }
 @media (min-width: 50rem){

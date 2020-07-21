@@ -41,8 +41,14 @@ var tab_show = function(){
 
   tabtoggle.classList.add("tab-toggle-active");
   tab_col.setAttribute("style","transform:scaleY(1)");
-  tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
+  if(tabtoggle.scrollHeight + 84 < screen.height){
+    tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
+  }
+  else{
+    tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
+  }
   // downarrow.setAttribute("style","transform:rotateZ(180deg)")
+  $(".dim-caller").addClass("dimmer");
 }
 var tab_hide = function(){
   var tab_col = $(".tabs")[0];
@@ -52,6 +58,7 @@ var tab_hide = function(){
   tab_col.setAttribute("style","@media (max-width: 50rem) {transform:scaleY(0)}");
   tabtoggle.setAttribute("style","margin-top:0");
   // downarrow.setAttribute("style","transform:rotateZ(0deg)")
+  $(".dim-caller").removeClass("dimmer");
 }
 
 var tab_toggle = function(){
@@ -59,6 +66,7 @@ var tab_toggle = function(){
   var tabtoggle = $(".tab-toggle")[0];
   var tab_col = $(".tabs")[0];
   state = tab_col.style.transform;
+  $(".dim-caller").toggleClass("dimmer");
   if(state == "scaleY(1)"){
     tab_hide();
   }
@@ -68,7 +76,16 @@ var tab_toggle = function(){
 }
 
 
-
+$(window).resize(function(){
+    var tab_col = $(".tabs")[0];
+    var tabtoggle = $(".tab-toggle")[0];
+    state = tab_col.style.transform;
+    console.log(state);
+    if(state == "scaleY(1)"){
+      tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
+    }
+    console.log(tabtoggle.style.marginTop)
+  })
 
 $('.container').on("click", ".ux-vertical-tabs .tabs button", function(){
     $('html, body').animate({
@@ -103,3 +120,4 @@ $(window).scroll(function (e){
 
     
 });
+
