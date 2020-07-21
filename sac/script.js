@@ -1,6 +1,8 @@
 /*
   Contents:
     * Main scripts for theme
+    * Initiatives
+    * Policy changes
 */
 var tab_show = function(){
   var tab_col = $(".tabs")[0];
