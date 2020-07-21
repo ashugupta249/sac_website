@@ -10,12 +10,7 @@ var tab_show = function(){
 
   tabtoggle.classList.add("tab-toggle-active");
   tab_col.setAttribute("style","transform:scaleY(1)");
-  if(tabtoggle.scrollHeight + 84 < screen.height){
-    tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
-  }
-  else{
-    tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
-  }
+  tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
   // downarrow.setAttribute("style","transform:rotateZ(180deg)")
   $(".dim-caller").addClass("dimmer");
 }
@@ -45,16 +40,17 @@ var tab_toggle = function(){
 }
 
 
-$(window).resize(function(){
+$(window).resize(function(){ 
     var tab_col = $(".tabs")[0];
     var tabtoggle = $(".tab-toggle")[0];
-    state = tab_col.style.transform;
-    console.log(state);
+    var state = tab_col.style.transform;
     if(state == "scaleY(1)"){
-      tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
+      setTimeout(() => { 
+        tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
+      }, 1005);
     }
-    console.log(tabtoggle.style.marginTop)
-  })
+  });
+
 $('.container').on("click", ".ux-vertical-tabs .tabs button", function(){
     $('html, body').animate({
         scrollTop: $('.ux-vertical-tabs .maincontent .tabcontent[data-tab="' + $(this).data('tab') + '"]').offset().top - $('header').outerHeight() + 2
@@ -151,7 +147,6 @@ $('select').each(function(){
         $styledSelect.text($(this).text()).removeClass('active');
         $this.val($(this).attr('rel'));
         $list.hide();
-        //console.log($this.val());
     });
     $(document).click(function() {
         $styledSelect.removeClass('active');
