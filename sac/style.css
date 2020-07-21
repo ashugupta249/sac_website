@@ -650,7 +650,7 @@ h1,h2,:not(.page-wrapper) h3{
     z-index: 998;
     transform: scaleY(0);
     transform-origin: top;
-    max-height: calc(100vh - var(--top-margin));
+    max-height: calc(100vh - var(--top-margin) - 1.4rem - 7px);
   }
   .ux-vertical-tabs .tabs button.empty {
     display: none;
