@@ -20,7 +20,7 @@ body {
   margin: 0;
   font-family: 'Lato';
 }
-h1,h2,:not(.page-wrapper) h3{
+main h1,main h2,main :not(.page-wrapper) h3{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 500;
 }
