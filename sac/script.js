@@ -49,12 +49,11 @@ $(window).resize(function(){
     var tab_col = $(".tabs")[0];
     var tabtoggle = $(".tab-toggle")[0];
     state = tab_col.style.transform;
-    console.log(state);
     if(state == "scaleY(1)"){
       tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
     }
-    console.log(tabtoggle.style.marginTop)
-  })
+  });
+
 $('.container').on("click", ".ux-vertical-tabs .tabs button", function(){
     $('html, body').animate({
         scrollTop: $('.ux-vertical-tabs .maincontent .tabcontent[data-tab="' + $(this).data('tab') + '"]').offset().top - $('header').outerHeight() + 2
@@ -151,7 +150,6 @@ $('select').each(function(){
         $styledSelect.text($(this).text()).removeClass('active');
         $this.val($(this).attr('rel'));
         $list.hide();
-        //console.log($this.val());
     });
     $(document).click(function() {
         $styledSelect.removeClass('active');

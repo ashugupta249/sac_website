@@ -80,11 +80,9 @@ $(window).resize(function(){
     var tab_col = $(".tabs")[0];
     var tabtoggle = $(".tab-toggle")[0];
     state = tab_col.style.transform;
-    console.log(state);
     if(state == "scaleY(1)"){
       tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
     }
-    console.log(tabtoggle.style.marginTop)
   })
 
 $('.container').on("click", ".ux-vertical-tabs .tabs button", function(){
