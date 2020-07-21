@@ -154,7 +154,11 @@ $.toggler = function(val){
     $(".container").html("");
     $(".container").load("./partials/"+val.toLowerCase()+".html .ux-vertical-tabs"); 
     $("title").html("Boards - "+val);
-    $('.container').fadeIn();
+    $('.container').fadeIn(function(){
+      /***********  Minutes of Meet ********/
+      var timelines = $('.cd-horizontal-timeline');
+      (timelines.length > 0) && initTimeline(timelines);
+    });
     history.replaceState(undefined, undefined, "#"+val.toLowerCase());
  }) 
 }
@@ -172,10 +176,8 @@ $('#drop .select-styled').on('DOMSubtreeModified',function(){
         $.toggler($('#drop .select-styled').html());
 });
 /*****************************  Minutes of Meet ********************************/
-$(document).ready(function($){
   var timelines = $('.cd-horizontal-timeline'),
     eventsMinDistance = 60;
-  (timelines.length > 0) && initTimeline(timelines);
   function initTimeline(timelines) {
     timelines.each(function(){
       var timeline = $(this),
@@ -415,4 +417,3 @@ $(document).ready(function($){
     //check if mobile or desktop device
     return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
   }
-});
