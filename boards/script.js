@@ -45,8 +45,7 @@ var tab_show = function(){
     tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
   }
   else{
-    // console.log(screen.height - parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--tab-toggle-topmargin') - tabtoggle.scrollHeight));
-    tabtoggle.setAttribute("style","margin-top:"+(screen.height - parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--tab-toggle-topmargin')) - tabtoggle.scrollHeight+"px"));
+    tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight - tabtoggle.clientHeight)+"px");
   }
   // downarrow.setAttribute("style","transform:rotateZ(180deg)")
   $(".dim-caller").addClass("dimmer");

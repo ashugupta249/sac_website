@@ -645,7 +645,7 @@ h1,h2,:not(.page-wrapper) h3{
   .ux-vertical-tabs .tabs {
     position: relative;
     width: 100%;
-    transition:all 0.1s ease-in-out;
+    transition:all 1s ease-in-out;
     position: fixed;
     z-index: 998;
     transform: scaleY(0);
@@ -690,7 +690,7 @@ h1,h2,:not(.page-wrapper) h3{
     text-align: center;
     border-radius: 5px 5px 0px px;
     cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    transition: all 1s ease-in-out;
     top:var(--top-margin);
     font-size: medium;
     padding-top: 0.25rem;
