@@ -47,3 +47,19 @@ function dropdown(a){
   }); 
   $(a).find(".dropdown-content").children().slideToggle();
 }
+
+$(window).resize(function(){
+  var x = document.getElementById("myTopnav");
+  var y = document.getElementById("lead-content");
+
+  if ($('#toggle-nav').css('display')=='none'){
+    $(".nav-links").children().slideDown();
+    //$(".dropdown-content").children().slideDown();
+    x.className = "topnav";
+    y.className = "";
+  }
+  else{
+    $(".nav-links").children().slideUp();
+    $(".dropdown-content").children().slideUp();
+  }
+})
