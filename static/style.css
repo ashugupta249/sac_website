@@ -11,8 +11,10 @@
   --background-hover-color:#999999;
 }
 header{
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
+  width: 100vw;
+  max-height: 100vh;
+  overflow-y: scroll;
   top: 0;
   z-index: 999999;
 }
