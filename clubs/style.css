@@ -234,11 +234,15 @@ h1,h2,h3{
      float: none;
    }
  }
+ .cards .card-title{
+  font-weight: 500;
+ }
  .cards .card-more {
   display: block;
   text-align: center;
-  border: 1px solid var(--know-more-hover-background-color);
-  padding: 0.4rem 0.25rem;
+  border: 2px solid var(--know-more-hover-background-color);
+  padding: 0.35rem 0.25rem;
+  font-size: 0.8em;
   margin-top: 0.75rem;
   color: var(--know-more-hover-background-color);
   transition: all 0.5s ease-in-out;
@@ -247,13 +251,19 @@ h1,h2,h3{
   -o-transition: all 0.5s ease-in-out;
   text-transform: uppercase;
   letter-spacing: 1.25px;
-  font-weight: 500;
+  font-weight: 700;
 }
  .cards .card-more:hover {
   background-color: var(--know-more-hover-background-color); /*#F3AE55;*/ /* #740a0a; */ /*#210202;*/
   color: var(--know-more-hover-color); 
   border-color: none;
   cursor:  pointer;
+}
+  .cards .card-more:hover i{
+  -webkit-animation: bounce 2s;
+            animation: bounce 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
   /*color: white;*/
   /*
   transition: background-color 0.5s ease-in-out;
@@ -264,6 +274,42 @@ h1,h2,h3{
   -moz-transition: border-color 0.5s ease-in-out;
   -o-transition: border-color 0.5s ease-in-out;
   */
+}
+@-webkit-keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  60% {
+    -webkit-transform: translateX(9px);
+            transform: translateX(9px);
+  }
+}
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  60% {
+    -webkit-transform: translateX(9px);
+            transform: translateX(9px);
+  }
 }
 /********************* Modal **********************************/
 /*Template from https://codepen.io/ettrics/pen/Jdjdzp */
