@@ -1,11 +1,10 @@
 function myFunction() {
     var x = document.getElementById("myTopnav");
-    var y = document.getElementById("lead-content");
     // var a = x.getElementsByClassName("nav-links")[0];
     if (x.className === "topnav") {
       $(".nav-links").children().slideDown();
       x.className += " responsive";
-      y.className += "hidden";
+      //y.className += "hidden";
       // var h = a.clientHeight;
       // a.setAttribute("style","hieght:0px");
       // console.log(a.clientHeight);
@@ -13,7 +12,6 @@ function myFunction() {
       $(".nav-links").children().slideUp();
       $(".dropdown-content").children().slideUp();
       x.className = "topnav";
-      y.className = "";
     }
 }
 
@@ -39,6 +37,7 @@ function dropdown(a){
   //   }
   // }
   x = $(a).find(".dropdown-content");
+  
   $(a).find(".dropdown-content").width($(a).width());
   $(".dropdown-content").toArray().forEach((value) => {
     if(value!=x.toArray()[0]){
@@ -46,17 +45,16 @@ function dropdown(a){
     }
   }); 
   $(a).find(".dropdown-content").children().slideToggle();
+  alert($(a).width());
 }
 
 $(window).resize(function(){
   var x = document.getElementById("myTopnav");
-  var y = document.getElementById("lead-content");
 
   if ($('#toggle-nav').css('display')=='none'){
     $(".nav-links").children().slideDown();
     //$(".dropdown-content").children().slideDown();
     x.className = "topnav";
-    y.className = "";
   }
   else{
     $(".nav-links").children().slideUp();
