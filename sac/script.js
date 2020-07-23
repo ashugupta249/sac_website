@@ -1,13 +1,14 @@
 /*
   Contents:
     * Main scripts for theme
+    * Initiatives
+    * Policy changes
+    * Minutes of Meet
 */
 var tab_show = function(){
-
   var tab_col = $(".tabs")[0];
   var tabtoggle = $(".tab-toggle")[0];
   var downarrow = $(".tab-toggle i")[0];
-
   tabtoggle.classList.add("tab-toggle-active");
   tab_col.setAttribute("style","transform:scaleY(1)");
   tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
@@ -24,9 +25,7 @@ var tab_hide = function(){
   // downarrow.setAttribute("style","transform:rotateZ(0deg)")
   $(".dim-caller").removeClass("dimmer");
 }
-
 var tab_toggle = function(){
-  // alert("Clicked");
   var tabtoggle = $(".tab-toggle")[0];
   var tab_col = $(".tabs")[0];
   state = tab_col.style.transform;
@@ -38,8 +37,6 @@ var tab_toggle = function(){
     tab_show();
   }
 }
-
-
 $(window).resize(function(){ 
     var tab_col = $(".tabs")[0];
     var tabtoggle = $(".tab-toggle")[0];
@@ -49,8 +46,7 @@ $(window).resize(function(){
         tabtoggle.setAttribute("style","margin-top:"+(tab_col.clientHeight)+"px");
       }, 1005);
     }
-  });
-
+});
 $('.container').on("click", ".ux-vertical-tabs .tabs button", function(){
     $('html, body').animate({
         scrollTop: $('.ux-vertical-tabs .maincontent .tabcontent[data-tab="' + $(this).data('tab') + '"]').offset().top - $('header').outerHeight() + 2

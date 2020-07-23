@@ -24,7 +24,6 @@ main h1,main h2,main :not(.page-wrapper) h3{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 500;
 }
-
 /****************** Minutes of Meet ********************************/
 /* https://codepen.io/SmGG/pen/wXROpv */
 .cd-horizontal-timeline a {
@@ -487,7 +486,6 @@ main h1,main h2,main :not(.page-wrapper) h3{
       grid-template-columns: repeat(auto-fit, 94%);
    }
 }
-
 /**************************** Main vertical tabs *******************************/
 .heading {
   position: relative;
@@ -572,7 +570,6 @@ main h1,main h2,main :not(.page-wrapper) h3{
   /* background: linear-gradient(to bottom, #eee, #fff 200px); */
 }
 .ux-vertical-tabs .tabs {
-  font-family: 'Oswald';
   position: sticky;
   position: -webkit-sticky;
   top:var(--top-margin);
@@ -764,7 +761,6 @@ main h1,main h2,main :not(.page-wrapper) h3{
   transform: translateX(0);
   opacity: 1;
 }
-
 /************************* Flowchart  ********************/
  /* https://www.cssscript.com/responsive-hierarchical-organization-chart-pure-css/ */
 *,
@@ -1025,7 +1021,6 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > ol li > d
     padding: 8px 10px;
     font-size: 1.1em;
 }
-
 /******************************** Initiatives *************************************/
 /* https://codepen.io/NielsVoogt/pen/YbaNPd */
 details {
@@ -1449,7 +1444,6 @@ details summary::-webkit-details-marker {
   transform: scale(1);
   opacity: 1;
 }
-
 /************************************ Team * ***************************/
 /* https://codepen.io/JarlLyng/pen/qyZLPp */
 .page-wrapper {
@@ -1605,7 +1599,6 @@ details summary::-webkit-details-marker {
    visibility: visible;
    opacity: 1;
  }
-
  /******************************** Policy & Constitutions ****************************/
 /* https://codepen.io/vinsongrant/pen/qbGKed */
 .accordion-wrapper{
@@ -1838,7 +1831,6 @@ details summary::-webkit-details-marker {
     content: "";
     display: block;
 }
-
 /**************************** Contact *****************************/
 .contact-container{
   /*border: 1px solid silver; */
