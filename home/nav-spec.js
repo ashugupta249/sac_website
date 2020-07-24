@@ -1,19 +1,18 @@
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    var y = document.getElementById("lead-content");
+    var x = $("#myTopnav");
     // var a = x.getElementsByClassName("nav-links")[0];
-    if (x.className === "topnav") {
+    if (!$("#myTopnav").hasClass("responsive")) {
       $(".nav-links").children().slideDown();
-      x.className += " responsive";
-      y.className += "hidden";
+      $("#myTopnav").addClass("responsive");
+      //y.className += "hidden";
+      
       // var h = a.clientHeight;
       // a.setAttribute("style","hieght:0px");
       // console.log(a.clientHeight);
     } else {
       $(".nav-links").children().slideUp();
       $(".dropdown-content").children().slideUp();
-      x.className = "topnav";
-      y.className = "";
+      $("#myTopnav").removeClass("responsive");
     }
 }
 
@@ -39,6 +38,7 @@ function dropdown(a){
   //   }
   // }
   x = $(a).find(".dropdown-content");
+  
   $(a).find(".dropdown-content").width($(a).width());
   $(".dropdown-content").toArray().forEach((value) => {
     if(value!=x.toArray()[0]){
@@ -46,4 +46,38 @@ function dropdown(a){
     }
   }); 
   $(a).find(".dropdown-content").children().slideToggle();
+  //alert($(a).width());
+}
+
+var curr= $('#toggle-nav').css('display');
+
+$(window).resize(function(){
+  var x = document.getElementById("myTopnav");
+  
+   /// alert($('#toggle-nav').css('display'));
+  if ($('#toggle-nav').css('display')!=curr){
+    curr = $('#toggle-nav').css('display');
+    if ($('#toggle-nav').css('display')==='none'){
+      $(".nav-links").children().slideDown();
+      //$(".dropdown-content").children().slideDown();
+      x.className = "topnav";
+    }
+    else{
+      $(".nav-links").children().slideUp();
+      $(".dropdown-content").children().slideUp();
+    }
+  }
+  logo_visibility_toggler();
+});
+
+$(document).scroll(function() {
+    // alert();
+ logo_visibility_toggler();
+})
+
+function logo_visibility_toggler(){
+  if (($(document).scrollTop() > $('#lead-content img').offset().top + ($('#lead-content img').height()/4) - 7) )
+    $('.topnav').addClass('show-logo');
+  else
+    $('.topnav').removeClass('show-logo');
 }
