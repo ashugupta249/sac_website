@@ -418,19 +418,19 @@ section{
 @media only screen and (max-width: 992px) {
 	#lead {
 		
-		height: 100vh;
-		/*min-height: auto;*/
-		/*max-height: auto;*/
+		height: auto;
+		min-height: auto;
+		max-height: auto;
 		
 		padding: 120px 15px
 		
 	}
 	#lead-content {
-		/*
+		
 		position: relative;
 		transform: none;
 		left: auto;
-		top: auto*/
+		top: auto
 		
 	}
 	#lead-content img{
