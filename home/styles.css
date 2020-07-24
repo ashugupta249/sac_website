@@ -503,7 +503,7 @@ section{
   margin-bottom: 2rem;
   width: 100%;
 }
-@media (min-width: 56rem) {
+@media (min-width: 850px) {
   .cards {
     width: 33.3%;
   }
