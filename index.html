@@ -18,6 +18,12 @@
     <script  src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <style type="text/css">
+      .topnav a img{
+        visibility: hidden;
+      }
+      .responsive a img{
+        visibility: hidden;
+      }
     @media screen and (max-width: 600px){
       .topnav a img{
         visibility: hidden;
@@ -25,15 +31,9 @@
       .responsive a img{
         visibility: visible;
       }
-
-    } 
-    @media screen and (min-width: 600px){
-      .topnav a img{
-        visibility: hidden;
-      }
-      .responsive a img{
-        visibility: hidden;
-      }
+    }
+    .show-logo a img{
+      visibility: visible;
     }
   </style>
 </head>
@@ -42,7 +42,7 @@
 	<header>
 
    <nav class="topnav" id="myTopnav">
-     <a href="../" class="saclogo"><img src="../silver_trans.png"/></a>
+     <a href="../" class="saclogo" id="nav-saclogo"><img src="../silver_trans.png"/></a>
      <a href="javascript:void(0);" class="icon" id="toggle-nav" onclick="myFunction()">&#9776;</a>
      <div class="nav-links">
        <a href="../">Home</a>
