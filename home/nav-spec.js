@@ -45,7 +45,7 @@ function dropdown(a){
     }
   }); 
   $(a).find(".dropdown-content").children().slideToggle();
-  alert($(a).width());
+  //alert($(a).width());
 }
 
 $(window).resize(function(){
