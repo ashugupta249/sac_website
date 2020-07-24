@@ -76,7 +76,7 @@ $(document).scroll(function() {
 })
 
 function logo_visibility_toggler(){
-  if (($(document).scrollTop() > $('#lead-content img').offset().top + ($('#lead-content img').height()/4) - 7) )
+  if (($(document).scrollTop() + 49 > $('#lead-content img').offset().top ) )
     $('.topnav').addClass('show-logo');
   else
     $('.topnav').removeClass('show-logo');

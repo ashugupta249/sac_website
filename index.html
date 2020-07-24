@@ -18,6 +18,7 @@
     <script  src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
   <style type="text/css">
+    /* The following order is important! */
       .topnav a img{
         visibility: hidden;
       }
@@ -34,6 +35,14 @@
     }
     .show-logo a img{
       visibility: visible;
+    }
+    :not(.show-logo){
+      background: transparent;
+    }
+    @media screen and (max-width: 600px) {
+      .responsive{
+        background: linear-gradient(to bottom right,#222222,#555555);
+      }
     }
   </style>
 </head>
