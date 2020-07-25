@@ -47,6 +47,9 @@
     .dropdown-content{
       background-color: #f9f9f9;
     }
+    main{
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -55,11 +58,11 @@
 
    <nav class="topnav" id="myTopnav">
      <a href="../" class="saclogo" id="nav-saclogo"><img src="../silver_trans.png"/></a>
-     <a href="javascript:void(0);" class="icon" id="toggle-nav" onclick="myFunction()">&#9776;</a>
+     <a href="javascript:void(0);" class="icon" id="toggle-nav">&#9776;</a>
      <div class="nav-links">
        <a href="../">Home</a>
        <a href="../sac/">SAC</a>
-       <div class="dropdown" onclick="{dropdown(this)}">
+       <div class="dropdown">
          <button class="dropbtn">Boards
            <i class="fa fa-caret-down"></i>
          </button>
@@ -71,7 +74,7 @@
            <a href="../boards/#brca">BRCA</a>
          </div>
        </div>
-       <div class="dropdown" onclick="{dropdown(this)}">
+       <div class="dropdown">
          <button class="dropbtn">Activities
            <i class="fa fa-caret-down"></i>
          </button>
@@ -81,7 +84,7 @@
            <a href="../clubs/#others">Others</a>
          </div>
        </div>
-       <div class="dropdown" onclick="{dropdown(this)}">
+       <div class="dropdown">
          <button class="dropbtn">Explore
            <i class="fa fa-caret-down"></i>
          </button>

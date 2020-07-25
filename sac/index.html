@@ -5,7 +5,6 @@
     <title>SAC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- REQ FOR MINUTES OF MEET!-->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../static/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,47 +16,47 @@
     </style>
   </head>
   <body>
-    <header>
-    <div class="topnav" id="myTopnav">
-      <a href="../" class="saclogo"><img src="../silver_trans.png"/></a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction();tab_hide()">&#9776;</a>
-      <div class="nav-links">
-        <a href="../">Home</a>
-        <a href="../sac/">SAC</a>
-        <div class="dropdown" onclick="{dropdown(this)}">
-          <button class="dropbtn">Boards
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="../boards/#bsw">BSW</a>
-            <a href="../boards/#bsa">BSA</a>
-            <a href="../boards/#bsp">BSP</a>
-            <a href="../boards/#bhm">BHM</a>
-            <a href="../boards/#brca">BRCA</a>
-          </div>
-        </div>
-        <div class="dropdown" onclick="{dropdown(this)}">
-          <button class="dropbtn">Activities
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="../clubs/#cultural">Cultural</a>
-            <a href="../clubs/#technical">Technical</a>
-            <a href="../clubs/#others">Others</a>
-          </div>
-        </div>
-        <div class="dropdown" onclick="{dropdown(this)}">
-          <button class="dropbtn">Explore
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="../facilities/">Facilities</a>
-            <!-- <a href="#">Activities</a> -->
-            <a href="#">Projects</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <header>
+   <div class="topnav" id="myTopnav">
+     <a href="../" class="saclogo" id="nav-saclogo"><img src="../silver_trans.png"/></a>
+     <a href="javascript:void(0);" class="icon" id="toggle-nav">&#9776;</a>
+     <div class="nav-links">
+       <a href="../" >Home</a>
+       <a href="../sac/">SAC</a>
+       <div class="dropdown">
+         <button class="dropbtn">Boards
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="../boards/#bsw">BSW</a>
+           <a href="../boards/#bsa">BSA</a>
+           <a href="../boards/#bsp">BSP</a>
+           <a href="../boards/#bhm">BHM</a>
+           <a href="../boards/#brca">BRCA</a>
+         </div>
+       </div>
+       <div class="dropdown">
+         <button class="dropbtn">Activities
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="../clubs/#cultural">Cultural</a>
+           <a href="../clubs/#technical">Technical</a>
+           <a href="../clubs/#others">Others</a>
+         </div>
+       </div>
+       <div class="dropdown">
+         <button class="dropbtn">Explore
+           <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+           <a href="../facilities/">Facilities</a>
+           <!-- <a href="#">Activities</a> -->
+           <a href="#">Projects</a>
+         </div>
+       </div>
+     </div>
+   </div>   
   </header>
   <main>
     <div class="vert-tabs">
