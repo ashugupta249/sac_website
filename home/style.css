@@ -432,7 +432,7 @@ section{
 		        transform: translateX(-12px);
 	}
 }
-section#more .container1 .cards a:hover i{
+section#more .explore-container .cards a:hover i{
 	-webkit-animation: bounce-alt 2s;
 		        animation: bounce-alt 2s;
 		-webkit-animation-iteration-count: infinite;
