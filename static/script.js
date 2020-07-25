@@ -9,14 +9,14 @@ $('#toggle-nav').click(function(){
     //var x = $("#myTopnav");
     // var a = x.getElementsByClassName("nav-links")[0];
     if (!$("#myTopnav").hasClass("responsive")) {
-      $(".nav-links").children().slideDown(function(){
+      $(".nav-links").children().slideDown("fast",function(){
         $(this).css("display", "block");
       });
       $("#myTopnav").addClass("responsive");
       //y.className += "hidden";
     } else {
-      $(".nav-links").children().slideUp();
-      $(".dropdown-content").children().slideUp();
+      $(".nav-links").children().slideUp("fast");
+      $(".dropdown-content").children().slideUp("fast");
       $("#myTopnav").removeClass("responsive");
     }
 });
@@ -26,10 +26,10 @@ $('#myTopnav .dropdown').click(function(){
   $(a).find(".dropdown-content").width($(a).width());
   $(".dropdown-content").toArray().forEach((value) => {
     if(value!=x.toArray()[0]){
-      $(value).children().slideUp();
+      $(value).children().slideUp("fast");
     }
   }); 
-  $(a).find(".dropdown-content").children().slideToggle(function(){
+  $(a).find(".dropdown-content").children().slideToggle("fast",function(){
     if ($(this).is(":visible"))
       $(this).css("display", "block");
   });
@@ -42,17 +42,17 @@ $(window).resize(function(){
   if ($('#toggle-nav').css('display')!=curr){
     curr = $('#toggle-nav').css('display');
     if ($('#toggle-nav').css('display')==='none'){
-      $(".nav-links").children().slideDown(function(){
+      $(".nav-links").children().slideDown("fast",function(){
         if ($(this).is(":visible"))
           $(this).css("display", "block");
       });
-      $(".dropdown-content").children().slideUp();
+      $(".dropdown-content").children().slideUp("fast");
       //$(".dropdown-content").children().slideDown();
       x.className = "topnav";
     }
     else{
-      $(".nav-links").children().slideUp();
-      $(".dropdown-content").children().slideUp();
+      $(".nav-links").children().slideUp("fast");
+      $(".dropdown-content").children().slideUp("fast");
     }
   }
 });
