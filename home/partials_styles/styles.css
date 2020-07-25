@@ -5,178 +5,18 @@
 	margin-block-end: 0em;
 }
 
-/*
-div{
-	padding:1%;
-}*/
-
 body{
 	margin:0px;
 	text-align: center;
 	padding:0%;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px
 }
+
 
 a,a:hover{
 	text-decoration: none;
 	color: black;
-}
-
-
-.box{
-	border-color: black;
-	border-width: 2px;
-	/*border-style: solid;*/
-	/*margin-bottom: 1%;*/
-	border-radius: 0px;
-}
-
-.box:hover{
-	cursor: pointer;
-}
-
-#about_us{
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.mobile_hidden{
-	visibility: visible;
-}
-
-
-.center{
-	margin-left: auto;
-	margin-right: auto;	
-}
-
-#boards,#facilities,#board_container{
-	display:flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-}
-
-#board_container,#facilities{
-	width:90%;
-	margin:auto;
-	margin-top: 1em;
-}
-
-.box{
-	padding:1%;
-	position: relative;
-	/*box-shadow: 0 10px 20px rgba(0,0,0,1);*/
-}
-
-/*.box::after{
-	box-shadow: 0 50px 15px rgba(0,0,0,1);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.box:hover::after{
-	opacity: 1;
-}*/
-#sac_box div img{
-	float: left;
-	margin-left: 5%;
-}
-
-.boardbox{
-	/*background: white;*/
-	-webkit-transition: all 0.5s ease-in-out;
-	box-shadow: 0 5px 10px -2px rgba(0,0,0,0.2);
-}
-
-.boardbox:hover{
-	cursor: pointer;
-	/*transform: scale(1.1);
-	-webkit-transform: scale(1.1);*/
-	box-shadow: 0 5px 10px -2px rgba(0,0,0,1);
-  /*transition: box-shadow 0.5s ease-in-out;*/
-}
-
-.sacbox ,.cards .card-item{
-	-webkit-transition: all 0.5s;
-	box-shadow: 0 5px 10px -2px rgba(0,0,0,0.2);
-}
-
-.sacbox:hover {
-	/*-webkit-transform: scalex(1.1);*/
-	box-shadow: 0 5px 10px -2px rgba(0,0,0,1);
-}
-
-.cards .card-item:hover{
-	/*-webkit-transform: scalex(1.1);*/
-	box-shadow: 0 20px 50px -8px rgba(0,0,0,1);
-}
-
-.board_logo{
-	height: 4em;
-	width: 4em;
-}
-
-#sac_box div h1{
-	margin-block-start: 0em;
-	margin-block-end: 0em;
-}
-
-.box div img{
-	height:7rem;
-	width:7rem;
-}
-
-@media(max-width: 800px){
-	.mobile_hidden{
-		visibility: hidden;
-		height: 0px;
-	}
-
-	#sac_box{
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-
-	
-
-	#board_container{
-		width:70%;
-	}
-
-	.facilitybox{
-		width:80%;
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-
-	#sac_box div img{
-		float: left;
-		margin-left: 10%;
-	}
-
-	#line1{
-		border-left: 5px solid black;
-		height: 0em;
-		padding: 0%;
-		margin-left: 15%;
-	}
-	#line2,#line3,#line4,#line5,#line6{
-		border-top: 5px solid black;
-		width:15px;
-	}
-	#line2{
-		margin-top: 3em;
-	}
-	#line3,#line4,#line5,#line6{
-		margin-top: 0em;
-	}
-}
-
-body {
-	font-family: 'Lato', sans-serif;
-	font-size: 16px
 }
 
 .shadow {
@@ -310,12 +150,6 @@ body {
 	text-align: center
 }
 
-#lead-down i {
-	animation: pulsate 1.5s ease;
-	animation-iteration-count: infinite;
-	padding-top: 5px
-}
-
 .down-arrow{
 	transform: rotate(45deg);
 	position: absolute;
@@ -331,21 +165,6 @@ body {
 	cursor:pointer;
 }
 
-@keyframes pulsate {
-	0% {
-		transform: scale(1, 1)
-	}
-	50% {
-		transform: scale(1.2, 1.2)
-	}
-	100% {
-		transform: scale(1, 1)
-	}
-}
-
-
-
-
 section{
     padding: 50px 15px;
     background: var(--main-bg-color);
@@ -353,71 +172,8 @@ section{
 }
 
 
-.more-grid{
-	border: 1px solid DodgerBlue;
-	padding: 0.25vw;
-	margin-bottom: 25px;
-
-	box-shadow: 0 10px 20px -7px rgba(0, 0, 0, 0.25);
-	overflow: hidden;
-	transition: transform 0.5s;
-	-webkit-transition: transform 0.5s;
-}
-
-.more-grid:hover{
-	cursor: pointer;
-	transform: scale(1.03);
-	-webkit-transform: scale(1.03);
-}
-
-.heading1 {
-	position: relative;
-	display: inline-block;
-	font-size: 1.5em;
-	font-weight: 400;
-	margin: 9px 0 15px 0
-}
-
-.heading1:after {
-	position: absolute;
-	content: '';
-	top: 100%;
-	height: 1px;
-	width: 50px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	background: #3498db
-}
-
-
-.more-grid .content{
-	text-align:  justify;
-	padding: 3px 2.5%;
-	margin-bottom: 18px;
-}
-
-.know-more{
-	margin: 3px 3% 18px;
-	padding: 6px;
-	cursor: pointer;
-	border: 1px solid DodgerBlue;
-	background: DodgerBlue;
-	text-transform:  uppercase;
-	color: white;
-}
-
-.know-more:hover{
-	border: 1px solid Blue;
-	background: Blue;
-	color: white;
-}
-
-
-
 @media only screen and (max-width: 992px) {
-	#lead {
-		
+	#lead {		
 		height: auto;
 		min-height: auto;
 		max-height: auto;
@@ -486,7 +242,24 @@ section{
 
 }
 
-.container1 {
+
+@media only screen and (min-width: 994px){
+	#lead-content{
+		display: flex;
+	}
+	#lead-content img{
+		height: 15em;
+	}
+
+	#lead-content div{
+		display: flex;
+		margin-top: 5%;
+		flex-direction: column;
+	}
+}
+
+
+.explore-container {
   display: flex;
   -webkit-display: box;
   -moz-display: box;
@@ -503,11 +276,11 @@ section{
   margin-bottom: 2rem;
   width: 100%;
 }
+
 @media (min-width: 850px) {
   .cards {
     width: 33.3%;
   }
-
 }
 .cards .card-item {
   display: flex;
@@ -576,15 +349,6 @@ section{
   /*border: none;*/
   cursor:  pointer;
   /*color: white;*/
-  /*
-  transition: background-color 0.5s ease-in-out;
-  -webkit-transition: background-color 0.5s ease-in-out;
-  -moz-transition: background-color 0.5s ease-in-out;
-  -o-transition: background-color 0.5s ease-in-out;
-  -webkit-transition: border-color 0.5s ease-in-out;
-  -moz-transition: border-color 0.5s ease-in-out;
-  -o-transition: border-color 0.5s ease-in-out;
-  */
 }
 
 .card-image img{
@@ -603,6 +367,45 @@ section{
 
 .cards .card-item:hover > .card-image,.cards .card-item:active > .card-image{
 	opacity: 1;
+}
+
+.box ,.cards .card-item{
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	box-shadow: 0 5px 10px -2px rgba(0,0,0,0.2);
+}
+
+.cards .card-item:hover{
+	/*-webkit-transform: scalex(1.1);*/
+	box-shadow: 0 20px 50px -8px rgba(0,0,0,1);
+}
+
+.box:hover{
+	cursor: pointer;
+	box-shadow: 0 5px 10px -2px rgba(0,0,0,1);
+}
+
+.box{
+	border-color: black;
+	border-width: 2px;
+	/*border-style: solid;*/
+	padding:1%;
+	position: relative;
+	/*box-shadow: 0 10px 20px rgba(0,0,0,1);*/
+}
+
+
+
+.board_logo{
+	height: 4em;
+	width: 4em;
+}
+
+.box div img{
+	height:7rem;
+	width:7rem;
 }
 
 .box h1{
@@ -721,20 +524,5 @@ section#more .container1 .cards a:hover i{
 	60% {
 		-webkit-transform: translateX(9px);
 		        transform: translateX(9px);
-	}
-}
-
-@media only screen and (min-width: 994px){
-	#lead-content{
-		display: flex;
-	}
-	#lead-content img{
-		height: 15em;
-	}
-
-	#lead-content div{
-		display: flex;
-		margin-top: 5%;
-		flex-direction: column;
 	}
 }
