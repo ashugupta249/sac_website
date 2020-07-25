@@ -133,7 +133,7 @@ a,a:hover{
 	width: 100%;
 	text-align: center;
 	z-index: 10;
-	bottom: 15px;
+	bottom: 35px;
 	color: #fff
 	margin-bottom: 5%;
 }
@@ -148,17 +148,46 @@ a,a:hover{
 	text-align: center
 }
 .down-arrow{
-	transform: rotate(45deg);
 	position: absolute;
 	left:50%;
-	border-style: solid;
-	border-width:0px 2px 2px 0px;
-	border-color: white;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 	width: 20px;
 	height: 20px;
+
+  	-webkit-animation: leadarrow 1.5s infinite;
+  	animation: leadarrow 1.5s infinite;
 }
 .down-arrow:hover{
 	cursor:pointer;
+}
+@-webkit-keyframes leadarrow {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
 section{
     padding: 50px 15px;
