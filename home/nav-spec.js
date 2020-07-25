@@ -1,47 +1,20 @@
 function myFunction() {
-    var x = $("#myTopnav");
+    //var x = $("#myTopnav");
     // var a = x.getElementsByClassName("nav-links")[0];
     if (!$("#myTopnav").hasClass("responsive")) {
       $(".nav-links").children().slideDown(function(){
         $(this).css("display", "block");
       });
-      
       $("#myTopnav").addClass("responsive");
       //y.className += "hidden";
-      
-      // var h = a.clientHeight;
-      // a.setAttribute("style","hieght:0px");
-      // console.log(a.clientHeight);
     } else {
       $(".nav-links").children().slideUp();
       $(".dropdown-content").children().slideUp();
       $("#myTopnav").removeClass("responsive");
     }
 }
-
 function dropdown(a){
-  // console.log(a);
-  // if(window.innerWidth<600){
-
-  //   x = a.getElementsByClassName("dropdown-content")[0];
-  //   var all_dropdown = document.getElementsByClassName("dropdown");
-  //   for(i=0;i<all_dropdown.length;i++){
-  //     e = all_dropdown[i].getElementsByClassName("dropdown-content")[0];
-      
-  //     if(x!=e){
-  //     e.setAttribute("style","");}
-  //   }
-
-    
-  //   if(x.getAttribute("style") == "display:block"){
-  //     x.setAttribute("style","");
-  //   }
-  //   else{
-  //     x.setAttribute("style","display:block");
-  //   }
-  // }
   x = $(a).find(".dropdown-content");
-  
   $(a).find(".dropdown-content").width($(a).width());
   $(".dropdown-content").toArray().forEach((value) => {
     if(value!=x.toArray()[0]){
@@ -52,14 +25,11 @@ function dropdown(a){
     if ($(this).is(":visible"))
       $(this).css("display", "block");
   });
-  //alert($(a).width());
 }
 
 var curr= $('#toggle-nav').css('display');
-
 $(window).resize(function(){
   var x = document.getElementById("myTopnav");
-  
    /// alert($('#toggle-nav').css('display'));
   if ($('#toggle-nav').css('display')!=curr){
     curr = $('#toggle-nav').css('display');
@@ -80,12 +50,7 @@ $(window).resize(function(){
   logo_visibility_toggler();
 });
 
-
-
-
-
 $(document).scroll(function() {
-    // alert();
  logo_visibility_toggler();
 })
 
