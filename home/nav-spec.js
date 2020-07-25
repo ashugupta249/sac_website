@@ -1,4 +1,4 @@
-function myFunction() {
+$('#toggle-nav').click(function(){
     //var x = $("#myTopnav");
     // var a = x.getElementsByClassName("nav-links")[0];
     if (!$("#myTopnav").hasClass("responsive")) {
@@ -12,8 +12,9 @@ function myFunction() {
       $(".dropdown-content").children().slideUp();
       $("#myTopnav").removeClass("responsive");
     }
-}
-function dropdown(a){
+});
+$('#myTopnav .dropdown').click(function(){
+  var a = $(this);
   x = $(a).find(".dropdown-content");
   $(a).find(".dropdown-content").width($(a).width());
   $(".dropdown-content").toArray().forEach((value) => {
@@ -25,7 +26,7 @@ function dropdown(a){
     if ($(this).is(":visible"))
       $(this).css("display", "block");
   });
-}
+})
 
 var curr= $('#toggle-nav').css('display');
 $(window).resize(function(){
