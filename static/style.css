@@ -200,6 +200,9 @@ header{
     /*margin-top: 49px;*/
   }
 }
+main{
+  margin-top: 49px;
+}
 /*********************** Footer ********************************/
 :root{
 	--footer-background-color:#00020b;
