@@ -1722,7 +1722,7 @@ details summary::-webkit-details-marker {
   background-color: #fff;
   border: 2px solid #000;
   font-size: 1rem;
-  padding: 0.6rem 15px;
+  padding: 0.45rem 15px;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -1735,7 +1735,7 @@ details summary::-webkit-details-marker {
   border: 0.4rem solid transparent;
   border-color: #000 transparent transparent transparent;
   position: absolute;
-  top: 1rem;
+  top: 0.9rem;
   right: 10px;
 }
 .select-styled:hover {
@@ -1769,7 +1769,7 @@ details summary::-webkit-details-marker {
 }
 .select-options li {
   margin: 0;
-  padding: 12px 0;
+  padding: 9px 0;
   text-indent: 15px;
   border-top: 1.5px solid silver;
   -moz-transition: all 0.15s ease-in;
