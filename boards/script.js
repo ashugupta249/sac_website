@@ -164,8 +164,8 @@ $.toggler = function(val){
 }
 $.hashChanger = function(){
   var val = window.location.hash.substring(1).toLowerCase();
-  var univ_set = ['bsw','bsp','brca','bsa','bhm'];
-  val = (univ_set.indexOf(val) > -1) ? val : 'bsw';
+  var univ_set = ['bhm','brca','bsa','bsp','bsw'];
+  val = (univ_set.indexOf(val) > -1) ? val : univ_set[Math.floor(Math.random() * univ_set.length)];
   val = val.toUpperCase();
   $('#drop .select-styled').html(val);
   $.toggler(val);
