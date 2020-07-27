@@ -25,6 +25,7 @@ header{
 .nav-links{
   overflow-y: scroll; 
   max-height: calc(100vh - 49px);
+  height: 49px;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -35,6 +36,7 @@ header{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  height: 49px;
 }
 .topnav a:hover{
   color:white;
@@ -67,6 +69,7 @@ header{
   font-family: inherit;
   margin: 0;
   cursor:  pointer;
+  height: 49px;
 }
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
