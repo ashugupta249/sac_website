@@ -440,7 +440,7 @@ main h1,main h2,main :not(.page-wrapper) h3{
   letter-spacing: 1.5px;
 }
 /* https://codepen.io/manelroig/pen/rJMVRO */
-.arrow {position: absolute; bottom: 0;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top:13px;}
+.arrow {position: absolute; bottom: 0;  margin-left:0px; width: 12px; height: 12px; background-size: contain; top: 14.5px;}
 .segunda{margin-left: 8px;}
 .next {
   background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iNTAwLjAwMDAwMHB0IiBoZWlnaHQ9IjUwMC4wMDAwMDBwdCIgdmlld0JveD0iMCAwIDUwMC4wMDAwMDAgNTAwLjAwMDAwMCIKIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPgoKPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsNTAwLjAwMDAwMCkgc2NhbGUoMC4xMDAwMDAsLTAuMTAwMDAwKSIKZmlsbD0iIzAwMDAwMCIgc3Ryb2tlPSJub25lIj4KPHBhdGggZD0iTTc2MyA0ODYxIGMtODUgLTI1IC0xNjQgLTc1IC0yMzMgLTE0OCAtMTUwIC0xNTkgLTE4MSAtMzgwIC04MyAtNTgzCjIzIC00NiAxNTMgLTE4MiA4MDIgLTgzMyBsNzc2IC03NzcgLTc3NyAtNzc4IGMtNjA3IC02MDggLTc4MiAtNzg4IC04MDEgLTgyOAotMTAxIC0yMDMgLTY1IC00MzQgOTMgLTU5NSAxNTggLTE2MCAzODcgLTIwMCA1OTAgLTEwMyA3MyAzNSAxMDQgNjUgMTA0MwoxMDAzIDU4NSA1ODQgOTg0IDk4OSAxMDA3IDEwMjUgOTkgMTQ2IDEwOCAzNTAgMjMgNTIxIC0zNyA3NSAtMTk2MiAyMDAxCi0yMDQ4IDIwNTAgLTExNSA2NSAtMjY0IDgyIC0zOTIgNDZ6Ii8+CjwvZz4KPC9zdmc+Cg==");
