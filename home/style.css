@@ -354,6 +354,7 @@ section{
   /*color: white;*/
 }
 .card-image img{
+    width: 100%;
 	width: -moz-available;
 	transition: all 1s cubic-bezier(.29,.64,.45,.94);
   -webkit-transition: all 1s cubic-bezier(.29,.64,.45,.94);
