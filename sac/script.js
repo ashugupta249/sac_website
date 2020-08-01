@@ -162,7 +162,7 @@ policy_year_filter();
 /*****************************  Minutes of Meet ********************************/
 $(document).ready(function($){
   var timelines = $('.cd-horizontal-timeline'),
-    eventsMinDistance = 60;
+    eventsMinDistance = 100;
   (timelines.length > 0) && initTimeline(timelines);
   function initTimeline(timelines) {
     timelines.each(function(){
