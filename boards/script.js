@@ -75,7 +75,7 @@ $(window).scroll(function (e){
 });
 /***************************** Initiatives ********************************/
 /* By Subhalingam */
-$(".init-item").click(function(){
+$(".container").on("click",".init-item",function(){
   var data = $(this).data("init-index");
   var book_item = $(this);
   var book_container = book_item.parent();
@@ -103,7 +103,7 @@ $(".init-item").click(function(){
     });
   } 
 })
-$(".init-index-container-close").click(function(){
+$(".container").on("click",".init-index-container-close",function(){
   $(this).parent().slideUp(function(){
     $(this).parent().parent().find(".init-container").css("white-space", "normal");
     $(this).parent().parent().find(".init-item").removeClass("init-item-active");
