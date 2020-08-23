@@ -699,8 +699,6 @@ main h1,main h2,main :not(.page-wrapper) h3{
   .heading {
     margin-top: 25px;
   }
-  .tab-toggle .tab-toggle-active{
-  }
   .tab-toggle-active i{
     transform: rotateZ(180deg);
   }
@@ -903,6 +901,12 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 /*** Senary ***/
 ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > ol li > div {
     background-color: #eaeaea;
+}
+.no-box :after{
+	border: 0;
+}
+.no-box :before{
+	border: 0;
 }
 /*** MEDIA QUERIES ***/
 @media only screen and ( min-width: 80rem ) {
@@ -1600,8 +1604,6 @@ details summary::-webkit-details-marker {
  }
  /******************************** Policy & Constitutions ****************************/
 /* https://codepen.io/vinsongrant/pen/qbGKed */
-.accordion-wrapper{
-}
 .accordion {
   margin-top: 1rem;
   padding: 1rem 0.5rem;
