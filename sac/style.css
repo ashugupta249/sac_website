@@ -793,16 +793,17 @@ ol.organizational-chart {
 ol.organizational-chart ol {
     padding-top: 1rem;
 }
-ol.organizational-chart ol:before,
-ol.organizational-chart ol:after,
+@media only screen and (max-width:80rem){
+ol.organizational-chart ol:not(.nobox):before,
+ol.organizational-chart ol:not(.nobox):after,
 ol.organizational-chart li:before,
 ol.organizational-chart li:after,
 ol.organizational-chart > li > div:before,
-ol.organizational-chart > li > div:after {
+ol.organizational-chart > li > div:after{
     background-color: #dadada; 
     content: '';
     position: absolute;
-}
+}}
 ol.organizational-chart ol > li {
     padding: 1rem 0 0 1rem;
 }
@@ -902,14 +903,24 @@ ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > div {
 ol.organizational-chart > li > ol > li > ol > li > ol > li > ol > li > ol li > div {
     background-color: #eaeaea;
 }
-.no-box :after{
-	border: 0;
+/* .nobox :after{
+	background-color: pink;
 }
-.no-box :before{
-	border: 0;
-}
+.nobox :before{
+	background-color: pink;
+} */
 /*** MEDIA QUERIES ***/
 @media only screen and ( min-width: 80rem ) {
+	ol.organizational-chart ol:before,
+ol.organizational-chart ol:after,
+ol.organizational-chart li:before,
+ol.organizational-chart li:after,
+ol.organizational-chart > li > div:before,
+ol.organizational-chart > li > div:after{
+    background-color: #dadada; 
+    content: '';
+    position: absolute;
+}
     ol.organizational-chart {
         margin-left: -1rem;
         margin-right: -1rem;
