@@ -95,7 +95,7 @@ h1,h2,h3{
 .cards .card-image {
   height: 200px;
   overflow: hidden;
-  background-size: cover;
+  /* background-size: cover; */
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 6px 6px 0px 0px;
