@@ -262,6 +262,9 @@ main h1,main h2,main :not(.page-wrapper) h3{
   -moz-transition: height 0.4s;
   transition: height 0.4s;
 }
+.cd-horizontal-timeline .events-content ol{
+  list-style: none;
+}
 .cd-horizontal-timeline .events-content li {
   position: absolute;
   z-index: 1;
