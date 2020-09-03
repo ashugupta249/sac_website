@@ -318,6 +318,10 @@ main h1,main h2,main :not(.page-wrapper) h3{
 .dimmer{
   display: none;
 }
+.prev{
+	left:0;
+}
+
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
     font-size: 2.6rem;
