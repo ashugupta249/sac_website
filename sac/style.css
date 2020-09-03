@@ -1223,10 +1223,9 @@ details summary::-webkit-details-marker {
 .init-index-container li a{
   text-decoration:   none;
   color: inherit;
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   padding: 8px 5px 8px 12px;
-  vertical-align: middle;
   margin-right: 36px;
 }
 /*
