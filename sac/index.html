@@ -70,7 +70,8 @@
                     <div class="tabs">
                       <button data-tab="about" class="active">About<span></span></button>
                       <button data-tab="str">Structure<span></span></button>
-                      <button data-tab="consti">Constitution & Policy changes<span></span></button>
+                      <button data-tab="policy">Policy changes<span></span></button>
+                      <button data-tab="consti">Constitution<span></span></button>
                       <!---<button data-tab="council">Council Members<span></span></button>-->
                       <button data-tab="init">Initiatives<span></span></button>
                       <button data-tab="mins">Minutes of Meeting<span></span></button>
@@ -138,13 +139,14 @@
                           -->
                       </div>
                         <!-- <div class="tabcontent">&nbsp</div> --> <!-- !important - CLEARFIX (use this if flowchart is used) -->
-                      <div data-tab="consti" class="tabcontent">
-                          <h2>Constitution & Policy changes</h2>
+                      <div data-tab="policy" class="tabcontent">
+                          <h2>Policy changes</h2>
                           <div class="two-col-box">
                             <div style='margin-right: 10px; font-size:1.056rem'>Show Policy changes for</div>
                             <div>
                               <select id="policy-year">
-                                  <!-- <option value="2021">2021</option> -->
+                                  <!-- A year CANNOT be left empty without (at east one) content -->
+                                  <!--<option value="2021">2021</option>--> 
                                   <option value="2020">2020</option>
                                   <!-- <option value="2019">2019</option> -->
                               </select>
@@ -237,16 +239,16 @@
                               </div>
                               -->
                             </div>
-
-
+                        </div>
+                        <div data-tab="consti" class="tabcontent">
+                           <h2>Constitution</h2>
                             <div class="consti-box">
                               <span>
-                                <p><b><u>Constitution</u></b> <br />
-                                <!---The Student Affairs Council shall derive all its powers from the relevant authorities of the Institute, as defined in the Acts & Statutes of the Institute, and shalI be subject to alI rules and regulations laid down by these authorities.</p>-->
+                                <!--<p>The Student Affairs Council shall derive all its powers from the relevant authorities of the Institute, as defined in the Acts & Statutes of the Institute, and shalI be subject to alI rules and regulations laid down by these authorities.</p>-->
                                 <a class="btn" href="../docs/SAC Constitution.pdf" target="_blank">Read</a>
                               </span> 
                             </div>
-                      </div>
+                        </div>
                       <!--- temporarily not implemented
                       <div data-tab="council" class="tabcontent">
                           <h2>Council Members</h2>
