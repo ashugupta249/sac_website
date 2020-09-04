@@ -343,7 +343,8 @@ section{
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	margin-top:auto;
 }
  .cards .card-more:hover {
   background-color: #000; /*#F3AE55;*/ /* #740a0a; */ /*#210202;*/
@@ -379,6 +380,9 @@ section{
 .cards .card-item:hover{
 	/*-webkit-transform: scalex(1.1);*/
 	box-shadow: 0 20px 50px -8px rgba(0,0,0,1);
+}
+.cards .card-intro{
+	text-align:left;
 }
 .box:hover{
 	cursor: pointer;
