@@ -88,10 +88,8 @@ $(".container").on("click",".init-item",function(){
   else{
     $(this).siblings().removeClass("init-item-active");
     $(this).parent().parent().find('.init-index-container:not([data-init-index="'+data+'"])').css("display","none");      
-		book_container.css("white-space", "nowrap");
-		if(! $(this).hasClass('no-active')){
-			book_item.addClass('init-item-active');
-		}
+    book_container.css("white-space", "nowrap");
+    book_item.addClass('init-item-active');
     if ($(window).scrollTop() + $('header').height() + 5 > book_container.offset().top){
       //alert('triggered');
       $('html,body').animate({
@@ -154,12 +152,14 @@ $('select').each(function(){
 $.toggler = function(val){ 
   //$('.container').fadeOut(function(){
     //$(".container").html("");
-    $(".container").load("./partials/"+val.toLowerCase()+".html .ux-vertical-tabs"); 
+    $(".container").load("./partials/"+val.toLowerCase()+".html .ux-vertical-tabs",function(){
+      $(window).scrollTop(0);
+      var timelines = $('.cd-horizontal-timeline');
+      (timelines.length > 0) && initTimeline(timelines);
+    }); 
     $("title").html(val+" :: Boards | SAC, IIT Delhi");
     //$('.container').fadeIn(function(){
       /***********  Minutes of Meet ********/
-      var timelines = $('.cd-horizontal-timeline');
-      (timelines.length > 0) && initTimeline(timelines);
     //});
     history.replaceState(undefined, undefined, "#"+val.toLowerCase());
  //}) 
