@@ -153,7 +153,7 @@ $.toggler = function(val){
   //$('.container').fadeOut(function(){
     //$(".container").html("");
     $(".container").load("./partials/"+val.toLowerCase()+".html .ux-vertical-tabs"); 
-    $("title").html("Boards - "+val);
+    $("title").html(val+" :: Boards | SAC, IIT Delhi");
     //$('.container').fadeIn(function(){
       /***********  Minutes of Meet ********/
       var timelines = $('.cd-horizontal-timeline');
