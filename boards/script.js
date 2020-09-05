@@ -88,8 +88,10 @@ $(".container").on("click",".init-item",function(){
   else{
     $(this).siblings().removeClass("init-item-active");
     $(this).parent().parent().find('.init-index-container:not([data-init-index="'+data+'"])').css("display","none");      
-    book_container.css("white-space", "nowrap");
-    book_item.addClass('init-item-active');
+		book_container.css("white-space", "nowrap");
+		if(! $(this).hasClass('no-active')){
+			book_item.addClass('init-item-active');
+		}
     if ($(window).scrollTop() + $('header').height() + 5 > book_container.offset().top){
       //alert('triggered');
       $('html,body').animate({
