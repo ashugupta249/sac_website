@@ -14,6 +14,11 @@
 *::after {
   box-sizing: border-box;
 }
+@media (max-width: 40rem){
+  :root{
+    font-size: 14px;
+  }
+}
 html {
   background-color: #f6f6f6;
 }
@@ -95,7 +100,7 @@ h1,h2,h3{
 .cards .card-image {
   height: 200px;
   overflow: hidden;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 6px 6px 0px 0px;
@@ -349,7 +354,7 @@ h1,h2,h3{
 }
 .modal__dialog {
   max-width: 600px;
-  padding: 1.2rem;
+  padding: 1.2rem 0.25em;
 }
 .modal__content {
   will-change: transform, opacity;
@@ -375,7 +380,7 @@ h1,h2,h3{
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transiti@imporon: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .modal__trigger--active {
