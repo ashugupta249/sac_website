@@ -289,6 +289,7 @@ main{
 	font-weight: 300 !important;
 	margin: 0 0 15px 0;
 	font-family: 'Lato',sans-serif !important;
+	font-weight: 400 !important;
 }
 .footer-heading:after {
 	position: absolute;
