@@ -152,17 +152,17 @@ $('select').each(function(){
     });
 });
 $.toggler = function(val){ 
-  $('.container').fadeOut(function(){
-    $(".container").html("");
+  //$('.container').fadeOut(function(){
+    //$(".container").html("");
     $(".container").load("./partials/"+val.toLowerCase()+".html .ux-vertical-tabs"); 
-    $("title").html("Boards - "+val);
-    $('.container').fadeIn(function(){
+    $("title").html(val+" :: Boards | SAC, IIT Delhi");
+    //$('.container').fadeIn(function(){
       /***********  Minutes of Meet ********/
       var timelines = $('.cd-horizontal-timeline');
       (timelines.length > 0) && initTimeline(timelines);
-    });
+    //});
     history.replaceState(undefined, undefined, "#"+val.toLowerCase());
- }) 
+ //}) 
 }
 $.hashChanger = function(){
   var val = window.location.hash.substring(1).toLowerCase();
