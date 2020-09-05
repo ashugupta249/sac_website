@@ -24,22 +24,22 @@
   </head>
   <body>
   <header>
-   <div class="topnav" id="myTopnav">
-     <a href="../" class="saclogo" id="nav-saclogo"><img src="../silver_trans.png"/></a>
+   <nav class="topnav" id="myTopnav">
+     <a href="javascript:void(0);" class="saclogo" id="nav-saclogo"><img src="../silver_trans.png"/></a>
      <a href="javascript:void(0);" class="icon" id="toggle-nav">&#9776;</a>
      <div class="nav-links">
-       <a href="../" >Home</a>
+       <a href="../">Home</a>
        <a href="../sac/">SAC</a>
        <div class="dropdown">
          <button class="dropbtn">Boards
            <i class="fa fa-caret-down"></i>
          </button>
-         <div class="dropdown-content">
-           <a href="../boards/#bsw">BSW</a>
-           <a href="../boards/#bsa">BSA</a>
-           <a href="../boards/#bsp">BSP</a>
+         <div class="dropdown-content">     
            <a href="../boards/#bhm">BHM</a>
            <a href="../boards/#brca">BRCA</a>
+           <a href="../boards/#bsa">BSA</a>
+           <a href="../boards/#bsp">BSP</a>
+           <a href="../boards/#bsw">BSW</a>
          </div>
        </div>
        <div class="dropdown">
@@ -52,18 +52,8 @@
            <a href="../clubs/#others">Others</a>
          </div>
        </div>
-       <div class="dropdown">
-         <button class="dropbtn">Explore
-           <i class="fa fa-caret-down"></i>
-         </button>
-         <div class="dropdown-content">
-           <a href="../facilities/">Facilities</a>
-           <!-- <a href="#">Activities</a> -->
-           <a href="#">Projects</a>
-         </div>
-       </div>
      </div>
-   </div>   
+   </nav>
   </header>
   <main>
     <div class="vert-tabs">
@@ -863,62 +853,97 @@
     </div>
   </main>
   <footer class="footer">
-  <div class="inner-footer">
-<!--  for company name and description -->
-<!--  for quick links  -->
-<!--  for contact us info -->
-     <div class="footer-items">
-      <img src="../silver_trans.png" style="height: 100px;margin-right: auto !important;margin-bottom:15px;display: block !important"/>
-      <h3 class="footer-heading">Contact us</h3><a style="text-decoration-color: white;margin-left: 20px;" href="https://www.facebook.com/saciitdelhi/"><i class="fa fa-facebook-official"></i></a>
-      <ul>
-        <li><i class="fa fa-map-marker" aria-hidden="true"></i>IIT Delhi, Hauz Khas</li>
-        <li><i class="fa fa-envelope" aria-hidden="true"></i>sacgsec@admin.iitd.ac.in</li>
-      </ul>
-<!--   for social links -->
-        <div class="social-media">
-          <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
-          <!-- <a href="#"><i class="fa fa-google-plus-square"></i></a> -->
+    <div class="inner-footer">
+  <!--  for company name and description -->
+  <!--  for quick links  -->
+  <!--  for contact us info -->
+       <div class="footer-items">
+        <img src="../silver_trans.png" style="height: 150px;margin-right: auto !important;margin-bottom:15px;display: block !important"/>
+        <h3 class="footer-heading">Contact us</h3>
+        <ul>
+          <li><a><i class="fa fa-map-marker" aria-hidden="true"></i>IIT Delhi, Hauz Khas</a></li>
+          <li><a href="mailto:sacgsec@admin.iitd.ac.in"><i class="fa fa-envelope" aria-hidden="true"></i>sacgsec@admin.iitd.ac.in</a></li>
+          <li><a href="https://www.facebook.com/saciitdelhi/"><i class="fa fa-facebook-official"></i>fb.com/saciitdelhi</a></li>
+        </ul>
+  <!--   for social links -->
+          <div class="social-media">
+            <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+            <!-- <a href="#"><i class="fa fa-google-plus-square"></i></a> -->
+          </div>
+      </div>
+      <div class="footer-items brdr-left">
+        <h3 class="footer-heading">Constituent Bodies of SAC</h3>
+          <ul>
+            <li class="boards-footer-flex">
+              <div style="flex-grow: 1;">
+                <a href="http://home.iitd.ac.in/bhm.php" target="_blank">BHM</a>
+              </div>
+                <a href="https://www.facebook.com/bhm.iitd/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="http://home.iitd.ac.in/bhm.php" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            </li>
+            <li class="boards-footer-flex">
+              <div style="flex-grow: 1;">
+                <a href="http://brca.iitd.ac.in/" target="_blank">BRCA</a>
+              </div>
+                <a href="https://www.instagram.com/brcaiitd/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/cultureIITD/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="http://brca.iitd.ac.in" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            </li>
+            <li class="boards-footer-flex">
+              <div style="flex-grow: 1;">
+                <a href="http://bsa-iitd.in/home/" target="_blank">BSA</a>
+              </div>
+                <a href="https://www.instagram.com/bsa.iitd/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/iitd.bsa/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="http://bsa-iitd.in/home/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            </li>
+            <li class="boards-footer-flex">
+              <div style="flex-grow: 1;">
+                <a href="http://bsp.iitd.ac.in/" target="_blank">BSP</a>
+              </div>
+                <a href="https://www.instagram.com/bsp.iitdelhi/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/bspiitd/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="http://bsp.iitd.ac.in" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            </li>
+            <li class="boards-footer-flex">
+              <div style="flex-grow: 1;">
+                <a href="http://bsw.iitd.ac.in/" target="_blank">BSW</a>
+              </div>
+                <a href="https://www.instagram.com/bsw_iitd/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/boardforstudentwelfare/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="http://bsw.iitd.ac.in" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+      </div>    
+  <!--  for quick links  -->
+      <div class="footer-items">
+        <h3 class="footer-heading">Services</h3>
+          <ul>
+            <li><a href="http://bsw.iitd.ac.in/counselling.php" target="_blank">Counselling </a></li>
+            <li><a href="http://hospital.iitd.ac.in/" target="_blank">Hospital </a></li>
+            <li><a href="https://csc.iitd.ac.in/" target="_blank">CSC - Computer Services Center </a></li>
+            <li><a href="https://tnp.iitd.ac.in/ocs/home.php" target="_blank">OCS - Office of Carrer Services </a></li>
+          </ul>
+      </div>
+  <!--  for some other links -->
+      <div class="footer-items">
+        <h3 class="footer-heading">Links</h3>
+          <ul>
+            <li><a href="http://ecertification.iitd.ac.in/" target="_blank">eCertification </a></li>
+            <li><a href="http://caic.iitd.ac.in/subscription-page/" target="_blank">Subscribe to iitdnotices </a></li>
+            <li><a href="https://eacademics.iitd.ac.in/sportal/login" target="_blank">eacademics </a></li>
+            <li><a href="http://roombooking.iitd.ac.in/index/" target="_blank">Room Booking</i></a></li>
+          </ul> 
+          <div class="scroll-top-button" onclick="scrollTopAnimated(500)">
+          Scroll to top<i class="fa fa-long-arrow-up" aria-hidden="true" style="margin-left: 10px"></i>
         </div>
-    </div>
-    <div class="footer-items brdr-left">
-      <h3 class="footer-heading">Constituent Bodies of SAC</h3>
-        <ul>
-          <li><a href="https://home.iitd.ac.in/bhm.php">BHM</a><a href="https://www.facebook.com/bhm.iitd/"><i class="fa fa-facebook-official"></i></a></li>
-          <li><a href="http://brca.iitd.ac.in/">BRCA</a><a href="https://www.facebook.com/cultureIITD/"><i class="fa fa-facebook-official"></i></a></li>
-          <li><a href="http://bsw.iitd.ac.in/">BSW</a><a href="https://www.facebook.com/boardforstudentwelfare/"><i class="fa fa-facebook-official"></i></a></li>
-          <li><a href="http://bsp.iitd.ac.in/">BSP</a><a href="https://www.facebook.com/bspiitd/"><i class="fa fa-facebook-official"></i></a></li>
-          <li><a href="http://bsa-iitd.in/home/">BSA</a><a href="https://www.facebook.com/iitd.bsa/"><i class="fa fa-facebook-official"></i></a></li>
-        </ul>
-    </div>    
-<!--  for quick links  -->
-    <div class="footer-items">
-      <h3 class="footer-heading">Services</h3>
-        <ul>
-          <li><a href="#">Counselling </a></li>
-          <li><a href="#">Hospital </a></li>
-          <li><a href="#">CSC - Computer Services Center </a></li>
-          <li><a href="#">OCS - Office of Carrer Services </a></li>
-        </ul>
-    </div>
-<!--  for some other links -->
-    <div class="footer-items">
-      <h3 class="footer-heading">Links</h3>
-        <ul>
-          <li><a href="#">eCertification </a></li>
-          <li><a href="#">Subscribe to iitdnotices </a></li>
-          <li><a href="#">eacademics </a></li>
-          <li><a href="#">Room Booking</a></li>
-        </ul> 
-        <div class="scroll-top-button" onclick="scrollTopAnimated(500)">
-        Scroll to top<i class="fa fa-long-arrow-up" aria-hidden="true" style="margin-left: 10px"></i>
       </div>
     </div>
-  </div>
-<!--   Footer Bottom start  -->
-  <div class="footer-bottom">
-  Copyright &copy; Student Affairs Council, Indian Institute of Technology Delhi, 2020.
-  <p>Made by Shubhalingam and Adarsh</p>
-  </div>
+  <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+      <span style="color:#dadada;font-size:1.2em;margin-bottom: 7px;display:block;">Designed & Developed by <a href="https://github.com/adarsh-ee3180525" target="_blank" style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Adarsh Jain</a> and <a href="https://subhalingamd.github.io/" target="_blank" style="color:#fafafa;text-decoration-color: #dadada;text-decoration: underline;">Subhalingam D</a></span>
+    <p>Copyright &copy; Student Affairs Council, Indian Institute of Technology Delhi, 2020.</p>
+    </div>
   </footer>
 
 
