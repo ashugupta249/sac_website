@@ -687,7 +687,7 @@ main h1,main h2,main :not(.page-wrapper) h3{
     text-align: center;
     border-radius: 0 0 1.5rem 1.5rem;
     cursor: pointer;
-    transition: all 0.33s ease-in-out;
+    transition: all 1s ease-in-out;
     top:var(--top-margin);
     font-size: medium;
   }
