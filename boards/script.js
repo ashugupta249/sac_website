@@ -153,6 +153,7 @@ $.toggler = function(val){
   //$('.container').fadeOut(function(){
     //$(".container").html("");
     $(".container").load("./partials/"+val.toLowerCase()+".html .ux-vertical-tabs",function(){
+      $(window).scrollTop(0);
       var timelines = $('.cd-horizontal-timeline');
       (timelines.length > 0) && initTimeline(timelines);
     }); 
